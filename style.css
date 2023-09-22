@@ -1,6 +1,13 @@
 /* Colours & fonts */
-/*
+/*  Dark Green: #21383C
+    Light Blue: #B8C4CB
+    Neutral: #EFE4DA
+    Light Beige: #D9BDA2
+    Rust: #B86E49
 
+    Font Heading font-family: 'Playfair Display', serif;
+    Body font-family: 'Libre Franklin', sans-serif;
+    
 */
 
 
@@ -81,12 +88,12 @@
   
 /* Typography font styles———-————————-—*/
 body {
-    font-family: Montserrat;
+    font-family: 'Libre Franklin', sans-serif;
     color: #21383C;
 }
   
 h1 {
-    font-family: Playfair Display;
+    font-family: Playfair Display, serif;
     font-weight: 200;
     font-size: 4rem;
     line-height: 1.2;
@@ -94,20 +101,19 @@ h1 {
 }
   
 .eyebrow-heading {
-    font-family: Montserrat;
     font-size: 1.2rem;
     font-weight: 600;
 }
   
 h2 {
-    font-family: Playfair Display;
+    font-family: Playfair Display, serif;
     font-size: 2.5rem;
     font-weight: 400;
 }
   
   
 h4 {
-    font-family: Playfair Display;
+    font-family: Playfair Display, serif;
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -140,7 +146,6 @@ p:last-child {
 .uppercase   { text-transform: uppercase;  }
   
 .subheading {
-    font-family: Montserrat;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 700;
@@ -200,7 +205,7 @@ header {
 }
   
 .logo h2 {
-    font-family: Montserrat;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -220,7 +225,6 @@ header {
 .ticket-banner {
     background-color: #21383C;
     color: #F7EEE7;
-    font-family: Montserrat;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.3rem;

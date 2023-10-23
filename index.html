@@ -16,7 +16,8 @@
         <!-- Add Google Fonts Here  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=WindSong&display=swap" rel="stylesheet">
+                
     
         <!-- My own custom stylesheet-this always goes last -->
         <link rel="stylesheet" href="/style.css">
@@ -43,15 +44,15 @@
   
     <!-------header banner------------------------->
 
-    <section class="center grid padded">
+    <section class="center grid padded tall-90">
         <div class="bg-image col-2">
             <!-- background image bed-->
         </div>
-        <div class="col-8">
-        <h2 class="uppercase eyebrow-heading"> Web Developer & Photographer </h2>
-        <h1> Creating <em> websites + photography </em> for <br> your  impactful <br> <span id="typed">hospitality business</span>
-        </h1>
-        <a href="" class="uppercase center margin-t-2 button"> Let's work together </a>
+        <div class="col-8-middle">
+            <h2 class="uppercase eyebrow-heading"> Web Developer & Photographer </h2>
+            <h1> Creating <em> websites + photography </em> for <br> your  impactful <br> <span id="typed">hospitality business</span>
+            </h1>
+            <a href="" class="uppercase center margin-t-2 button"> Let's work together </a>
         </div>
         
         <div class="bg-image col-2">
@@ -90,12 +91,15 @@
     </section>
   
   <!------- Services Section ------------------->
-    <section class="padded-lg bg-featured">
-        <div>
+    <section class="padded-lg bg-featured grid">
+        <div class="col-12">
             <h3 class="subheading center"> Service menu </h3>
-            <h2> 01 Web <em>Design</em> / Development +</h2>
+            <h2 class="large-text"> 01 Web <em>Design</em> / Development +</h2>
             <p>Venenatis lectus magna fringilla urna. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Amet porttitor eget dolor morbi non arcu. Cras semper auctor neque vitae tempus quam pellentesque.</p>
-            <h2> 02 Food / Restaurant <em>Photography</em> +</h2>
+        </div>
+        <hr class="col-12 border-line">
+        <div class="col-12">
+            <h2 class="large-text"> 02 Food / Restaurant <em>Photography</em> +</h2>
             <p> TEMPORARY Tristique senectus et netus et malesuada fames ac. Erat imperdiet sed euismod nisi. Amet risus nullam eget felis eget nunc lobortis. Libero justo laoreet sit amet cursus sit. Convallis aenean et tortor at risus. Ullamcorper sit amet risus nullam eget. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum.</p>
         </div>
     </section>
@@ -125,40 +129,52 @@
     </section>
   
     <!-------Portfolio Section ------>
-    <h2 class="center large-text">Portfolio</h2>
+    <h2 class="center large-text padded-t"> Portfolio</h2>
     
-    <section class="grid"> 
+    <section class="grid padded"> 
         <!-------Portfolio Web dev section ------>
-        <div class="padded col-6-middle_sm-12">
-            <p class="subheading">company name</p>
-            <h4>Web <em>design</em> & development</h4>
-            <a href=""> Explore Portfolio </a>
+        <div class="col-5-bottom_sm-12">
+            <div class="margin-b-1">
+                <p class="subheading">company name</p>
+                <h4 class="medium-heading">Web <em>design</em> & development</h4>
+                <a href=""> Explore Portfolio </a>
+            </div>
+            <div class="bg-image tall-50 image-border-r">
+                <!-- background image tatjana + extra-->
+            </div>
         </div>
-        <div class="bg-image col-6_sm-12 tall-70">
+        <div class="bg-image col-7_sm-12 tall-70 image-border-l">
             <!-- background image tatjana + extra-->
         </div>
-        
+    </section>
+    
+    <section class="grid padded padded-t-0"> 
         <!-------Portfolio photography section ------>
-        <div class="bg-image col-6_sm-12 tall-70">
+        <div class="bg-image col-7_sm-12 tall-70 image-border-r">
             <!-- background image tatjana + extra-->
         </div>
-        <div class="padded col-6-middle_sm-12">
-            <p class="subheading">company name</p>
-            <h4>Food <em>photography</em></h4>
-            <a href=""> Explore Portfolio </a>
+        <div class="col-5-bottom_sm-12">
+            <div class="padded col-6-middle_sm-12">
+                <p class="subheading">company name</p>
+                <h4 class="medium-heading">Food <em>photography</em></h4>
+                <a href=""> Explore Portfolio </a>
+            </div>
+            <div class="bg-image tall-50 image-border-l">
+                <!-- background image tatjana-->
+            </div>
         </div>
     </section>
   
   <!-------Testimonial Section ------------>
   
     <section class="padded-lg grid bg-image">
-        <h4 class="col-12 center"> Kind words <h/3>
+        <h4 class="col-12 center"> Kind words </h4>
         <div class="col-1 text-right"> 
             <span class="quote-icon"> “ </span>
         </div>
-        <div class="col-10 text-center"> 
+        <div class="col-10 center"> 
             <p> Working with Tatjana has given me more time to work on the expanding the business & bring more cerativity into my offerings for the company </p>
-            <p class="subtitle"> - A very happy customer </p>
+            <p class="subtitle cursive-text"> - A very happy customer </p>
         </div>
         <div class="col-1"> 
             <span class="quote-icon"> ” </span>   

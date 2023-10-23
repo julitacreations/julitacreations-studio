@@ -7,6 +7,7 @@
 
     Font Heading font-family: 'Playfair Display', serif;
     Body font-family: 'Libre Franklin', sans-serif;
+    Featured font-family: 'WindSong', cursive;
     
 */
 
@@ -49,6 +50,8 @@
 .padded-b { padding-bottom: 5%; }
 .padded-l { padding-left: 5%; }
 .padded-r { padding-right: 5%; }
+
+.padded-t-0 { padding-top: 0; }
   
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -80,7 +83,8 @@
   
   
 /* Height Classes */
-  
+ 
+.tall-40 { min-height: 40vh; }
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
@@ -96,8 +100,8 @@ body {
 }
   
 h1 {
-    font-family: Playfair Display, serif;
-    font-weight: 200;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     font-size: 4rem;
     line-height: 1.2;
     text-align: center;
@@ -105,31 +109,30 @@ h1 {
   
 .eyebrow-heading {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Libre Franklin', sans-serif;
 }
   
 h2 {
-    font-family: Playfair Display, serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 400;
 }
   
-  
 h4 {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
 }
   
 h2, h3, h4, h5, h6 {
-      line-height: 1.1;
-      margin-bottom: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
 }
   
 p {
     font-size: 1.1rem;
-      line-height: 1.4; 
-      margin-bottom: 1rem;
+    line-height: 1.4; 
+    margin-bottom: 1rem;
 }
   
 h1:last-child, 
@@ -139,7 +142,7 @@ h4:last-child,
 h5:last-child, 
 h6:last-child, 
 p:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
 }
   
   
@@ -151,10 +154,20 @@ p:last-child {
 .subheading {
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 400;
 }
   
 .large-text   { font-size: 3.2rem; }
+
+.medium-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.cursive-text {
+    font-family: 'Windsong', cursive;
+}
   
 .light-text { color: #EFE4DA; } 
 .dark-text  { color: #21383C; }
@@ -190,6 +203,14 @@ a:hover {
     background-color: #21383C;
     font-style: normal;
 }
+
+.border-line {
+    border: none;
+    border-bottom: 1px solid #21383C;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
   
 /* Header & Footer Styles————————————————*/
   
@@ -204,7 +225,7 @@ header a {
 }
   
 header {
-    padding: 0 5%;
+    padding: 1.2% 5%;
     border: 1px solid grey;
 }
   
@@ -218,10 +239,17 @@ header {
   
 /* Images & Background Images—————————-—— */
 .bg-image {
-      background-color:  rgb(199, 199, 199);
-      background-size: cover; 
-      background-position: center; 
-      background-repeat: no-repeat;
+    background-color:  rgb(199, 199, 199);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.image-border-l {
+    border-left: 10px solid white;
+}
+.image-border-r {
+    border-right: 10px solid white;
 }
   
 /* Ticket slider Styles*/
@@ -232,7 +260,7 @@ header {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: 1.6%;
+    padding: 1.5%;
 }
   
   

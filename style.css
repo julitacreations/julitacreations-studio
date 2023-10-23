@@ -157,16 +157,23 @@ p:last-child {
     font-weight: 400;
 }
   
-.large-text   { font-size: 3.2rem; }
-
 .medium-heading {
     font-family: 'Playfair Display', serif;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
+.medium-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.large-text   { font-size: 3.2rem; }
+
 .cursive-text {
     font-family: 'Windsong', cursive;
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
 }
   
 .light-text { color: #EFE4DA; } 
@@ -176,7 +183,12 @@ p:last-child {
 .bg-light    { background-color: #EFE4DA;  }
 .bg-dark     { background-color: #21383C;  }
 .bg-featured { background-color: #B8C4CB;  }
-  
+
+.bg-gradient { 
+    background: #B8C4CB; /* Background for old browsers */
+    background: linear-gradient(to left, #a2b2bb, #B8C4CB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
   
 a {
     color: #21383C;
@@ -210,6 +222,14 @@ a:hover {
     padding: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+
+.quote-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: rgba(33, 56, 60, 0.8);
 }
   
 /* Header & Footer Styles————————————————*/
@@ -252,6 +272,51 @@ header {
     border-right: 10px solid white;
 }
   
+
+/* Contact Form Styles*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #21383C;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #21383C;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border: 2px solid;
+    border-radius: 0.1rem;
+    /*top +bottom then left +right */
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #EFE4DA;
+    background-color: #21383C;
+    font-style: normal;
+}
+
+
 /* Ticket slider Styles*/
   
 .ticket-banner {
@@ -263,6 +328,7 @@ header {
     padding: 1.5%;
 }
   
+
   
 
 

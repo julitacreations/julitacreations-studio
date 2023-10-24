@@ -4,6 +4,7 @@
     Neutral: #EFE4DA
     Light Beige: #D9BDA2
     Rust: #B86E49
+    Neutral background: #F5F6F7
 
     Font Heading font-family: 'Playfair Display', serif;
     Body font-family: 'Libre Franklin', sans-serif;
@@ -97,12 +98,13 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
     color: #21383C;
+    background-color: #F5F6F7;
 }
   
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 4.2rem;
     line-height: 1.2;
     text-align: center;
 }
@@ -115,7 +117,7 @@ h1 {
   
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 400;
 }
   
@@ -168,7 +170,7 @@ p:last-child {
     font-size: 1.8rem;
     font-weight: 400;
 }
-.large-text   { font-size: 3.2rem; }
+.large-text   { font-size: 3.4rem; }
 
 .cursive-text {
     font-family: 'Windsong', cursive;
@@ -203,6 +205,16 @@ a:hover {
   
   
 .button {
+    background-color: #F5F6F7;
+    border: 2px solid;
+    border-radius: 0.1rem;
+     /*top +bottom then left +right */
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+}
+
+.button-color {
+    background-color: #B8C4CB;
     border: 2px solid;
     border-radius: 0.1rem;
      /*top +bottom then left +right */
@@ -213,8 +225,17 @@ a:hover {
 .button:hover {
     color: #EFE4DA;
     background-color: #21383C;
-    font-style: normal;
+    border: 2px solid #21383C;
+    font-style:normal;
 }
+
+.button-color:hover {
+    color: #EFE4DA;
+    background-color: #21383C;
+    border: 2px solid #21383C;
+    font-style:normal;
+}
+
 
 .border-line {
     border: none;
@@ -275,45 +296,37 @@ header {
 
 /* Contact Form Styles*/
 form {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 48vw;
+    margin: auto;
 }
 
-label {
+form label {
     display: block;
-    margin-bottom: 0.3rem;
+    margin-top: 1rem;
 }
 
-input, select {
+form input, 
+form select,
+form textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
+    padding: 0.5rem;
+    margin: 0 0 0.5rem 0;
     border: none;
+    outline: none;
     border-bottom: 1px solid #21383C;
-    box-sizing: border-box;
-  }
+    border-top: 1px solid #F5F6F7;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background-color: #F5F6F7;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #B86E49;
+}
 
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #21383C;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    border: 2px solid;
-    border-radius: 0.1rem;
-    /*top +bottom then left +right */
-    padding: 0.8rem 2rem;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    color: #EFE4DA;
-    background-color: #21383C;
-    font-style: normal;
+    min-height: 5rem;
 }
 
 

@@ -53,6 +53,7 @@
 .padded-r { padding-right: 5%; }
 
 .padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
   
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -82,7 +83,7 @@
 .center { text-align: center; }
 .right  { text-align: right; }
   
-  
+
 /* Height Classes */
  
 .tall-40 { min-height: 40vh; }
@@ -152,6 +153,7 @@ p:last-child {
 /* General typography & universal styles——————-———*/
   
 .uppercase   { text-transform: uppercase;  }
+.bold        {font-weight: bold;}
   
 .subheading {
     text-transform: uppercase;
@@ -165,6 +167,9 @@ p:last-child {
     font-weight: 400;
 }
 
+.small-text {
+    font-size: 0.9rem;
+}
 .medium-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
@@ -287,10 +292,10 @@ header {
 }
 
 .image-border-l {
-    border-left: 10px solid white;
+    border-left: 10px solid #F5F6F7;
 }
 .image-border-r {
-    border-right: 10px solid white;
+    border-right: 10px solid #F5F6F7;
 }
   
 

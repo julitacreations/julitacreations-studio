@@ -67,8 +67,8 @@
 
 
     <!-------Introduction/ Process Section ----------->
-    <section class="padded-lg padded-b-1 grid-spaceBetween center"> 
-        <div class="col-12-middle">
+    <section class="padded-lg padded-t padded-b-0 grid-spaceAround center"> 
+        <div class="col-10">
             <h4 class="subheading"> Let's create together </h4>
             <p class="medium-heading">Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum.</p>
             <p> Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Amet porttitor eget dolor morbi non arcu. Cras semper auctor neque vitae tempus quam pellentesque. Let me help you achieve more of what matters to make a greater impact in your business & your surroundings lor morbi non arcu. Cras semper auctor neque vitae tempus quam pellentesque. Let me help you achieve more of what matters to make a greater impact in your business & your surro.
@@ -77,40 +77,46 @@
     </section>
 
     <!-------Image Gallery Portfolio------>
-    <section class="padded">
+    <section class="padded padded-b-0">
+        <div class="padded-sm center portfolio-filter" id="portfolio-filter">
+            <span>All</span> 
+            <span>Restaurant</span> 
+            <span>Food & Drink</span> 
+            <span>Product</span>
+        </div>
 
-        <div class="gallery grid">
-            <div class="col-4_xs-6">
+        <div class="grid-center filterable-gallery" id="filterable-gallery">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-8_xs-6">
+            <div class="col-8_xs-6 gallery-item">
                 <div class="bg-image landscape"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait-tall"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
-            <div class="col-4_xs-6">
+            <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image portrait"></div>
             </div> 
           </div>
@@ -186,8 +192,47 @@
         </div>
     </footer>
 
-   
-   
+
+
+<!---------  Ad JS Code for filterable gallery later on 
+
+
+ $('#portfolio-filter span').click(function(){
+    
+    // Remove class 'active' from any <span> that is currently active 
+    $('#portfolio-filter .active').removeClass('active');
+    
+    // give this <span> that was clicked on a class of 'active' 
+    $(this).addClass('active');
+
+    // get the name of the cateory from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
+    var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
+
+    // This is something new, it's an 'each' function which is basically iterates through each element that matches the selector and applies the function one by one.
+    
+    $('#filterable-gallery .gallery-item').each(function() {
+      
+        // If the filter value that they have clicked on is 'all' then remove the class of hidden from each gallery-item. 
+
+        if (filterVal == 'all') {
+          $(this).removeClass('hidden');
+          
+        }
+      
+        // if it's not all, then 
+        else {
+           if($(this).hasClass(filterVal)) {
+              $(this).removeClass('hidden'); // show those that have the filter class
+             
+            }
+          else {
+              $(this).addClass('hidden'); // hide those that do not have the filter
+            }};
+        });
+      
+});
+
+-->
 
 
 </body>

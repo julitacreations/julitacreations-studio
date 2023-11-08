@@ -362,8 +362,26 @@ footer p {
 .bg-pos-unique { background-position: 50% 50%; }
 
 
-.gallery [class*="col-"] {
-  padding: 0.5%;
+/* Filterable Gallery Styles   */ 
+.filterable-gallery {
+    padding: 1rem;
+}
+.filterable-gallery [class*="col-"] {
+    padding: 0.5%;
+}  
+.hidden { display: none; }
+
+/* Filter navigation */
+.portfolio-filter span {
+    text-transform: uppercase; 
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid #21383C;
+    padding: 0.5rem 1.5rem;
+    margin: 0.6rem 0.3rem;
+}
+.portfolio-filter .active {
+    color: red;
 }
 
 

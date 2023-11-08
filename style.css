@@ -178,7 +178,16 @@ p:last-child {
     font-size: 1.8rem;
     font-weight: 400;
 }
-.large-text   { font-size: 3.4rem; }
+.large-text   { 
+    font-size: 3.4rem; 
+}
+.xtra-large-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    text-align: center;
+}
 
 .cursive-text {
     font-family: 'Windsong', cursive;

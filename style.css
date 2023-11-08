@@ -53,6 +53,7 @@
 .padded-r { padding-right: 5%; }
 
 .padded-b-1 { padding-bottom: 1rem; }
+.padded-t-1 { padding-top: 1rem;}
 
 .padded-t-0 { padding-top: 0; }
 .padded-b-0 { padding-bottom: 0; }
@@ -331,7 +332,8 @@ footer p {
 
 
 
-/* Images & Background Images—————————-—----------— */
+/* Images & Background Images—————————-—----------— *
+
 .bg-image {
     background-color:  rgb(199, 199, 199);
     background-size: cover; 
@@ -383,6 +385,9 @@ footer p {
 .portfolio-filter .active {
     color: red;
 }
+
+/* Individual Images —————————-—----------— */
+.logo-image { background-image: url('images/jcs-logo-footer.png');}
 
 
 

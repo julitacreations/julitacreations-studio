@@ -322,7 +322,7 @@ footer p {
 
 
 
-/* Images & Background Images—————————-—— */
+/* Images & Background Images—————————-—----------— */
 .bg-image {
     background-color:  rgb(199, 199, 199);
     background-size: cover; 
@@ -337,6 +337,25 @@ footer p {
     border-right: 10px solid #F5F6F7;
 }
   
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 134%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+.bg-pos-unique { background-position: 50% 50%; }
+
+
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
 
 
 

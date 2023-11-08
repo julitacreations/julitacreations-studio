@@ -191,7 +191,7 @@ p:last-child {
 
 .cursive-text {
     font-family: 'Windsong', cursive;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-top: 1.7rem;
 }
   
@@ -339,13 +339,13 @@ footer p {
     background-repeat: no-repeat;
 }
 
-.image-border-l {
-    border-left: 10px solid #F5F6F7;
-}
-.image-border-r {
-    border-right: 10px solid #F5F6F7;
+.image-border {
+    border: 10px solid #F5F6F7;
 }
   
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}  
 
 /* Aspect Ratio  */
 .portrait-tall { padding-bottom: 134%; }

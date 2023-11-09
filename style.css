@@ -90,6 +90,7 @@
 /* Height Classes */
  
 .tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
 .tall-40 { min-height: 40vh; }
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
@@ -391,9 +392,57 @@ footer p {
 /* Individual Images —————————-—----------— */
 .logo-image     { background-image: url('images/jcs-logo-footer.png');}
 .profile-image  { background-image: url('images/jcs-profile-image.jpg');}
+.profile-image-2 { background-image: url('images/jcs-profile-photo-2.jpg');}
+.building       { background-image: url('images/building-max.jpg');}
+.towel-beach    { background-image: url('images/chandra-oh-beach-towel.jpg');}
+.dusting-cake   { background-image: url('images/jcs-food-photography-dusting.jpg');}
+.corn-fritter   { background-image: url('images/jcs-food-photography-corn-fritter.jpg');}
+.bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}
 .water-image    { background-image: url('images/the-mediterranean.jpg');}
-.drink-image    { background-image: url('images/INSTA-TJCOPYRIGHT-NKN_3541.jpg');}
+.pomelo-drink   { background-image: url('images/jcs-drink-photography-pomelo-spritz.jpg');}
 
+.cookies        { 
+    background-image: url('images/jcs-photography-cookies.jpg');
+    background-position: 50% 90%;
+}
+.raspberry-lemon-loaf { 
+    background-image: url('images/jcs-photography-lemon-raspbery-loaf-2.jpg');
+    background-position: 50% 80%;
+}
+
+
+/* Fotography Portfolio Images —————————-—----------— */
+.elegant-drink  { background-image: url('images/jcs-drink-photography-elegant.jpg');}
+.coffee-pour    { background-image: url('images/jcs-drink-photography-pour.jpg');}
+.acquafaba      { background-image: url('images/jcs-food-photography-acquafaba.jpg');}
+.macro-biscuit  { background-image: url('images/jcs-food-photography-biscuits.jpg');}
+.cheesecake     { background-image: url('images/jcs-food-photography-cheesecake.jpg');}
+.crepes         { background-image: url('images/jcs-food-photography-crepes.jpg');}
+.croissant-choc { background-image: url('images/jcs-food-photography-croissant-choc.jpg');}
+.croissant-stack { background-image: url('images/jcs-food-photography-croissant.jpg');}
+.biscuit-flatlay { background-image: url('images/jcs-food-photography-flatlay.jpg');}
+.loaf-cake      { background-image: url('images/jcs-food-photography-loaf.jpg');}
+.loaf-motion    { background-image: url('images/jcs-food-photography-motion.jpg');}
+.serve-cake     { background-image: url('images/jcs-food-photography-serve-cake.jpg');}
+.skillet-cookie { background-image: url('images/jcs-food-photography-skillet-cookie.jpg');}
+.cinammon-roll  { background-image: url('images/jcs-photography-cinammon-roll.jpg');}
+.raspberry-lemon-loaf-2 { background-image: url('images/jcs-photography-lemon-raspberry-loaf.jpg');}
+
+/* Restaurant Portfolio Images ——---— */
+.flatlay        { background-image: url('images/jcs-food-photography-14.jpg');}
+.drink-hugo     { background-image: url('images/jcs-drink-photography-hugo.jpg');}
+.red-cappuccino { background-image: url('images/jcs-drink-photography-red-cappuccino.jpg');}
+.flower-portrait { background-image: url('images/jcs-portfolio-flower.jpg');}
+.musician { background-image: url('images/jcs-portfolio-musician.jpg');}
+.coffee-cake { background-image: url('images/jcs-restaurant-photography-coffee-cake.jpg');}
+.egg-benedict   { background-image: url('images/jcs-restaurant-photography-egg-benedict.jpg');}
+
+
+
+
+
+
+/* Website Portfolio Images —————————-—----------— */
 
 
 /* Contact Form Styles*/

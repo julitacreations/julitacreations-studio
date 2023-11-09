@@ -389,7 +389,10 @@ footer p {
 }
 
 /* Individual Images —————————-—----------— */
-.logo-image { background-image: url('images/jcs-logo-footer.png');}
+.logo-image     { background-image: url('images/jcs-logo-footer.png');}
+.profile-image  { background-image: url('images/jcs-profile-image.jpg');}
+.water-image    { background-image: url('images/the-mediterranean.jpg');}
+.drink-image    { background-image: url('images/INSTA-TJCOPYRIGHT-NKN_3541.jpg');}
 
 
 

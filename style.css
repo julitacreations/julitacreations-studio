@@ -223,18 +223,20 @@ a:hover {
   
   
 .button {
-    background-color: #F5F6F7;
-    border: 2px solid;
-    border-radius: 0.1rem;
+    background-color: #B8C4CB;
+    color: inherit;
+    border: 1px solid #B8C4CB;
+    border-radius: 0.2rem;
      /*top +bottom then left +right */
     padding: 0.8rem 2rem;
     transition: all 0.2s;
 }
 
 .button-color {
-    background-color: #B8C4CB;
-    border: 2px solid;
-    border-radius: 0.1rem;
+    background-color: #21383C;
+    color: #EFE4DA;
+    border: 1px solid #21383C;
+    border-radius: 0.2rem;
      /*top +bottom then left +right */
     padding: 0.8rem 2rem;
     transition: all 0.2s;
@@ -242,15 +244,15 @@ a:hover {
   
 .button:hover {
     color: #EFE4DA;
-    background-color: #21383C;
-    border: 2px solid #21383C;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
     font-style:normal;
 }
 
 .button-color:hover {
     color: #EFE4DA;
-    background-color: #21383C;
-    border: 2px solid #21383C;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
     font-style:normal;
 }
 
@@ -427,9 +429,9 @@ textarea {
 }
 
 form button {
-    background-color: #F5F6F7;
-    border: 2px solid;
-    border-radius: 0.1rem;
+    background-color: #B8C4CB;
+    border: 1px solid #B8C4CB;
+    border-radius: 0.2rem;
      /*top +bottom then left +right */
     padding: 0.8rem 2rem;
     transition: all 0.2s;
@@ -437,8 +439,8 @@ form button {
   
 form button:hover {
     color: #EFE4DA;
-    background-color: #21383C;
-    border: 2px solid #21383C;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
     font-style:normal;
 }
 

@@ -379,6 +379,16 @@ img {max-width: 50%; height: auto;}
 .bg-pos-r { background-position: right; }
 .bg-pos-unique { background-position: 50% 50%; }
 
+/*Position classes */
+.relative { position: relative; }
+.biscuit-position   { 
+    position: absolute;
+    bottom: 0.8rem;
+    right: 23rem;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
 
 /* Filterable Gallery Styles   */ 
 .filterable-gallery {
@@ -413,6 +423,7 @@ img {max-width: 50%; height: auto;}
 .bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}
 .water-image    { background-image: url('images/the-mediterranean.jpg');}
 .pomelo-drink   { background-image: url('images/jcs-drink-photography-pomelo-spritz.jpg');}
+
 
 .cookies        { 
     background-image: url('images/jcs-photography-cookies.jpg');

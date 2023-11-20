@@ -475,6 +475,8 @@ img {max-width: 50%; height: auto;}
 
 
 /* Website Portfolio Images —————————-—----------— */
+.portfolio-cocktail-bar     { background-image: url('images/the-article-cocktail-venue.jpg');}
+.portfolio-cocktail-mockup   { background-image: url('images/article-cocktail-mockup-elegant.png');}
 
 
 /* Contact Form Styles*/

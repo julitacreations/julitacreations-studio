@@ -383,10 +383,16 @@ img {max-width: 50%; height: auto;}
 .relative { position: relative; }
 .biscuit-position   { 
     position: absolute;
-    bottom: 1.5rem;
-    right: 25rem;
+    bottom: -8rem;
+    right: 6rem;
     margin: 0;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+}
+.drink-position   { 
+    position: absolute;
+    top: -6rem;
+    left: 1rem;
+    margin: 0;
 }
 
 

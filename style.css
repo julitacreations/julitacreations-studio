@@ -19,16 +19,6 @@
     box-sizing: border-box;
 }
   
-/*Temporary styles */
-/* *{
-    padding: 0.5rem;
-    border: 1px solid grey;
-} */
-  
-  
-/* h1,h2,h3,h4,h5,h6,p, a {
-      border: 2px solid rgb(179, 84, 84);
-} */
   
 [class*="col-"] {
     padding: 0;
@@ -79,6 +69,8 @@
 .margin-b-0 { margin-bottom: 0; }
 .margin-l-0 { margin-left: 0; }
 .margin-r-0 { margin-right: 0; }
+
+.margin-b-05 {margin-bottom: 0.5rem;}
   
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
@@ -102,7 +94,7 @@
 .tall-100 { min-height: 100vh; }
   
   
-/* Typography font styles———-————————-—*/
+/* Typography font styles———-————————-----------—*/
 body {
     font-family: 'Libre Franklin', sans-serif;
     color: #21383C;
@@ -175,10 +167,9 @@ li {
   
 .subheading {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
-}
-  
+} 
 .medium-heading {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -204,7 +195,6 @@ li {
     text-align: center;
 }
 
-  
 .light-text { color: #EFE4DA; } 
 .dark-text  { color: #21383C; }
 .featured-text { color: #B86E49; }
@@ -217,19 +207,17 @@ li {
     background: #B8C4CB; /* Background for old browsers */
     background: linear-gradient(to left, #a2b2bb, #B8C4CB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
   
 a {
     color: #21383C;
     text-decoration: none;
     display: inline-block;
     font-size: 0.9rem;
-}
-  
+}  
 a:hover {
     font-style: italic;
 }
-  
+
   
 .button {
     background-color: #B8C4CB;
@@ -274,6 +262,42 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+
+
+/*Accordion Block--------------------------------*/
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-header {
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 8px;
+}
+
+.accordion-header.active::after {
+    content: '-';
+}
+
+/* ACTIVATE ONCE JS IS ON
+.accordion-content {
+    display: none;
+    padding: 8px;
+ } */
+
+
+
 /*Testimonial Block--------------------------------*/
 
 .quote-icon {
@@ -290,7 +314,7 @@ a:hover {
 }
   
 
-/* Slider---*/
+/* Slider--------------*/
   .testimonial-slider-container {
     padding: 5%;
     max-width: 900px;
@@ -305,7 +329,7 @@ a:hover {
     display: block;
 }
   
-  /*DOTS--*/
+  /*DOTS----------*/
 .slick-dots {
     bottom: 12px;
     left: 0; /* This align the dots perfectly to the center, do not delete */
@@ -326,10 +350,10 @@ color: var(--light-subtle);
 
 .slick-dotted.slick-slider {
     margin-bottom: 0px;
-  }
+}
 
 
-/* Header & Footer Styles————————————————*/
+/* Header & Footer Styles———————————————-----------------—*/
   
 header a {
     color: inherit;
@@ -357,7 +381,6 @@ header {
 footer {
     padding: 8%;
 }
-  
 footer a {
     color: inherit;
     text-decoration: none;
@@ -367,7 +390,6 @@ footer a {
 .footer-info {
     padding-right: 10%;
 }
-
 footer h4 {
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -387,10 +409,7 @@ footer p {
 }
 
 
-
-
-
-/* Images & Background Images—————————-—----------— */
+/* Images & Background Images—————————-----—----------— */
 
 .bg-image {
     background-color:  rgb(199, 199, 199);
@@ -440,7 +459,7 @@ img {max-width: 50%; height: auto;}
 }
 
 
-/* Filterable Gallery Styles   */ 
+/* Filterable Gallery Styles-------   */ 
 .filterable-gallery {
     padding: 1rem;
 }
@@ -459,10 +478,10 @@ img {max-width: 50%; height: auto;}
     margin: 0.6rem 0.3rem;
 }
 .portfolio-filter .active {
-    color: red;
+    color: #B86E49;
 }
 
-/* Individual Images —————————-—----------— */
+/* Individual Images —————————-—-----------------------— */
 .logo-image     { background-image: url('images/jcs-logo-footer.png');}
 .profile-image  { background-image: url('images/jcs-profile-image.jpg');}
 .profile-image-2 { background-image: url('images/jcs-profile-photo-2.jpg');}
@@ -473,7 +492,6 @@ img {max-width: 50%; height: auto;}
 .bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}
 .water-image    { background-image: url('images/the-mediterranean.jpg');}
 .pomelo-drink   { background-image: url('images/jcs-drink-photography-pomelo-spritz.jpg');}
-
 
 .cookies        { 
     background-image: url('images/jcs-photography-cookies.jpg');
@@ -502,7 +520,7 @@ img {max-width: 50%; height: auto;}
 .cinammon-roll  { background-image: url('images/jcs-photography-cinammon-roll.jpg');}
 .raspberry-lemon-loaf-2 { background-image: url('images/jcs-photography-lemon-raspberry-loaf.jpg');}
 
-/* Restaurant Portfolio Images ——---— */
+/* Restaurant Portfolio Images ——----------— */
 .flatlay        { background-image: url('images/jcs-food-photography-14.jpg');}
 .drink-hugo     { background-image: url('images/jcs-drink-photography-hugo.jpg');}
 .red-cappuccino { background-image: url('images/jcs-drink-photography-red-cappuccino.jpg');}
@@ -510,12 +528,6 @@ img {max-width: 50%; height: auto;}
 .musician { background-image: url('images/jcs-portfolio-musician.jpg');}
 .coffee-cake { background-image: url('images/jcs-restaurant-photography-coffee-cake.jpg');}
 .egg-benedict   { background-image: url('images/jcs-restaurant-photography-egg-benedict.jpg');}
-
-
-/* Video / gif ——---— */
-.bubble-drink-gif   { background-image: url('images/pomelo-gif.gif');}
-
-
 
 
 /* Website Portfolio Images —————————-—----------— */
@@ -575,7 +587,7 @@ form button:hover {
 }
 
 
-/* Ticket slider Styles*/
+/* Ticket Banner slider Styles-------------------*/
   
 .ticket-banner {
     background-color: #21383C;
@@ -635,6 +647,26 @@ form button:hover {
   });*/
 
 
+
+
+  /* THIS IS THE JS TO BE ADDED LATER- JS for accordion---------*/
+/*
+  $(document).ready(function(){
+    $('.accordion-header').click(function(){
+      // Toggle the visibility of the content when the header is clicked
+      $(this).next('.accordion-content').slideToggle();
+      // Toggle active class to highlight the active section
+      $(this).toggleClass('active');
+      // Toggle the + and - signs
+      $(this).find('::after').html($(this).hasClass('active') ? '-' : '+');
+      // Hide other content when a new section is opened
+      $('.accordion-content').not($(this).next('.accordion-content')).slideUp();
+      // Remove active class from other headers
+      $('.accordion-header').not(this).removeClass('active');
+      // Reset the + and - signs on other headers
+      $('.accordion-header').not(this).find('::after').html('+');
+    });
+  });*/
 
 
 

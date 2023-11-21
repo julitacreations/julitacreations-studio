@@ -469,7 +469,7 @@ img {max-width: 50%; height: auto;}
 
 
 /* Video / gif ——---— */
-.bubble-drink-gif   { background-image: url('images/Pomelo-gif.gif');}
+.bubble-drink-gif   { background-image: url('images/pomelo-gif.gif');}
 
 
 
@@ -560,14 +560,14 @@ form button:hover {
 
 /*---THIS MUST GO COMPLETELY LAST -------------*/
 /*Typed JS for header*/
-  #typed {
+ /* #typed {
     font-style: italic;
-}
+}*/
   
-.typed-cursor {
+/*.typed-cursor {
     font-size: 3rem;
     color: #B86E49;
-}
+} */
 
 /* THIS IS THE JS TO BE ADDED LATER
 / Typed JS code
@@ -589,3 +589,7 @@ form button:hover {
     fadeOutDelay: 200
 
   });*/
+
+  /*THIS IS THE JS FOR THE testimonial slider */
+
+  

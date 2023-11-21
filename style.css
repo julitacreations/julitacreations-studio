@@ -52,6 +52,8 @@
 .padded-l { padding-left: 5%; }
 .padded-r { padding-right: 5%; }
 
+.padded-r-1 {padding-right: 1rem;}
+.padded-l-1 {padding-left: 1rem;}
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-t-1 { padding-top: 1rem;}
 

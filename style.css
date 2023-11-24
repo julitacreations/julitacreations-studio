@@ -625,6 +625,7 @@ form button:hover {
 @media (max-width: 48em) {
 	 .show-sm { display: block; }
 	 .hide-sm { display: none; }
+
 }
 
 /* --------------- XS Media Query (36em / 576px) --------------- */ 

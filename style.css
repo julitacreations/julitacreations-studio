@@ -104,7 +104,7 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 4.2rem;
+    font-size: 5.3vw;
     line-height: 1.2;
     text-align: center;
 }
@@ -218,6 +218,7 @@ a:hover {
     font-style: italic;
 }
 
+/* Button styles—-———*/
   
 .button {
     background-color: #B8C4CB;
@@ -314,8 +315,8 @@ a:hover {
 }
   
 
-/* Slider--------------*/
-  .testimonial-slider-container {
+/* Testimonial Slider Styles-------*/
+.testimonial-slider-container {
     padding: 5%;
     max-width: 900px;
     margin: auto;
@@ -329,7 +330,7 @@ a:hover {
     display: block;
 }
   
-  /*DOTS----------*/
+/*DOTS----------*/
 .slick-dots {
     bottom: 12px;
     left: 0; /* This align the dots perfectly to the center, do not delete */
@@ -535,7 +536,7 @@ img {max-width: 50%; height: auto;}
 .portfolio-cocktail-mockup   { background-image: url('images/article-cocktail-mockup-elegant.png');}
 
 
-/* Contact Form Styles*/
+/* Contact Form Styles---------------------*/
 form {
     max-width: 48vw;
     margin: auto;
@@ -601,6 +602,38 @@ form button:hover {
 
   
 
+
+/* General CSS Styles (apply everywhere)-MEDIA QUERIES */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* --------------- MD Media Query (64em / 1024px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+	.show-md { display: block; }
+	.hide-md { display: none; }
+}
+
+/* --------------- SM Media Query (48em / 768px) --------------- */ 
+/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+	 .show-sm { display: block; }
+	 .hide-sm { display: none; }
+}
+
+/* --------------- XS Media Query (36em / 576px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+		.show-xs { display: block; }
+		.hide-xs { display: none; }
+}
 
 
 

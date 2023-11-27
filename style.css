@@ -105,7 +105,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 5.3vw;
-    line-height: 1.2;
+    line-height: 1.1;
     text-align: center;
 }
   
@@ -377,7 +377,12 @@ header {
     text-transform: uppercase;
     font-weight: 500;
 }
-  
+
+
+.main-header {
+    z-index: 1;
+}
+
 
 footer {
     padding: 8%;
@@ -409,49 +414,15 @@ footer p {
     text-align: center;
 }
 
-
-
-/*new header try out TEMPORARY---------*/
-
-.parallax-section {
-    position: relative;
+.site-credit a {
+    font-size: 0.6rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
 }
 
-.parallax-image {
-    transition: transform 0.5s ease-out;
-}
 
-.image1 {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    margin: 0;
-    transform-origin: top left;
-}
-.image2 {
-    position: absolute;
-    bottom: 12rem;
-    right: 2rem;
-    margin: 0;
-    transform-origin: top right;
-
-}
-.image3 {
-    position: absolute;
-    bottom: 2rem;
-    left: 25rem;
-    margin: 0;
-    transform-origin: bottom right;
-    transform: rotate(90deg);
-}
-
-.main-header {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
 
 
 

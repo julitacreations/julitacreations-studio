@@ -4,6 +4,14 @@ title: ticker banner
 banner_messages:
  - repeated text over and over again
  - but then something else 
+process:
+ - heading: Strategy
+   description: Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call. Only then can we get to create something uniquely customised to you and cohesive to your brand.
+ - heading: Creation
+   description: For websites, I use an approved wireframe and design to build a custom-coded website, and complete it with a user-friendly CMS that you can update yourself.
+   For photography, I’ll be capturing your imagery, sharing updates along the way. Once the photos are taken, you'll receive a gallery to select the final images for editing.
+ - heading: Delivery
+   description: Crafted with your goals in mind, you’ll receive your chosen final product, uniquely tailored to you. With your new website and / or images, we'll have a handover, to make sure you feel prepared to use your new assets. It’s time to celebrate!
 ---
 
 
@@ -16,7 +24,7 @@ banner_messages:
             <h2 class="uppercase eyebrow-heading margin-b-1">Web Developer & Photographer</h2>
             <h1>Creating <em>websites + photography</em> for <br> your  impactful <br> <span id="typed">hospitality business</span>
             </h1>
-            <a href="#" class="uppercase center margin-t-2 button"> Let's work together</a> 
+            <a href="#contact" class="uppercase center margin-t-2 button"> Let's work together</a> 
         </div>
         <div class="col-2-top image-column">
             <div class="bg-image dusting-cake portrait-tall"></div>
@@ -95,10 +103,14 @@ banner_messages:
         <div class="padded-sm col-12 text-center">
             <h2 class="center large-text"> The Process </h2>
         </div>
+        {% for item in page.process %}
         <div class="padded-sm col-4">
-            <h4 class="subheading"> Strategy </h4>
-            <p>Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call. Only then can we get to create something uniquely customised to you and cohesive to your brand.</p>
+            <h4 class="subheading">{{item.heading}}</h4>
+            <p>{{item.description}}</p>
         </div>
+        {% enfor %}
+
+        <!----
         <div class="padded-sm col-4">
             <h4 class="subheading"> Creation </h4>
             <p> For websites, I use an approved wireframe and design to build a custom-coded website, and complete it with a user-friendly CMS that you can update yourself.  </p>
@@ -110,6 +122,7 @@ banner_messages:
                 <br> With your new website and / or images, we'll have a handover, to make sure you feel prepared to use your new assets. <br> It’s time to celebrate!
             </p>
         </div>
+    -->
     </section>
   
     <!-------Portfolio Section ------>

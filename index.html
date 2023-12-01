@@ -1,5 +1,9 @@
 ---
 layout: default
+title: ticker banner
+banner_messages:
+ - repeated text over and over again
+ - but then something else 
 ---
 
 
@@ -26,6 +30,16 @@ layout: default
     <!-------moving slider banner------>
     <div>
         <h4 class="ticket-banner"> Website development | Mobile responsive | Impactful | Website Design | Purpose-driven | Food Photography | </h4>
+    </div>
+
+    <div class="container-ticker-banner">
+        <div class="tickerBanner">
+
+          {% for message in page.banner_messages %}
+          <div class="text-block">{{message}}</div>
+          {% endfor %}
+
+        </div>
     </div>
   
 

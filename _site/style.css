@@ -1,0 +1,818 @@
+/* Colours & fonts */
+/*  Dark Green: #21383C
+    Light Blue: #B8C4CB
+    Neutral: #EFE4DA
+    Light Beige: #D9BDA2
+    Rust: #B86E49
+    Neutral background: #F5F6F7
+
+    Font Heading font-family: 'Playfair Display', serif;
+    Body font-family: 'Libre Franklin', sans-serif;
+    Featured font-family: 'WindSong', cursive;
+    
+*/
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+  
+  
+[class*="col-"] {
+    padding: 0;
+}
+
+[class*=grid] {
+    margin:0;
+}
+  
+/* Reusale Utility classes*/
+.padded { padding: 5%; }
+.padded-sm { padding: 2.5%; }
+.padded-lg { padding: 10%;  }
+  
+.padded-05 { padding: 0.5rem; }
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+  
+.padded-t { padding-top: 5%; }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%; }
+.padded-r { padding-right: 5%; }
+
+.padded-r-1 {padding-right: 1rem;}
+.padded-l-1 {padding-left: 1rem;}
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-t-1 { padding-top: 1rem;}
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+  
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+  
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+  
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+  
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-b-05 {margin-bottom: 0.5rem;}
+  
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+  
+  
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+  
+
+/* Height Classes */
+ 
+.tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+  
+  
+/* Typography font styles———-————————-----------—*/
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #21383C;
+    background-color: #F5F6F7;
+}
+  
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 5.3vw;
+    line-height: 1.1;
+    text-align: center;
+}
+  
+.eyebrow-heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Libre Franklin', sans-serif;
+}
+  
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+  
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+  
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+}
+  
+p {
+    font-size: 1rem;
+    line-height: 1.4; 
+    margin-bottom: 1rem;
+}
+  
+h1:last-child, 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+    margin-bottom: 0;
+}
+
+ol, ul {
+    /*   list-style-position: inside; */
+    margin-left: 2rem;
+}
+    
+li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+  
+  
+  
+/* General typography & universal styles——————-———*/
+  
+.uppercase   { text-transform: uppercase;  }
+.bold        {font-weight: bold;}
+  
+.subheading {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+} 
+.medium-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 0.9rem;
+}
+.medium-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.large-text   { 
+    font-size: 3.4rem; 
+}
+.xtra-large-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.light-text { color: #EFE4DA; } 
+.dark-text  { color: #21383C; }
+.featured-text { color: #B86E49; }
+  
+.bg-light    { background-color: #EFE4DA;  }
+.bg-dark     { background-color: #21383C;  }
+.bg-featured { background-color: #B8C4CB;  }
+
+.bg-gradient { 
+    background: #B8C4CB; /* Background for old browsers */
+    background: linear-gradient(to left, #a2b2bb, #B8C4CB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  
+a {
+    color: #21383C;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+}  
+a:hover {
+    font-style: italic;
+}
+
+/* Button styles—-———*/
+  
+.button {
+    background-color: #B8C4CB;
+    color: inherit;
+    border: 1px solid #B8C4CB;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+}
+
+.button-color {
+    background-color: #21383C;
+    color: #EFE4DA;
+    border: 1px solid #21383C;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+}
+  
+.button:hover {
+    color: #EFE4DA;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
+    font-style:normal;
+}
+
+.button-color:hover {
+    color: #EFE4DA;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
+    font-style:normal;
+}
+
+
+.border-line {
+    border: none;
+    border-bottom: 1px solid #21383C;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*Accordion Block--------------------------------*/
+.accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-header {
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 8px;
+}
+
+.accordion-header.active::after {
+    content: '-';
+}
+
+/* ACTIVATE ONCE JS IS ON
+.accordion-content {
+    display: none;
+    padding: 8px;
+ } */
+
+
+
+/*Testimonial Block--------------------------------*/
+
+.quote-icon {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    color: rgba(33, 56, 60, 0.8);
+}
+
+.cursive-text {
+    font-family: 'Windsong', cursive;
+    font-size: 1.5rem;
+    margin-top: 1.7rem;
+}
+  
+
+/* Testimonial Slider Styles-------*/
+.testimonial-slider-container {
+    padding: 5%;
+    max-width: 900px;
+    margin: auto;
+}
+.slider-item {
+    padding: 0.9rem;
+    display: none;
+}
+  
+.slider-item:first-child {
+    display: block;
+}
+  
+/*DOTS----------*/
+.slick-dots {
+    bottom: 12px;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+    width: 10px;
+}
+
+.slick-dots li button::before {
+color: var(--light-subtle);
+}
+
+.slick-dots li.slick-active button::before {
+    color: var(--light);
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+
+/* Header & Footer Styles———————————————-----------------—*/
+  
+header a {
+    color: inherit;
+    text-decoration: none;
+    /*border: 1px solid grey;*/
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+}
+  
+header {
+    padding: 1.2% 5%;
+    border: 1px solid grey;
+}
+  
+.logo h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container-header {
+    display: flex;
+}
+.image-column {
+    flex: 1;
+}
+.text-column {
+    flex: 1;
+    position: sticky;
+    top: 0;
+}
+
+
+footer {
+    padding: 8%;
+}
+footer a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0;
+}
+.footer-info {
+    padding-right: 10%;
+}
+footer h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}  
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-credit p {
+    font-size: 0.6rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+}
+
+.site-credit a {
+    font-size: 0.6rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+/* Images & Background Images—————————-----—----------— */
+
+.bg-image {
+    background-color:  rgb(199, 199, 199);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.image-border {
+    border: 10px solid #F5F6F7;
+}
+  
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}  
+
+img {max-width: 50%; height: auto;}
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 134%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+.bg-pos-unique { background-position: 50% 50%; }
+
+/*Position classes */
+.relative { position: relative; }
+.biscuit-position   { 
+    position: absolute;
+    bottom: -8rem;
+    right: 6rem;
+    margin: 0;
+    transform: rotate(90deg);
+}
+.drink-position   { 
+    position: absolute;
+    top: -6rem;
+    left: 1rem;
+    margin: 0;
+}
+
+
+/* Filterable Gallery Styles-------   */ 
+.filterable-gallery {
+    padding: 1rem;
+}
+.filterable-gallery [class*="col-"] {
+    padding: 0.5%;
+}  
+.hidden { display: none; }
+
+/* Filter navigation */
+.portfolio-filter span {
+    text-transform: uppercase; 
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid #21383C;
+    padding: 0.5rem 1.5rem;
+    margin: 0.6rem 0.3rem;
+}
+.portfolio-filter .active {
+    color: #B86E49;
+}
+
+/* Individual Images —————————-—-----------------------— */
+.logo-image     { background-image: url('images/jcs-logo-footer.png');}
+.profile-image  { background-image: url('images/jcs-profile-image.jpg');}
+.profile-image-2 { background-image: url('images/jcs-profile-photo-2.jpg');}
+.building       { background-image: url('images/building-max.jpg');}
+.towel-beach    { background-image: url('images/chandra-oh-beach-towel.jpg');}
+.dusting-cake   { background-image: url('images/jcs-food-photography-dusting.jpg');}
+.corn-fritter   { background-image: url('images/jcs-food-photography-corn-fritter.jpg');}
+.bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}
+.water-image    { background-image: url('images/the-mediterranean.jpg');}
+.pomelo-drink   { background-image: url('images/jcs-drink-photography-pomelo-spritz.jpg');}
+
+.cookies        { 
+    background-image: url('images/jcs-photography-cookies.jpg');
+    background-position: 50% 90%;
+}
+.raspberry-lemon-loaf { 
+    background-image: url('images/jcs-photography-lemon-raspbery-loaf-2.jpg');
+    background-position: 50% 80%;
+}
+
+
+/* Fotography Portfolio Images —————————-—----------— */
+.elegant-drink  { background-image: url('images/jcs-drink-photography-elegant.jpg');}
+.coffee-pour    { background-image: url('images/jcs-drink-photography-pour.jpg');}
+.acquafaba      { background-image: url('images/jcs-food-photography-acquafaba.jpg');}
+.macro-biscuit  { background-image: url('images/jcs-food-photography-biscuits.jpg');}
+.cheesecake     { background-image: url('images/jcs-food-photography-cheesecake.jpg');}
+.crepes         { background-image: url('images/jcs-food-photography-crepes.jpg');}
+.croissant-choc { background-image: url('images/jcs-food-photography-croissant-choc.jpg');}
+.croissant-stack { background-image: url('images/jcs-food-photography-croissant.jpg');}
+.biscuit-flatlay { background-image: url('images/jcs-food-photography-flatlay.jpg');}
+.loaf-cake      { background-image: url('images/jcs-food-photography-loaf.jpg');}
+.loaf-motion    { background-image: url('images/jcs-food-photography-motion.jpg');}
+.serve-cake     { background-image: url('images/jcs-food-photography-serve-cake.jpg');}
+.skillet-cookie { background-image: url('images/jcs-food-photography-skillet-cookie.jpg');}
+.cinammon-roll  { background-image: url('images/jcs-photography-cinammon-roll.jpg');}
+.raspberry-lemon-loaf-2 { background-image: url('images/jcs-photography-lemon-raspberry-loaf.jpg');}
+
+/* Restaurant Portfolio Images ——----------— */
+.flatlay        { background-image: url('images/jcs-food-photography-14.jpg');}
+.drink-hugo     { background-image: url('images/jcs-drink-photography-hugo.jpg');}
+.red-cappuccino { background-image: url('images/jcs-drink-photography-red-cappuccino.jpg');}
+.flower-portrait { background-image: url('images/jcs-portfolio-flower.jpg');}
+.musician { background-image: url('images/jcs-portfolio-musician.jpg');}
+.coffee-cake { background-image: url('images/jcs-restaurant-photography-coffee-cake.jpg');}
+.egg-benedict   { background-image: url('images/jcs-restaurant-photography-egg-benedict.jpg');}
+
+
+/* Website Portfolio Images —————————-—----------— */
+.portfolio-cocktail-bar     { background-image: url('images/the-article-cocktail-venue.jpg');}
+.portfolio-cocktail-mockup   { background-image: url('images/article-cocktail-mockup-elegant.png');}
+
+
+/* Contact Form Styles---------------------*/
+form {
+    max-width: 48vw;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input, 
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0 0.5rem 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #21383C;
+    border-top: 1px solid #F5F6F7;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background-color: #F5F6F7;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #B86E49;
+}
+
+textarea {
+    min-height: 5rem;
+}
+
+form button {
+    background-color: #B8C4CB;
+    border: 1px solid #B8C4CB;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+    padding: 0.8rem 2rem;
+    transition: all 0.2s;
+}
+  
+form button:hover {
+    color: #EFE4DA;
+    background-color: #B86E49;
+    border: 1px solid #B86E49;
+    font-style:normal;
+}
+
+
+/* Ticket Banner slider Styles-------------------*/
+  
+.ticket-banner {
+    background-color: #21383C;
+    color: #EFE4DA;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 1.5%;
+}
+  
+
+  
+
+
+/* General CSS Styles (apply everywhere)-MEDIA QUERIES */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* --------------- MD Media Query (64em / 1024px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+	.show-md { display: block; }
+	.hide-md { display: none; }
+}
+
+/* --------------- SM Media Query (48em / 768px) --------------- */ 
+/* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+	 .show-sm { display: block; }
+	 .hide-sm { display: none; }
+
+}
+
+/* --------------- XS Media Query (36em / 576px) --------------- */ 
+/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+		.show-xs { display: block; }
+		.hide-xs { display: none; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---THIS MUST GO COMPLETELY LAST -------------*/
+/*Typed JS for header*/
+ /* #typed {
+    font-style: italic;
+}*/
+  
+/*.typed-cursor {
+    font-size: 3rem;
+    color: #B86E49;
+} */
+
+/* THIS IS THE JS TO BE ADDED LATER
+/ Typed JS code
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    strings: [
+        "hospitality business",
+        "restaurant",
+        "café",
+        "bed + breakfast",
+        "service business"
+      ],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true,
+    loopCount: Infinity,
+    fadeOut: true,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 200
+
+  });*/
+
+
+
+
+  /* THIS IS THE JS TO BE ADDED LATER- JS for accordion---------*/
+/*
+  $(document).ready(function(){
+    $('.accordion-header').click(function(){
+      // Toggle the visibility of the content when the header is clicked
+      $(this).next('.accordion-content').slideToggle();
+      // Toggle active class to highlight the active section
+      $(this).toggleClass('active');
+      // Toggle the + and - signs
+      $(this).find('::after').html($(this).hasClass('active') ? '-' : '+');
+      // Hide other content when a new section is opened
+      $('.accordion-content').not($(this).next('.accordion-content')).slideUp();
+      // Remove active class from other headers
+      $('.accordion-header').not(this).removeClass('active');
+      // Reset the + and - signs on other headers
+      $('.accordion-header').not(this).find('::after').html('+');
+    });
+  });*/
+
+
+
+
+  /*THIS IS THE JS FOR THE testimonial slider - slick.js---------------*/
+/* 
+  // A $( document ).ready() block.
+  $( document ).ready(function() {
+  
+     
+        // Slick-Slider animation
+        $('.testimonial-slider-container').slick({
+          autoplay: true, // Do we want it to autoplay? true or false
+          autoplaySpeed: 3000, // How long between each slide when auto-playing
+          speed: 500, // How fast is the transition in milliseconds
+          arrows: false, // Do you want to show arrows to trigger each slide
+          accessibility: true, // Enables keyboard tabbing and arrow key navigation
+          dots: true, // Enables the dots below to show how many slides
+          fade: false, // Changes the animate from slide to fade if true
+          infinite: true, // When true, means that it will scroll in a circle
+          pauseOnHover: true, // When true means the autoplay pauses when hovering
+          pauseOnDotsHover: true // Pauses the autoplay when hovering over the dots
+        });
+  
+      
+  
+  }); */
+
+
+
+/*THIS IS THE JS FOR THE filterable gallery - scripts.js----------------*/
+
+/*
+  // A $( document ).ready() block.
+$( document ).ready(function() {
+    
+    $('.hamburger-button').click(function(){
+        $('.mobile-menu').slideToggle();
+        $(this).toggleClass('active');
+      });
+
+      // Animate on scroll - activate 
+      AOS.init({
+        offset: 80, // offset (in px) from the original trigger point
+        duration: 900, // values from 0 to 3000, with step 50ms
+      });
+
+
+      // Filterable Gallery
+      $('#portfolio-filter span').click(function(){
+    
+        // Remove class 'active' from any <span> that is currently active 
+        $('#portfolio-filter .active').removeClass('active');
+        
+        // give this <span> that was clicked on a class of 'active' 
+        $(this).addClass('active');
+    
+        // get the name of the cateory from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
+        var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
+
+    
+        // This is something new, it's an 'each' function which is basically iterates through each element that matches the selector and applies the function one by one.
+        
+        $('#filterable-gallery .gallery-item').each(function() {
+          
+            // If the filter value that they have clicked on is 'all' then remove the class of hidden from each gallery-item. 
+    
+            if (filterVal == 'all') {
+              $(this).removeClass('hidden');
+            }
+          
+            // if it's not all, then 
+            else {
+               if($(this).hasClass(filterVal)) {
+                  $(this).removeClass('hidden'); // show those that have the filter class
+                 
+                }
+              else {
+                  $(this).addClass('hidden'); // hide those that do not have the filter
+                }};
+            });
+          
+        });
+    
+
+}); */
+
+
+

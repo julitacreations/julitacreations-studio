@@ -6,7 +6,9 @@ banner_messages:
  - but then something else 
 process:
  - heading: Strategy
-   description: Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call. Only then can we get to create something uniquely customised to you and cohesive to your brand.
+   description: Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call.
+ - heading: Conceptualisation
+   description: This phase is all about creating moodboards and wireframes to bring your ideas and vision to life, making sure that we move forward with a cohesive visual style for your brand. 
  - heading: Creation
    description: For websites, I use an approved wireframe and design to build a custom-coded website, and complete it with a user-friendly CMS that you can update yourself. For photography, I will be capturing your imagery, sharing updates along the way. Once the photos are taken, you will receive a gallery to select the final images for editing.
  - heading: Delivery
@@ -98,12 +100,12 @@ process:
   
     <!-------Process Section ------>
   
-    <section class="padded grid bg-gradient">
+    <section class="padded grid-center bg-gradient">
         <div class="padded-sm col-12 text-center">
             <h2 class="center large-text"> The Process </h2>
         </div>
         {% for item in page.process %}
-        <div class="padded-sm col-4">
+        <div class="padded-sm col-3">
             <h4 class="subheading">{{item.heading}}</h4>
             <p>{{item.description}}</p>
         </div>

@@ -29,18 +29,35 @@
 
     <!--header nav-->
     <header class="grid-middle bg-dark light-text">
-        <div class="col-5">
+        <div class="col-5_sm-11">
             <a href="/index.html" class="logo">
                 <h2> Julita Creations Studio </h2>
             </a>
         </div>
-        <nav class="col-7 right">
+        <nav class="col-7_sm-12 right hide-sm">
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="col-1">
+            <div class="burger-button show-sm">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+        </div>
     </header>
+
+    <!--mobile menu hamburger button-->
+    <div class="mobile-menu bg-featured padded">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
 
         <!-------header banner------------------------->
@@ -292,6 +309,7 @@
 <!--Any other tools like popup gallery etc / slick slider etc -->
 
 <!--Custom JavaScript at the end -->
+<script src="/scripts.js"></script>
 </body>
 
 </html>

@@ -104,7 +104,7 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 5.3vw;
+    font-size: 4.5rem;
     line-height: 1.1;
     text-align: center;
 }
@@ -430,7 +430,93 @@ footer p {
 }
 
 
+/* mobile menu styles -----*/
 
+.burger-button {
+    position:fixed;
+    /*this is the space from top and right or viewport*/
+    top: 2vh;
+    right: 2vh;
+    z-index: 9;
+    padding: 8px;
+}
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+    /*this is how long the lines are*/
+    width: 40px;
+    border: 2px solid #EFE4DA;
+    background-color: #EFE4DA;
+    display: block;
+    border-radius: 22px;
+    transition: 2s;
+}
+.burger-button.active span{
+    border-color:#a2b2bb;
+    background-color:#a2b2bb;
+}
+  
+.burger-top,
+.burger-bottom{
+    position: absolute;
+}
+  
+.burger-top{
+    top: -02px;
+}
+  
+.burger-bottom{
+    bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+}
+  
+.burger-button.active .burger-middle{
+/* transform: rotateZ(270deg);*/
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+}
+  
+/* make sure this has the same bottom as the burger button has padding*/
+.burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+}
+  
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left:0;
+    right: 0;
+    bottom: 100vh;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    transition:1s;
+    align-content:space-around;
+    /* This creates equal space around the text to spread out the links */
+    justify-content:space-around;
+    flex-direction: column;
+}
+  
+.mobile-menu.active{
+    top:0;
+    bottom:0;
+}
+.mobile-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: blue;
+    display:block;
+    padding: 5px 15px;
+    text-align: center;
+    white-space: nowrap;
+}
 
 
 
@@ -530,7 +616,7 @@ img {max-width: 50%; height: auto;}
 }
 
 
-/* Fotography Portfolio Images —————————-—----------— */
+/* Photography Portfolio Images —————————-—----------— */
 .elegant-drink  { background-image: url('images/jcs-drink-photography-elegant.jpg');}
 .coffee-pour    { background-image: url('images/jcs-drink-photography-pour.jpg');}
 .acquafaba      { background-image: url('images/jcs-food-photography-acquafaba.jpg');}
@@ -658,7 +744,8 @@ form button:hover {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 

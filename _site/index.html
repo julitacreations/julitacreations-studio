@@ -29,18 +29,35 @@
 
     <!--header nav-->
     <header class="grid-middle bg-dark light-text">
-        <div class="col-5">
+        <div class="col-5_sm-11">
             <a href="/index.html" class="logo">
                 <h2> Julita Creations Studio </h2>
             </a>
         </div>
-        <nav class="col-7 right">
+        <nav class="col-7_sm-12 right hide-sm">
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="col-1">
+            <div class="burger-button show-sm">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+        </div>
     </header>
+
+    <!--mobile menu hamburger button-->
+    <div class="mobile-menu bg-featured padded">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
 
         <section class="grid-spaceAround center padded tall-90 container-header">
@@ -129,22 +146,27 @@
   
     <!-------Process Section ------>
   
-    <section class="padded grid bg-gradient">
+    <section class="padded grid-center bg-gradient">
         <div class="padded-sm col-12 text-center">
             <h2 class="center large-text"> The Process </h2>
         </div>
         
-        <div class="padded-sm col-4">
+        <div class="padded-sm col-3">
             <h4 class="subheading">Strategy</h4>
-            <p>Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call. Only then can we get to create something uniquely customised to you and cohesive to your brand.</p>
+            <p>Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call.</p>
         </div>
         
-        <div class="padded-sm col-4">
+        <div class="padded-sm col-3">
+            <h4 class="subheading">Conceptualisation</h4>
+            <p>This phase is all about creating moodboards and wireframes to bring your ideas and vision to life, making sure that we move forward with a cohesive visual style for your brand.</p>
+        </div>
+        
+        <div class="padded-sm col-3">
             <h4 class="subheading">Creation</h4>
             <p>For websites, I use an approved wireframe and design to build a custom-coded website, and complete it with a user-friendly CMS that you can update yourself. For photography, I will be capturing your imagery, sharing updates along the way. Once the photos are taken, you will receive a gallery to select the final images for editing.</p>
         </div>
         
-        <div class="padded-sm col-4">
+        <div class="padded-sm col-3">
             <h4 class="subheading">Delivery</h4>
             <p>Crafted with your goals in mind, you will receive your chosen final product, uniquely tailored to you. With your new website and / or images, we'll have a handover, to make sure you feel prepared to use your new assets. Time to celebrate!</p>
         </div>
@@ -413,6 +435,7 @@
 <!--Any other tools like popup gallery etc / slick slider etc -->
 
 <!--Custom JavaScript at the end -->
+<script src="/scripts.js"></script>
 </body>
 
 </html>

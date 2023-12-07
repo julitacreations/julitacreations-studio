@@ -1,5 +1,57 @@
 ---
 layout: default
+gallery:
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-drink-photography-hugo.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-portfolio-flower.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-drink-photography-elegant.jpg
+ - column-size: col-8
+   aspect-ratio: landscape
+   background-image: /images/jcs-food-photography-14.jpg
+ - column-size: col-4
+   aspect-ratio: portrait-tall
+   background-image: /images/jcs-portfolio-musician.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-restaurant-photography-egg-benedict.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-biscuits.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-drink-photography-red-cappuccino.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-skillet-cookie.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-croissant-choc.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-photography-cinammon-roll.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-loaf.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-cheesecake.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-drink-photography-pour.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-crepes.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-croissant.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/jcs-food-photography-serve-cake.jpg
 ---
   
     <!-------header banner------------------------->
@@ -65,10 +117,17 @@ layout: default
         </div>
 
         <div class="grid-center filterable-gallery" id="filterable-gallery">
-            <div class="col-4_xs-6 gallery-item">
-                <div class="bg-image drink-hugo portrait"></div>
+
+            {% for item in page.gallery %}
+            <div class="{{item.column-size}} gallery-item">
+                <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background-image}}');">
+            </div>
             </div> 
-            <div class="col-4_xs-6 gallery-item">
+            {% endfor %}
+
+
+            <!-- <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image flower-portrait portrait"></div>
             </div> 
             <div class="col-4_xs-6 gallery-item">
@@ -115,7 +174,8 @@ layout: default
             </div> 
             <div class="col-4_xs-6 gallery-item">
                 <div class="bg-image serve-cake portrait"></div>
-            </div> 
+            </div> -->
+
           </div>
     </section>
 

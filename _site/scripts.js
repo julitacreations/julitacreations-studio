@@ -1,6 +1,7 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
     
+    // Hamburger Mobile Menu
     $(".burger-button").click(function(){
       
         $(".burger-button").toggleClass("active");
@@ -9,5 +10,11 @@ $( document ).ready(function() {
       });
 
 
+});
 
+ // Lightgallery Pop-up
+ lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+  
 });

@@ -65,7 +65,8 @@ layout: default
         <div class="col-8 right padded-b-0">
 
             <p>Current Project ID: {{ page.project_id }}</p>
-            <p>Next Project: {{ site.projects | where: "project_id", page.project_id | first | next | jsonify }}</p>
+            <p>All Projects: {{ site.projects | jsonify }}</p>
+            <p>Next Project: {{ site.projects | where: "project_id", current_project_id | first | next | jsonify }}</p> 
 
 
             {% assign current_project_id = page.project_id | plus: 0 %}

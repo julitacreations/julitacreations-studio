@@ -543,7 +543,7 @@ footer p {
 /* Images & Background Images—————————-----—----------— */
 
 .bg-image {
-    background-color:  rgb(199, 199, 199);
+    background-color:  #B8C4CB;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -631,6 +631,7 @@ img {max-width: 50%; height: auto;}
 .bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}
 .water-image    { background-image: url('images/the-mediterranean.jpg');}
 .pomelo-drink   { background-image: url('images/jcs-drink-photography-pomelo-spritz.jpg');}
+.laptop         { background-image: url('images/kaboompics_laptop.jpg');}
 
 .cookies        { 
     background-image: url('images/jcs-photography-cookies.jpg');

@@ -64,11 +64,17 @@ layout: default
      <section class="padded padded-t-0 grid-spaceAround center"> 
         <div class="col-8 right padded-b-0">
 
+            <p>Current Project ID: {{ page.project_id }}</p>
+            <p>Next Project: {{ site.projects | where: "project_id", page.project_id | first | next | jsonify }}</p>
+
+
             {% assign current_project_id = page.project_id | plus: 0 %}
             {% assign next_project = site.projects | where: "project_id", current_project_id | first | next %}
 
             {% if next_project %}
             <a href="{{ next_project.url }}" class="medium-heading featured-text">Next project &#8594;</a> 
+            {% else %}
+            <p>No next project found</p>
             {% endif %}
 
         </div>

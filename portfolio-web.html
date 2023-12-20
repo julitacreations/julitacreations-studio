@@ -57,28 +57,16 @@ layout: default
         </div>
     </section>
 
-    {% endfor %}
+   
 
 
     <!-------Call to Action ----------->
      <section class="padded padded-t-0 grid-spaceAround center"> 
+
         <div class="col-8 right padded-b-0">
-
-            <p>Current Project ID: {{ page.project_id }}</p>
-            <p>All Projects: {{ site.projects | jsonify }}</p>
-            <p>Next Project: {{ site.projects | where: "project_id", current_project_id | first | next | jsonify }}</p> 
-
-
-            {% assign current_project_id = page.project_id | plus: 0 %}
-            {% assign next_project = site.projects | where: "project_id", current_project_id | first | next %}
-
-            {% if next_project %}
-            <a href="{{ next_project.url }}" class="medium-heading featured-text">Next project &#8594;</a> 
-            {% else %}
-            <p>No next project found</p>
-            {% endif %}
-
+            <a href="{{ project.next-project }}" class="medium-heading featured-text">Next project &#8594;</a> 
         </div>
+
         <div class="col-8 left padded-b">
             <a href="/_projects/demo-project-4.html" class="medium-heading featured-text"> &#8592;Previous project</a> 
         </div>
@@ -87,6 +75,8 @@ layout: default
             <a href="" class="uppercase margin-t-2 button-color"> Inquire Now </a>
         </div>
     </section>
+
+    {% endfor %}
 
 
 

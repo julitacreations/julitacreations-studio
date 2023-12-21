@@ -289,12 +289,13 @@ a:hover {
 }
 
 .accordion-item {
-    margin-bottom: 1rem;
+    margin: -0.4rem 0;
 }
 
 .accordion-header {
     cursor: pointer;
     position: relative;
+    margin: 0.2rem 0;
 }
 
 .accordion-header::after {
@@ -307,11 +308,10 @@ a:hover {
     content: '-';
 }
 
-/* ACTIVATE ONCE JS IS ON
 .accordion-content {
     display: none;
     padding: 8px;
- } */
+ }
 
 
 

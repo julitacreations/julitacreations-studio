@@ -27,7 +27,7 @@ layout: default
 
     <!-------showcase & testimonial------>
 
-    {% for project in site.projects limit:  1 %}
+    {% for project in site.projects %}
 
     <section class="grid-spaceAround padded-lg padded-t padded-b-1"> 
         <h3 class="col-12 center medium-heading padded-sm"> {{project.title}}</h3>
@@ -70,6 +70,7 @@ layout: default
         <div class="col-8 left padded-b">
             <a href="/_projects/demo-project-4.html" class="medium-heading featured-text"> &#8592;Previous project</a> 
         </div>
+
         <div class="col-12-middle padded-t">
             <h5 class="medium-heading margin-b-0"> Ready to <em>talk about</em> <br> <em>your</em> new website? </h5>
             <a href="" class="uppercase margin-t-2 button-color"> Inquire Now </a>

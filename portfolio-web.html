@@ -33,7 +33,7 @@ banner_messages:
 
     <!-------showcase & testimonial of Web Portfolio project------>
 
-    {% for project in site.projects %}
+    {% for project in site.projects limit: 1 %}
 
     <section class="grid-spaceAround padded-lg padded-t padded-b-1"> 
         <h3 class="col-12 center medium-heading padded-sm"> {{project.title}}</h3>
@@ -85,29 +85,4 @@ banner_messages:
 
     {% endfor %}
 
-
-
-
-    <!-------moving slider banner------>
-    <h4 class="ticket-banner"> in person / Milan | on social / @julitacreationsstudio </h4>
-
-  
-    <!-------Instagram Gallery  ------>
-    <section class="grid-spaceAround gallery padded-sm">
-        <div class="col-2">
-            <div class="bg-image square"></div>
-        </div> 
-        <div class="col-2">
-            <div class="bg-image square"></div>
-        </div> 
-        <div class="col-2">
-            <div class="bg-image square"></div>
-        </div> 
-        <div class="col-2">
-            <div class="bg-image square"></div>
-        </div> 
-        <div class="col-2">
-            <div class="bg-image square"></div>
-        </div> 
-    </section>
       

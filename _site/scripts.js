@@ -10,13 +10,9 @@ $( document ).ready(function() {
       });
 
 
-    // Lightgallery Pop-up  - check if still free to use? 
-    lightGallery(document.getElementById('lightgallery'), {
-      
-      speed: 500,
-      download: false
-      
-    });
+    // Magnific Popup Gallery
+      $('.image-link').magnificPopup({type:'image'});
+    
 
     // Accordion
     $('.accordion-header').click(function(){

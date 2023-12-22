@@ -591,12 +591,9 @@ img {max-width: 50%; height: auto;}
 
 /*Pop-up gallery classes (background of gallery when active)*/
 
-.lg-backdrop {
-    background-color: #0e1313;
-}
-.lg-backdrop.in {
-    opacity: 0.98;
-}
+
+
+
 
 /* Filterable Gallery Styles-------   */ 
 .filterable-gallery {

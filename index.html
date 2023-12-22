@@ -2,8 +2,12 @@
 layout: default
 title: ticker banner
 banner_messages:
- - repeated text over and over again
- - but then something else 
+ - Website development
+ - Mobile responsive
+ - Impactful
+ - Website design 
+ - Purpose-driven
+ - Food Photography
 process:
  - heading: Strategy
    description: Understanding your goals, vision, style and brand is important to create a website and / or photography that speak to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, through a questionnaire and a call.
@@ -37,19 +41,8 @@ process:
 
   
     <!-------moving slider banner------>
-    <div>
-        <h4 class="ticket-banner"> Website development | Mobile responsive | Impactful | Website Design | Purpose-driven | Food Photography | </h4>
-    </div>
 
-    <div class="container-ticker-banner">
-        <div class="tickerBanner">
-
-          {% for message in page.banner_messages %}
-          <div class="text-block">{{message}}</div>
-          {% endfor %}
-
-        </div>
-    </div>
+    {% include moving-banner.html %}
   
 
     
@@ -137,7 +130,6 @@ process:
                                     <li>Social Media integration</li>
                                     <li>Food & Restaurant Photography / content creation</li>
                                     <li>Image Sourcing</li>
-                                    <li>Adding your page content after completion of website</li>
                                 </ul>
                             </div>
                         </div>
@@ -401,9 +393,10 @@ process:
 
 
 
-  
     <!-------moving slider banner------>
-    <h4 class="ticket-banner"> in person / Milan | on social / @julitacreationsstudio </h4>
+
+    {% include moving-banner.html %}
+
 
   
     <!-------Instagram Gallery  ------>

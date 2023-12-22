@@ -729,19 +729,25 @@ form button:hover {
 
 /* Ticket Banner slider Styles-------------------*/
   
-.ticket-banner {
-    background-color: #21383C;
-    color: #EFE4DA;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.3rem;
-    padding: 1.5%;
+.text-block {
+    padding: 0.8%;
+}
+
+:root {
+--bannerBlockLength: 280px;
+--bannerBlockTime: 2s;
 }
 
 .container-ticker-banner{
     overflow-X: hidden;
     display: flex;
     flex-direction: row-reverse;
+    background-color: #21383C;
+    color: #EFE4DA;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+  
 }
 .tickerBanner{
     display: flex;

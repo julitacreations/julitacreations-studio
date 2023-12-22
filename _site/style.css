@@ -107,7 +107,7 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     line-height: 1.1;
     text-align: center;
 }
@@ -171,7 +171,7 @@ li {
 .subheading {
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 500;
 } 
 .medium-heading {
     font-family: 'Playfair Display', serif;
@@ -590,8 +590,9 @@ img {max-width: 50%; height: auto;}
 }
 
 /*Pop-up gallery classes (background of gallery when active)*/
-
-
+.mfp-bg {
+    opacity: 0.95;
+}
 
 
 
@@ -779,19 +780,44 @@ form button:hover {
 }
 
 /* --------------- MD Media Query (64em / 1024px) --------------- */ 
-/* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/* Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
 	.show-md { display: block; }
 	.hide-md { display: none; }
+
+    h1 { font-size: 3.4rem;}
+
+    .md-text-center {text-align: center;}
+    .md-text-left   {text-align: left;}
+    .md-text-right  {text-align: right;}
+
+    .md-padded      {padding: 5%;}
+    .md-padded-1    {padding: 1rem;}
+    .md-padded-05   {padding: 0.5rem;}
+
+    .md-padded-b    {padding-bottom: 5%;}
 }
 
 /* --------------- SM Media Query (48em / 768px) --------------- */ 
 /* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
 @media (max-width: 48em) {
-	 .show-sm { display: block; }
-	 .hide-sm { display: none; }
+    .show-sm { display: block; }
+    .hide-sm { display: none; }
+
+    h1 { font-size: 2.5rem;}
+
+    .eyebrow-heading h2 {font-size: 1rem;}
+
+    .sm-text-center {text-align: center;}
+    .sm-text-left   {text-align: left;}
+    .sm-text-right  {text-align: right;}
+
+    .sm-padded      {padding: 5%;}
+    .sm-padded-1    {padding: 1rem;}
+    .sm-padded-05   {padding: 0.5rem;}
+
 
 }
 
@@ -799,8 +825,24 @@ form button:hover {
 /* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
-		.show-xs { display: block; }
-		.hide-xs { display: none; }
+    .show-xs { display: block; }
+    .hide-xs { display: none; }
+
+    h1 { font-size: 2.1rem;}
+
+    footer h4 {
+        font-weight: bold;
+    }
+
+    .xs-text-center {text-align: center;}
+
+    .xs-padded      {padding: 5%;}
+    .xs-padded-1    {padding: 1rem;}
+    .xs-padded-05   {padding: 0.5rem;}
+
+    .xs-padded-t    {padding-top: 5%;}
+    .xs-padded-b    {padding-bottom: 5%;}
+
 }
 
 

@@ -8,55 +8,72 @@ banner_messages:
  - Drink Photography
  - Content Creation
 gallery:
- - column-size: col-4
+ - category: "restaurant"
+   column-size: col-4
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-hugo.jpg
- - column-size: col-4
+ - category: "restaurant"
+   column-size: col-4
    aspect-ratio: portrait
    background-image: /images/jcs-portfolio-flower.jpg
- - column-size: col-4
+ - category: "restaurant"
+   column-size: col-4
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-elegant.jpg
- - column-size: col-8_xs-12
+ - category: "restaurant"
+   column-size: col-8_xs-12
    aspect-ratio: landscape
    background-image: /images/jcs-food-photography-14.jpg
- - column-size: col-4_xs-12
-   aspect-ratio: portrait-tall
+ - category: "restaurant"
+   column-size: col-4_xs-12
+   aspect-ratio: portrait
    background-image: /images/jcs-portfolio-musician.jpg
- - column-size: col-4_xs-6
+ - category: "restaurant"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-restaurant-photography-egg-benedict.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-biscuits.jpg
- - column-size: col-4_xs-6
+ - category: "restaurant"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-red-cappuccino.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-skillet-cookie.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-croissant-choc.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-photography-cinammon-roll.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-loaf.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-cheesecake.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-pour.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-crepes.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-croissant.jpg
- - column-size: col-4_xs-6
+ - category: "food-&-drink"
+   column-size: col-4_xs-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-serve-cake.jpg
 ---
@@ -125,7 +142,7 @@ gallery:
 
             <!--This is the pop up version-->
             {% for item in page.gallery %}
-            <a class="{{item.column-size}} gallery-item" href="{{item.background-image}}">
+            <a class="{{item.column-size}} {{item.category}} gallery-item" href="{{item.background-image}}">
               <div class="bg-image {{item.aspect-ratio}}" 
                 style="background-image: url('{{item.background-image}}');">
               </div>
@@ -133,7 +150,8 @@ gallery:
             {% endfor %}
 
 
-            <!--TEST   adjust for SEO???-->
+            <!--TEST TEST TEST  adjust for SEO???-->
+            <!---
             <a class="col-4_xs-12" href="/images/building-max.jpg">
               <div>
                 <img src="/images/building-max.jpg">
@@ -148,7 +166,7 @@ gallery:
               <div>
                 <img src="/images/building-max.jpg">
               </div>
-            </a> 
+            </a> -->
 
 
            <!---- Standard Gallery
@@ -223,48 +241,3 @@ gallery:
             <a href="" class="uppercase margin-t-2 button-color"> Inquire Now </a>
         </div>
     </section>
-
-
-
-
-
-
-<!---------  Ad JS Code for filterable gallery later on 
-
-
- $('#portfolio-filter span').click(function(){
-    
-    // Remove class 'active' from any <span> that is currently active 
-    $('#portfolio-filter .active').removeClass('active');
-    
-    // give this <span> that was clicked on a class of 'active' 
-    $(this).addClass('active');
-
-    // get the name of the cateory from this <span>, remove up to two spaces from the text and replace them with dashes, and make it lowercase 
-    var filterVal = $(this).text().replace(' ','-').replace(' ','-').toLowerCase();
-
-    // This is something new, it's an 'each' function which is basically iterates through each element that matches the selector and applies the function one by one.
-    
-    $('#filterable-gallery .gallery-item').each(function() {
-      
-        // If the filter value that they have clicked on is 'all' then remove the class of hidden from each gallery-item. 
-
-        if (filterVal == 'all') {
-          $(this).removeClass('hidden');
-          
-        }
-      
-        // if it's not all, then 
-        else {
-           if($(this).hasClass(filterVal)) {
-              $(this).removeClass('hidden'); // show those that have the filter class
-             
-            }
-          else {
-              $(this).addClass('hidden'); // hide those that do not have the filter
-            }};
-        });
-      
-});
-
--->

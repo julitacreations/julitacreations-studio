@@ -446,6 +446,33 @@ footer p {
     display: inline-block;
 }
 
+/* navigation styles ------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-title {
+padding: 0.5rem;
+display: inline-block;
+font-size: 0.9rem;
+}
+.dropdown-content {
+position: absolute;
+top: 100%;
+left: -1rem;
+padding: 0.5rem;
+display: none;
+background-color: #21383C;
+z-index: 2;
+text-align: left;
+min-width: 9rem;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown-content a {
+display: block;
+}
 
 /* mobile menu styles -----*/
 

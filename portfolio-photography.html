@@ -9,73 +9,90 @@ banner_messages:
  - Content Creation
 gallery:
  - category: "restaurant"
-   column-size: col-4
+   column-size: col-4_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-hugo.jpg
+   image-alt-description: Refreshing Hugo Cocktail elegantly presneted on an outdoor wooden table.
  - category: "restaurant"
-   column-size: col-4
+   column-size: col-4_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-portfolio-musician.jpg 
+   image-alt-description: Musician immersed in the rhythm, on a sunny day at the outdoor restaurant Fresh 'n Wild, captured by Julita Creations Studio.
  - category: "food-&-drink"
-   column-size: col-4
+   column-size: col-4_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-elegant.jpg
+   image-alt-description: Elegant drink captured with motion photography and styling, featuring a drip and splash.
  - category: "restaurant"
    column-size: col-8_xs-12
    aspect-ratio: landscape
    background-image: /images/jcs-food-photography-14.jpg
+   image-alt-description: A delicious spread of shared plates and platters, with hands reaching for various bites on the table—flatlay photography by Julita Creations Studio.
  - category: "restaurant"
    column-size: col-4_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-portfolio-flower.jpg
+   image-alt-description: Skillful barista framed by spring flowers in the foreground, creating depth of field.
  - category: "restaurant"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-restaurant-photography-egg-benedict.jpg
+   image-alt-description: Eggs Benedict captured from a 45-degree angle, showcasing the abudance of hollandaise.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-biscuits.jpg
+   image-alt-description: Flatlay food photography of homemade biscuits neatly aligned in three rows, capturing details of texture and symmetry.
  - category: "restaurant"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-red-cappuccino.jpg
+   image-alt-description: Red Cappuccino drink photography by Julita Creations Studio.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-skillet-cookie.jpg
+   image-alt-description: Slice of skillet cookie being lifted from a skillet-Food photography & styling by Julita Creations Studio.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-croissant.jpg
+   image-alt-description: Three pain-au-chocolate stacked with its layers of flaky pastry and chcoloate.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-photography-cinammon-roll.jpg
+   image-alt-description: A person wearing blue reaching with a fork towards a soft and sticky cinnamon roll, accompanied by a cup of coffee in the corner.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-loaf.jpg
+   image-alt-description: 3 pieces of chocolate loaf slices in a row with a milk bottle in the background.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-cheesecake.jpg
+   image-alt-description: Person placing homemade cheesecake with sliced strawberries onto a styled scene with plates, strawberries, and a glass.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-drink-photography-pour.jpg
+   image-alt-description: Milk flowing from the top into a coffee glass to create contrasting colours and motion.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-crepes.jpg
+   image-alt-description: Stack of crepes folded in quarters on three rose-coloured glass plates and sprinkled with powdered sugar and berries.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-croissant-choc.jpg
+   image-alt-description: Pain au chocolat cut in half and stacked, showcasing layers of flaky pastry and chocolate styled on a plate.
  - category: "food-&-drink"
-   column-size: col-4_xs-6
+   column-size: col-4_sm-6_xs-12
    aspect-ratio: portrait
    background-image: /images/jcs-food-photography-serve-cake.jpg
+   image-alt-description: Bundt cake with a slice being lifted up with a cake lifter by person wiht only the hand visible.
 ---
   
     <!-------header banner------------------------->
@@ -132,9 +149,9 @@ gallery:
     <!-------Image Gallery Portfolio------>
     <section class="padded padded-b-0">
         <div class="padded-sm center portfolio-filter" id="portfolio-filter">
-            <span>All</span> 
-            <span>Restaurant</span> 
-            <span>Food & Drink</span> 
+            <span>All</span> |
+            <span>Restaurant</span> |
+            <span>Food & Drink</span> |
             <span>Product</span>
         </div>
 
@@ -143,8 +160,8 @@ gallery:
             <!--This is the pop up version-->
             {% for item in page.gallery %}
             <a class="{{item.column-size}} {{item.category}} gallery-item" href="{{item.background-image}}">
-              <div class="img-holder">
-                <img src="{{item.background-image}}" alt="image description text">
+              <div class="img-holder {{item.aspect-ratio}}">
+                <img src="{{item.background-image}}" alt="{{item.image-alt-description}}">
               </div>
             </a> 
             {% endfor %}

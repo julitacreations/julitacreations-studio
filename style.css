@@ -446,6 +446,10 @@ footer p {
     display: inline-block;
 }
 
+.footer-info img {
+    max-width: 50%;
+}
+
 /* navigation styles ------*/
 .dropdown {
     position: relative;
@@ -613,7 +617,7 @@ img {
     margin: 0;
     transform: rotate(90deg);
 }
-.drink-position   { 
+.drink-position { 
     position: absolute;
     top: -6rem;
     left: 1rem;
@@ -623,7 +627,6 @@ img {
 .img-holder {
     position:relative;
     width:100%;
-    height: 75vh;
 }
 
 .img-holder img {
@@ -656,10 +659,9 @@ img {
 /* Filter navigation ---*/
 .portfolio-filter span {
     text-transform: uppercase; 
-    padding: 0.2rem;
-    border-radius: 0.2rem;
+   /* border-radius: 0.2rem;
     border: 1px solid #21383C;
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem 1rem;*/
     margin: 0.6rem 0.3rem;
 }
 .portfolio-filter .active {

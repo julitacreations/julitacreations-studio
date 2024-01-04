@@ -15,7 +15,7 @@ gallery:
  - category: "restaurant"
    column-size: col-4
    aspect-ratio: portrait
-   background-image: /images/jcs-portfolio-flower.jpg
+   background-image: /images/jcs-portfolio-musician.jpg 
  - category: "food-&-drink"
    column-size: col-4
    aspect-ratio: portrait
@@ -27,7 +27,7 @@ gallery:
  - category: "restaurant"
    column-size: col-4_xs-12
    aspect-ratio: portrait
-   background-image: /images/jcs-portfolio-musician.jpg
+   background-image: /images/jcs-portfolio-flower.jpg
  - category: "restaurant"
    column-size: col-4_xs-6
    aspect-ratio: portrait
@@ -47,7 +47,7 @@ gallery:
  - category: "food-&-drink"
    column-size: col-4_xs-6
    aspect-ratio: portrait
-   background-image: /images/jcs-food-photography-croissant-choc.jpg
+   background-image: /images/jcs-food-photography-croissant.jpg
  - category: "food-&-drink"
    column-size: col-4_xs-6
    aspect-ratio: portrait
@@ -71,7 +71,7 @@ gallery:
  - category: "food-&-drink"
    column-size: col-4_xs-6
    aspect-ratio: portrait
-   background-image: /images/jcs-food-photography-croissant.jpg
+   background-image: /images/jcs-food-photography-croissant-choc.jpg
  - category: "food-&-drink"
    column-size: col-4_xs-6
    aspect-ratio: portrait
@@ -143,13 +143,25 @@ gallery:
             <!--This is the pop up version-->
             {% for item in page.gallery %}
             <a class="{{item.column-size}} {{item.category}} gallery-item" href="{{item.background-image}}">
-              <div class="bg-image {{item.aspect-ratio}}" 
-              
-                style="background-image: url('{{item.background-image}}');">
+              <div class="img-holder">
+                <img src="{{item.background-image}}" alt="image description text">
               </div>
             </a> 
             {% endfor %}
 
+
+
+
+              <!---- Original Code without img /alt
+                 This is the pop up version
+                {% for item in page.gallery %}
+                <a class="{{item.column-size}} {{item.category}} gallery-item" href="{{item.background-image}}">
+                  <div class="bg-image {{item.aspect-ratio}}" 
+                    style="background-image: url('{{item.background-image}}');">
+                  </div>
+                </a> 
+                {% endfor %}
+              -->
 
             <!--TEST TEST TEST  adjust for SEO???-->
             <!---

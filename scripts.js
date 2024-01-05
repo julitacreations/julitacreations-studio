@@ -1,4 +1,5 @@
 // A $( document ).ready() block.
+
 $( document ).ready(function() {
     
     // Hamburger Mobile Menu

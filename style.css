@@ -338,12 +338,10 @@ a:hover {
     padding: 5%;
     max-width: 900px;
     margin: auto;
-    border: 3px solid red;
 }
 .slider-item {
     padding: 0.9rem;
     display: none;
-    border: 3px solid green;
 }
   
 .slider-item:first-child {
@@ -361,16 +359,35 @@ a:hover {
     width: 10px;
 }
 
+
 .slick-dots li button::before {
-color: var(--light-subtle);
+    font-size: 12px;
+    background-color: transparent; /* Dot background color */
+    color: #B86E49;
 }
 
 .slick-dots li.slick-active button::before {
-    color: var(--light);
+    color: #B86E49;
 }
+
 
 .slick-dotted.slick-slider {
     margin-bottom: 0px;
+}
+
+
+
+/* Optional: Customize arrow styles */
+.slick-prev, .slick-next {
+  font-size: 18px; /* Adjust arrow size */
+  color: red; /* Arrow color */
+  background-color: transparent; /* Arrow background color */
+}
+
+/* Optional: Hover styles for arrows */
+.slick-prev:hover, .slick-next:hover {
+  color: yellow; /* Hover color */
+  background-color: yellow; /* Hover background color */
 }
 
 

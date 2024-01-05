@@ -191,7 +191,7 @@ li {
 }
 .medium-text {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400;
 }
 .large-text   { 
@@ -328,9 +328,15 @@ a:hover {
 
 .cursive-text {
     font-family: 'Windsong', cursive;
-    font-size: 1.5rem;
-    margin-top: 1.7rem;
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
 }
+
+.overlay {
+    background-color: rgba(0,0,0,0.05);
+}
+
+
   
 
 /* Testimonial Slider Styles-------*/
@@ -363,11 +369,11 @@ a:hover {
 .slick-dots li button::before {
     font-size: 12px;
     background-color: transparent; /* Dot background color */
-    color: #B86E49;
+    color: #21383C;
 }
 
 .slick-dots li.slick-active button::before {
-    color: #B86E49;
+    color: #e67b45;
 }
 
 
@@ -377,11 +383,15 @@ a:hover {
 
 .slick-next::before, .slick-prev::before {
     font-family: inherit;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1;
-    opacity: .75;
-    color: #B86E49;
+    opacity: .80;
+    color: #21383C;
 }
+
+  
+  
+
 
 /* Header & Footer Styles———————————————-----------------—*/
   
@@ -418,7 +428,6 @@ header {
     position: sticky;
     top: 0;
 }
-
 
 
 footer {
@@ -686,7 +695,12 @@ img {
 .profile-image  { background-image: url('images/jcs-profile-image.jpg');}
 .profile-image-2 { background-image: url('images/jcs-profile-photo-2.jpg');}
 .building       { background-image: url('images/building-max.jpg');}
-.towel-beach    { background-image: url('images/chandra-oh-beach-towel.jpg');}
+
+.towel-beach    { 
+    background-image: url('images/chandra-oh-beach-towel.jpg');
+    background-attachment: fixed;
+}
+
 .dusting-cake   { background-image: url('images/jcs-food-photography-dusting.jpg');}
 .corn-fritter   { background-image: url('images/jcs-food-photography-corn-fritter.jpg');}
 .bubble-drink   { background-image: url('images/jcs-drink-photography.jpg');}

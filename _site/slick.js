@@ -12,7 +12,7 @@ if (typeof jQuery === 'undefined') {
         autoplay: true, // Do we want it to autoplay? true or false
         autoplaySpeed: 3000, // How long between each slide when auto-playing
         speed: 800, // How fast is the transition in milliseconds
-        arrows: false, // Do you want to show arrows to trigger each slide
+        arrows: true, // Do you want to show arrows to trigger each slide
         accessibility: true, // Enables keyboard tabbing and arrow key navigation
         dots: true, // Enables the dots below to show how many slides
         fade: false, // Changes the animate from slide to fade if true

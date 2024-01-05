@@ -191,7 +191,7 @@ li {
 }
 .medium-text {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 .large-text   { 
@@ -375,21 +375,13 @@ a:hover {
     margin-bottom: 0px;
 }
 
-
-
-/* Optional: Customize arrow styles */
-.slick-prev, .slick-next {
-  font-size: 18px; /* Adjust arrow size */
-  color: red; /* Arrow color */
-  background-color: transparent; /* Arrow background color */
+.slick-next::before, .slick-prev::before {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #B86E49;
 }
-
-/* Optional: Hover styles for arrows */
-.slick-prev:hover, .slick-next:hover {
-  color: yellow; /* Hover color */
-  background-color: yellow; /* Hover background color */
-}
-
 
 /* Header & Footer Styles———————————————-----------------—*/
   

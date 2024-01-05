@@ -52,6 +52,8 @@
 
 .padded-t-0 { padding-top: 0; }
 .padded-b-0 { padding-bottom: 0; }
+
+.padded-vw {padding: 1vw;}
   
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -725,7 +727,7 @@ img {
 
 /* Contact Form Styles---------------------*/
 form {
-    max-width: 50vw;
+    max-width: 40vw;
     margin: auto;
 } 
 

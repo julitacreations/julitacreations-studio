@@ -28,11 +28,11 @@ $( document ).ready(function() {
 
     // Accordion
     $('.accordion-header').click(function(){
-      // Toggle the visibility of the content when the header is clicked
+      // Toggle visibility of the content when the header is clicked
       $(this).next('.accordion-content').slideToggle();
-      // Toggle active class to highlight the active section
+      // Toggle active class to highlight active section
       $(this).toggleClass('active');
-      // Toggle the + and - signs
+      // Toggle the + and - buttons
       $(this).find('::after').html($(this).hasClass('active') ? '-' : '+');
       // Hide other content when a new section is opened
       $('.accordion-content').not($(this).next('.accordion-content')).slideUp();

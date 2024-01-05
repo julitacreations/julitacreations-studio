@@ -15,6 +15,27 @@ $( document ).ready(function() {
         $(".mobile-menu").toggleClass("active");
       });
 
+    // Typed JS code
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        strings: [
+            "hospitality business",
+            "restaurant",
+            "café",
+            "bed + breakfast",
+            "service business"
+          ],
+        typeSpeed: 100,
+        backSpeed: 70,
+        loop: true,
+        loopCount: Infinity,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 200
+
+      });
+
+
 
     // Magnific Popup Gallery
 

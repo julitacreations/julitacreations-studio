@@ -429,6 +429,15 @@ header {
     top: 0;
 }
 
+#typed {
+    font-style: italic;
+}
+  
+.typed-cursor {
+    font-size: 3rem;
+    color: #B86E49;
+} 
+
 
 footer {
     padding: 8%;
@@ -931,9 +940,6 @@ form button:hover {
 
 
 
-
-
-
 /*---THIS MUST GO COMPLETELY LAST -------------*/
 /*Typed JS for header*/
  /* #typed {
@@ -944,27 +950,6 @@ form button:hover {
     font-size: 3rem;
     color: #B86E49;
 } */
-
-/* THIS IS THE JS TO BE ADDED LATER
-/ Typed JS code
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    strings: [
-        "hospitality business",
-        "restaurant",
-        "café",
-        "bed + breakfast",
-        "service business"
-      ],
-    typeSpeed: 100,
-    backSpeed: 50,
-    loop: true,
-    loopCount: Infinity,
-    fadeOut: true,
-    fadeOutClass: 'typed-fade-out',
-    fadeOutDelay: 200
-
-  });*/
 
 
 

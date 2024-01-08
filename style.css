@@ -137,7 +137,7 @@ h2, h3, h4, h5, h6 {
 }
   
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.4; 
     margin-bottom: 1rem;
 }
@@ -869,10 +869,15 @@ form button:hover {
 /* Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
+
+    body { border: 2px solid green; padding: 0.5rem;}
+   
+
 	.show-md { display: block; }
 	.hide-md { display: none; }
 
     h1 { font-size: 3.4rem;}
+    .medium-text    { font-size: 1.4rem;}
 
     .md-text-center {text-align: center;}
     .md-text-left   {text-align: left;}
@@ -889,12 +894,23 @@ form button:hover {
 /* Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
 @media (max-width: 48em) {
+    html { font-size: 14px;}
+
+    body { border: 2px solid blue;}
+
     .show-sm { display: block; }
     .hide-sm { display: none; }
 
-    h1 { font-size: 2.5rem;}
+    h1                  { font-size: 2.6rem;}
+    h2                  { font-size: 2.1rem}
+    .eyebrow-heading    {
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .subheading         {font-size: 1rem;}
+    .large-text         {font-size: 3.2rem;}
+    .medium-text    { font-size: 1.4rem;}
 
-    .eyebrow-heading h2 {font-size: 1rem;}
 
     .sm-text-center {text-align: center;}
     .sm-text-left   {text-align: left;}
@@ -904,6 +920,13 @@ form button:hover {
     .sm-padded-1    {padding: 1rem;}
     .sm-padded-05   {padding: 0.5rem;}
 
+    .sm-tall-70 { min-height: 70vh; }
+    .sm-tall-80 { min-height: 80vh; }
+
+    .dusting-cake   {margin-top: 15%;}
+
+    .flex-flip-sm { flex-direction: column-reverse; }
+
 
 }
 
@@ -911,14 +934,20 @@ form button:hover {
 /* Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
+
+    body { border: 2px solid lightblue;}
+
     .show-xs { display: block; }
     .hide-xs { display: none; }
 
-    h1 { font-size: 2.1rem;}
+    h1              { font-size: 2.3rem;}
+    h2              { font-size: 1.9rem}
+    .medium-heading { font-size:1.9rem;}
+    .large-text     { font-size: 2.8rem;}
+    .medium-text    { font-size: 1.3rem;}
 
-    footer h4 {
-        font-weight: bold;
-    }
+
+    footer h4 { font-weight: bold;}
 
     .xs-text-center {text-align: center;}
 
@@ -928,8 +957,28 @@ form button:hover {
 
     .xs-padded-t    {padding-top: 5%;}
     .xs-padded-b    {padding-bottom: 5%;}
+    .xs-padded-tb   {padding:5% 0;}
+
+    form {
+        max-width: 60vw;
+    }
 
 }
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:25em) {
+
+    html { font-size: 12px;}
+
+	[class*="grid"] .xxs-stack { 
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
 
 
 

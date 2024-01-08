@@ -20,18 +20,18 @@ process:
 ---
 
     <!-------Hero Banner------------>
-    <section class="grid-spaceAround center padded tall-90 container-header">
+    <section class="grid-spaceAround center padded sm-padded xs-padded-1 tall-90 sm-tall-70 container-header">
 
-        <div class="col-2-bottom image-column">
+        <div class="col-2-bottom image-column hide-sm">
             <div class="bg-image bubble-drink portrait"></div>
         </div>
-        <div class="col-8-middle center text-column">
+        <div class="col-8_sm-10-middle center text-column">
             <h2 class="uppercase eyebrow-heading margin-b-1">Web Developer & Photographer</h2>
             <h1>Creating <em>websites + photography</em> <br> for your  impactful <br> <span id="typed">hospitality business</span>
             </h1>
             <a href="#contact" class="uppercase center margin-t-2 button"> Let's work together</a> 
         </div>
-        <div class="col-2-top image-column">
+        <div class="col-2_sm-5-top image-column">
             <div class="bg-image dusting-cake portrait-tall"></div>
         </div>
 
@@ -200,7 +200,7 @@ process:
             <h2 class="center large-text"> The Process </h2>
         </div>
         {% for item in page.process %}
-        <div class="padded-sm xs-padded-b col-3_md-6_xs-10 xs-text-center">
+        <div class="padded-sm xs-padded-tb col-3_md-6_xs-10 xs-text-center">
             <h4 class="subheading">{{item.heading}}</h4>
             <p>{{item.description}}</p>
         </div>
@@ -266,13 +266,13 @@ process:
 
     <!-------About Section ----------------------->
     
-    <section class="grid-spaceAround padded padded-lg-t padded-lg-b" id="about">
+    <section class="grid-spaceAround padded-lg" id="about">
         <div class="col-7-middle_sm-12">
         
             <h3 class="subheading">Ciao, I'm Tatjana</h3>
-            <h2>You <em>twirl</em> in your kitchen // back office every time your <em>service</em> makes someone smile? If that is you, then I'm glad you're here!
+            <h2>You <em>dance</em> in your back office every time your <em>service</em> makes someone smile? If that is you, then I'm glad you're here!
             </h2>
-            <p> Having grown up in Namibia, surrounded by nature and incredible wildlife, two things have always been important to me: 
+            <p> Growing up in Namibia, surrounded by nature and incredible wildlife, two things have always been important to me: 
             </p>
             <ol class="margin-b-1">
                 <li> Service excellence and delighting others through memorable experiences</li>
@@ -282,7 +282,6 @@ process:
             </p>
             <p> Now, I’m bringing that dedication in helping small, independent business owners by providing strategic website and food photography services to enhance their online presence and support their journey to not only continue making a mark in the heart of their guests, but fostering change in their community and environment.
             </p>
-            <p> Feel free to reach out in either English, German or Afrikaans. And soon in Italian as well (busy learning as best as I can.)</p>
         </div>
         
         <div class="col-4-middle_sm-12 tall-50">
@@ -310,11 +309,11 @@ process:
 
     
     <!-------Contact Section ------>
-    <section class="grid padded-lg" id="contact">
-        <div class="col-2-bottom">
+    <section class="grid padded-lg md-padded xs-padded" id="contact">
+        <div class="col-2-bottom hide-xs">
             <div class="bg-image water-image portrait-tall"></div>
         </div>
-        <div class="col-8-middle">
+        <div class="col-8_xs-12-middle">
             <h2 class="center padded-b"> Let's get your  <br> business online </h2>
             
             <form class="uppercase">
@@ -347,20 +346,20 @@ process:
         
         </div>
         
-        <div class="col-2-top">
+        <div class="col-2-top hide-xs">
             <div class="bg-image building portrait"></div>
         </div>
 
         <div class="grid-spaceAround col-12">
-            <div class="col-2 padded-t padded-sm padded-b-0">
+            <div class="col-2_xs-3 padded-t padded-sm padded-b-0">
                 <p class="small-text margin-b-0">Email</p>
                 <a href="#" class="bold">email@gmail.com</a>
             </div>
-            <div class="col-3 padded-t padded-sm padded-b-0">
+            <div class="col-3_xs-4 padded-t padded-sm padded-b-0">
                 <p class="small-text margin-b-0">Reach out in</p>
                 <p class="small-text">English, German or Afrikaans</p>
             </div>
-            <div class="col-2 padded-t padded-sm padded-b-0">
+            <div class="col-2_xs-3 padded-t padded-sm padded-b-0">
                 <p class="small-text margin-b-0">Book a free call</p>
                 <a href="#" class="bold uppercase featured-text">Book here</a>
             </div>

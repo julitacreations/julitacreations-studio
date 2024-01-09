@@ -80,6 +80,7 @@ $( document ).ready(function() {
         
       });
 
+
       // Typed JS code
       var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
@@ -101,8 +102,6 @@ $( document ).ready(function() {
       });
 
 });
-
-
 
 
   //Moving banner 

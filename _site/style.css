@@ -706,10 +706,9 @@ img {
 /* Filter navigation ---*/
 .portfolio-filter span {
     text-transform: uppercase; 
-   /* border-radius: 0.2rem;
-    border: 1px solid #21383C;
-    padding: 0.3rem 1rem;*/
+
     margin: 0.6rem 0.3rem;
+    cursor: pointer;
 }
 .portfolio-filter .active {
     color: #B86E49;
@@ -892,8 +891,9 @@ form button:hover {
 	.show-md { display: block; }
 	.hide-md { display: none; }
 
-    h1 { font-size: 3.4rem;}
+    h1              { font-size: 3.4rem;}
     h2              { font-size: 2.2rem}
+    .xtra-large-text{ font-size: 3.4rem;}
     .medium-heading { font-size: 2.1rem;}
     .medium-text    { font-size: 1.4rem;}
 
@@ -928,6 +928,7 @@ form button:hover {
         margin-top: 10%;
     }
     .subheading         {font-size: 1rem;}
+    .xtra-large-text    { font-size: 2.6rem;}
     .large-text         {font-size: 3.2rem;}
     .medium-text        { font-size: 1.4rem;}
 
@@ -973,6 +974,7 @@ form button:hover {
     h1              { font-size: 2.3rem;}
     h2              { font-size: 1.9rem}
     .medium-heading { font-size: 2rem;}
+    .xtra-large-text{ font-size: 2.3rem;}
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}
 

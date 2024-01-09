@@ -606,7 +606,7 @@ display: block;
 }
 .mobile-menu a {
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
     color: #EFE4DA;
     display:block;
@@ -970,6 +970,8 @@ form button:hover {
 
     .show-xs { display: block; }
     .hide-xs { display: none; }
+
+    .mobile-menu a { font-size: 2rem; }
 
     h1              { font-size: 2.3rem;}
     h2              { font-size: 1.9rem}

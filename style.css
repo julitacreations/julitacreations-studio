@@ -232,6 +232,10 @@ a:hover {
     font-style: italic;
 }
 
+.underline {
+    border-bottom: 1px solid;
+}
+
 /* Button styles—-———*/
   
 .button {
@@ -820,13 +824,6 @@ form button:hover {
     background-color: #B86E49;
     border: 1px solid #B86E49;
     font-style:normal;
-}
-
-.contact-info-booking-1 {
-    border-bottom: 1px solid;
-}
-.contact-info-booking {
-    border-bottom: 1px solid #B86E49;
 }
 
 

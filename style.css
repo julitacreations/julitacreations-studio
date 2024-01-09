@@ -452,6 +452,9 @@ footer a {
     display: block;
     padding: 0.3rem 0;
 }
+footer a:hover {
+    color: #B86E49;
+}
 .footer-info {
     padding-right: 10%;
 }
@@ -466,7 +469,7 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
-.site-credit p {
+.site-credit div {
     font-size: 0.6rem;
     font-style: italic;
     font-weight: 200;
@@ -480,6 +483,11 @@ footer p {
     text-align: center;
     display: inline-block;
 }
+.site-credit a:hover {
+  color:#B86E49;
+}
+
+
 
 .footer-info img {
     max-width: 50%;
@@ -814,6 +822,13 @@ form button:hover {
     font-style:normal;
 }
 
+.contact-info-booking-1 {
+    border-bottom: 1px solid;
+}
+.contact-info-booking {
+    border-bottom: 1px solid #B86E49;
+}
+
 
 /* Ticket Banner slider Styles-------------------*/
   
@@ -1001,26 +1016,6 @@ form button:hover {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-/*---THIS MUST GO COMPLETELY LAST -------------*/
-/*Typed JS for header*/
- /* #typed {
-    font-style: italic;
-}*/
-  
-/*.typed-cursor {
-    font-size: 3rem;
-    color: #B86E49;
-} */
 
 
 

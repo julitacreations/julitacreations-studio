@@ -180,6 +180,10 @@ li {
     font-size: 2.5rem;
     font-weight: 400;
 }
+
+.medium-heading span {
+    font-size: 1.45rem;
+}
 .large-heading {
     font-family: 'Playfair Display', serif;
     font-size: 3.4rem;
@@ -236,7 +240,7 @@ a:hover {
     border: 1px solid #B8C4CB;
     border-radius: 0.2rem;
      /*top +bottom then left +right */
-    padding: 0.8rem 2rem;
+    padding: 0.75rem 1.9rem;
     transition: all 0.2s;
 }
 
@@ -246,7 +250,7 @@ a:hover {
     border: 1px solid #21383C;
     border-radius: 0.2rem;
      /*top +bottom then left +right */
-    padding: 0.8rem 2rem;
+     padding: 0.75rem 1.9rem;
     transition: all 0.2s;
 }
   
@@ -291,7 +295,7 @@ a:hover {
 }
 
 .accordion-item {
-    margin: -0.4rem 0;
+    margin: -0.3rem 0;
 }
 
 .accordion-header {
@@ -877,6 +881,7 @@ form button:hover {
 	.hide-md { display: none; }
 
     h1 { font-size: 3.4rem;}
+    .medium-heading { font-size: 2.2rem;}
     .medium-text    { font-size: 1.4rem;}
 
     .md-text-center {text-align: center;}
@@ -905,11 +910,11 @@ form button:hover {
     h2                  { font-size: 2.1rem}
     .eyebrow-heading    {
         font-size: 1rem;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     .subheading         {font-size: 1rem;}
     .large-text         {font-size: 3.2rem;}
-    .medium-text    { font-size: 1.4rem;}
+    .medium-text        { font-size: 1.4rem;}
 
 
     .sm-text-center {text-align: center;}
@@ -919,13 +924,20 @@ form button:hover {
     .sm-padded      {padding: 5%;}
     .sm-padded-1    {padding: 1rem;}
     .sm-padded-05   {padding: 0.5rem;}
+    .sm-padded-t    { padding-top: 5%; }
 
+    .sm-tall-50 { min-height: 50vh; }
     .sm-tall-70 { min-height: 70vh; }
     .sm-tall-80 { min-height: 80vh; }
 
-    .dusting-cake   {margin-top: 15%;}
+    .dusting-cake   {margin-bottom: -30%;}
 
-    .flex-flip-sm { flex-direction: column-reverse; }
+    .flex-flip-sm { flex-direction: column-reverse; }ù
+
+
+
+
+    .accordion-item { margin: -0.1rem 0;}
 
 
 }
@@ -946,6 +958,7 @@ form button:hover {
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}
 
+    a               { font-size: 0.8rem;}
 
     footer h4 { font-weight: bold;}
 

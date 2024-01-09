@@ -893,6 +893,8 @@ form button:hover {
     .md-padded-05   {padding: 0.5rem;}
 
     .md-padded-b    {padding-bottom: 5%;}
+
+    .flex-flip-md { flex-direction: column-reverse; }
 }
 
 /* --------------- SM Media Query (48em / 768px) --------------- */ 
@@ -924,7 +926,7 @@ form button:hover {
     .sm-padded      {padding: 5%;}
     .sm-padded-1    {padding: 1rem;}
     .sm-padded-05   {padding: 0.5rem;}
-    .sm-padded-t    { padding-top: 5%; }
+    .sm-padded-t-75    {padding-top: 7.5%; }
 
     .sm-tall-50 { min-height: 50vh; }
     .sm-tall-70 { min-height: 70vh; }
@@ -932,7 +934,7 @@ form button:hover {
 
     .dusting-cake   {margin-bottom: -30%;}
 
-    .flex-flip-sm { flex-direction: column-reverse; }ù
+    .flex-flip-sm { flex-direction: column-reverse; }
 
 
 
@@ -953,8 +955,8 @@ form button:hover {
     .hide-xs { display: none; }
 
     h1              { font-size: 2.3rem;}
-    h2              { font-size: 1.9rem}
-    .medium-heading { font-size:1.9rem;}
+    h2              { font-size: 2rem}
+    .medium-heading { font-size: 2rem;}
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}
 
@@ -972,9 +974,12 @@ form button:hover {
     .xs-padded-b    {padding-bottom: 5%;}
     .xs-padded-tb   {padding:5% 0;}
 
+    .portfolio-cocktail-mob   { background-image: url('images/article-cocktail-mockup-mob.jpg');}
+
     form {
         max-width: 60vw;
     }
+
 
 }
 

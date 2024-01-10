@@ -774,6 +774,12 @@ img {
 .portfolio-cocktail-mockup   { background-image: url('images/article-cocktail-mockup-elegant.png');}
 
 
+
+/*Video styles------------------------------*/
+video {
+    width:100%;
+}
+
 /* Contact Form Styles---------------------*/
 form {
     max-width: 40vw;

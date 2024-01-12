@@ -4,30 +4,31 @@ layout: default
 
     <!-------showcase & testimonial of Web Portfolio project------>
 
+    <h3 class="col-12 center medium-heading padded padded-b-0"> {{page.title}}</h3>
 
-    <section class="grid-spaceAround padded-lg padded-t padded-b-1"> 
-        <h3 class="col-12 center medium-heading padded-sm"> {{page.title}}</h3>
-        <div class="col-3-top_sm-12">
+    <section class="grid-spaceAround padded-lg md-padded padded-t padded-b-0  flex-flip-sm">  
+        <div class="col-3-middle_md-4_sm-12 sm-padded-1">
             <p>{{page.case}}</p>
         </div>
-        <div class="bg-image col-5_sm-12 tall-60 padded-sm" style="background-image: url('{{ page.main_image }}')">
+        <div class="col-8-middle_md-7_sm-12 video-container sm-padded-1">
             <!-- background video -->
-        </div>
-        <div class="col-3-bottom_sm-12 right">
-            <p>{{page.solution}}</p>
-            <a href="{{ page.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
+            <video autoplay muted loop playsinline poster="/images/the-article-poster.png">
+                <source src="{{page.video_webm}}" type="video/webm">
+                <source src="{{page.video_mp4}}" type="video/mp4">
+                <p>Sorry, your browser doesn't support embedded videos</p> 
+            </video>
         </div>
     </section>
 
-    <section class="grid padded-lg padded-t padded-b"> 
-        <div class="bg-image  col-7_sm-12 tall-60 image-border" style="background-image: url('{{ page.mockup_image }}')"></div>
+    <section class="grid padded-lg md-padded padded-t md-padded-t-1 padded-b md-padded-b"> 
+        <div class="bg-image  col-7_sm-12 tall-70 sm-tall-50 image-border" style="background-image: url('{{ page.mockup_image }}')"></div>
        
-        <div class="col-5-bottom_sm-12">
-            <div class="padded col-6-middle_sm-12 right">
-                <p> {{page.testimonial}} </p>
-                <p class="cursive-text"> - {{page.author}} </p>
+        <div class="grid col-5-bottom_sm-12">
+            <div class="padded col-12 right sm-text-left sm-padded-1">
+                <p>{{page.solution}}</p>
+                <a href="{{ page.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
             </div>
-            <div class="bg-image tall-40 image-border" style="background-image: url('{{ page.featured_image }}')">
+            <div class="col-12 bg-image tall-40 image-border" style="background-image: url('{{ page.featured_image }}')">
                 <!-- background image -->
             </div> 
         </div>

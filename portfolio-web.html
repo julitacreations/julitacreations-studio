@@ -12,7 +12,7 @@ banner_messages:
   
     <!-------header banner------------------------->
 
-    <section class="center grid-spaceAround padded tall-80 container-header">
+    <section class="center grid-spaceAround padded tall-80 sm-tall-70 container-header">
         <div class="bg-image col-2-bottom image-column hide-sm">
             <div class="bg-image loaf-motion portrait-tall"></div>
         </div>
@@ -51,31 +51,31 @@ banner_messages:
 -->
 
 <!----New video incl code TEST-->
-    <h3 class="col-12 center medium-heading padded padded-b-0"> {{project.title}}</h3>
-    <section class="grid-spaceAround padded-lg md-padded padded-t md-padded-t padded-b-0 md-padded-b-0 flex-flip-sm"> 
-        <div class="col-3-middle_sm-12 sm-padded-b">
+    <h3 class="col-12 center medium-heading padded-lg padded-b-0"> {{project.title}}</h3>
+    
+    <section class="grid-spaceAround padded-lg md-padded padded-t padded-b-0  flex-flip-sm"> 
+        <div class="col-3-middle_md-4_sm-12 sm-padded-1">
             <p>{{project.case}}</p>
-            <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
         </div>
-        <div class="col-8-middle_sm-12 tall-60 video-container">
+        <div class="col-8-middle_md-7_sm-12 video-container sm-padded-1">
             <!-- background video -->
-            <video autoplay muted loop playsinline poster="/images/the-article-poster.png">
-                <source src="/videos/article-vid.webm" type="video/webm">
-                <source src="/videos/article-vid.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline poster="{{project.poster}}">
+                <source src="{{project.video_webm}}" type="video/webm">
+                <source src="{{project.video_mp4}}" type="video/mp4">
                 <p>Sorry, your browser doesn't support embedded videos</p> 
             </video>
         </div>
     </section>
 
-    <section class="grid padded-lg md-padded padded-t-1 md-padded-t-1 padded-b md-padded-b"> 
-        <div class="bg-image  col-7_sm-12 tall-70 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
+    <section class="grid padded-lg md-padded padded-t md-padded-t-1 padded-b md-padded-b"> 
+        <div class="bg-image col-7_sm-12 tall-70 sm-tall-50 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
        
-        <div class="col-5-bottom_sm-12">
-            <div class="padded col-6-middle_sm-12 right">
+        <div class="grid col-5-bottom_sm-12">
+            <div class="padded col-12 right sm-text-left sm-padded-1">
                 <p>{{project.solution}}</p>
                 <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
             </div>
-            <div class="bg-image tall-40 image-border" style="background-image: url('{{ project.featured_image }}')">
+            <div class="bg-image tall-40 image-border col-12" style="background-image: url('{{ project.featured_image }}')">
                 <!-- background image -->
             </div> 
         </div>
@@ -92,7 +92,7 @@ banner_messages:
         </div>
 
         <div class="col-8 left padded-b">
-            <a href="{{ previous.next-project_url }}" class="medium-heading featured-text"> &#8592;Previous project</a> 
+            <a href="{{ project.previous-project_url }}" class="medium-heading featured-text"> &#8592;Previous project</a> 
         </div>
 
         <div class="col-12-middle padded-t">

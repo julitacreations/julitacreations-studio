@@ -827,8 +827,9 @@ form button {
     border: 1px solid #B8C4CB;
     border-radius: 0.2rem;
      /*top +bottom then left +right */
-    padding: 0.8rem 2rem;
+    padding: 0.75rem 1.9rem;
     transition: all 0.2s;
+    font-size: 0.9rem;
 }
   
 form button:hover {
@@ -940,7 +941,7 @@ form button:hover {
     h2                  { font-size: 2rem}
     .eyebrow-heading    {
         font-size: 1rem;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .subheading         {font-size: 1rem;}
     .xtra-large-text    { font-size: 2.6rem;}
@@ -1010,11 +1011,15 @@ form button:hover {
     .xs-padded-b    {padding-bottom: 5%;}
     .xs-padded-tb   {padding:5% 0;}
 
+    .xs-tall-70     { min-height: 70vh; }
+
     .portfolio-cocktail-mob   { background-image: url('images/article-cocktail-mockup-mob.jpg');}
 
     form {
         max-width: 60vw;
     }
+
+    form button { font-size: 0.8rem;}
 
 
 }

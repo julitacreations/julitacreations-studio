@@ -780,6 +780,13 @@ video {
     width:100%;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Contact Form Styles---------------------*/
 form {
     max-width: 40vw;
@@ -910,7 +917,9 @@ form button:hover {
     .md-padded      {padding: 5%;}
     .md-padded-1    {padding: 1rem;}
     .md-padded-05   {padding: 0.5rem;}
+    .md-padded-t-1  {padding-top: 1rem;}
 
+    .md-padded-b-0  {padding-bottom: 0;}
     .md-padded-b    {padding-bottom: 5%;}
 
     .flex-flip-md { flex-direction: column-reverse; }
@@ -948,6 +957,7 @@ form button:hover {
     .sm-padded-1    {padding: 1rem;}
     .sm-padded-05   {padding: 0.5rem;}
     .sm-padded-t    {padding-top: 5%; }
+    .sm-padded-b    {padding-bottom: 5%; }
 
     .sm-padded-t-75    {padding-top: 7.5%; }
 

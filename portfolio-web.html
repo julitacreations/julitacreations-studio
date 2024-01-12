@@ -53,30 +53,27 @@ banner_messages:
 <!----New video incl code TEST-->
     <section class="grid-spaceAround padded-lg padded-t padded-b-1"> 
         <h3 class="col-12 center medium-heading padded-sm"> {{project.title}}</h3>
-        <div class="col-3-top_sm-12">
+        <div class="col-3-middle_sm-12">
             <p>{{project.case}}</p>
+            <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
         </div>
-        <div class="col-5_sm-12 tall-60 padded-sm">
+        <div class="col-8_sm-12 tall-60 padded-sm">
             <!-- background video -->
             <video autoplay muted loop playsinline poster="/images/the-article-poster.png">
-                <source src="/videos/the-article-vid.webm" type="video/webm">
-                <source src="/videos/the-article-vid.mp4" type="video/mp4">
+                <source src="/videos/article-vid.webm" type="video/webm">
+                <source src="/videos/article-vid.mp4" type="video/mp4">
                 <p>Sorry, your browser doesn't support embedded videos</p> 
             </video>
-        </div>
-        <div class="col-3-bottom_sm-12 right">
-            <p>{{project.solution}}</p>
-            <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
         </div>
     </section>
 
     <section class="grid padded-lg padded-t padded-b"> 
-        <div class="bg-image  col-7_sm-12 tall-60 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
+        <div class="bg-image  col-7_sm-12 tall-70 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
        
         <div class="col-5-bottom_sm-12">
             <div class="padded col-6-middle_sm-12 right">
-                <p> {{project.testimonial}} </p>
-                <p class="cursive-text"> - {{project.author}} </p>
+                <p>{{project.solution}}</p>
+                <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
             </div>
             <div class="bg-image tall-40 image-border" style="background-image: url('{{ project.featured_image }}')">
                 <!-- background image -->

@@ -14,7 +14,7 @@ banner_messages:
 
     <section class="center grid-spaceAround padded tall-80 sm-tall-70 container-header">
         <div class="bg-image col-2-bottom image-column hide-sm">
-            <div class="bg-image loaf-motion portrait-tall"></div>
+            <div class="bg-image mob-bakery-mockup portrait"></div>
         </div>
         <div class="col-8_sm-10-middle text-column">
             <h1 class="uppercase eyebrow-heading margin-b-1"> Web Designer & Developer in Milan </h1>
@@ -23,7 +23,7 @@ banner_messages:
         </div>
         
         <div class="col-2-top_sm-4 image-column">
-            <div class="bg-image pomelo-drink portrait"></div>
+            <div class="bg-image bnb-mockup portrait-tall"></div>
         </div>
     </section> 
   
@@ -53,7 +53,7 @@ banner_messages:
 <!----New video incl code TEST-->
     <h3 class="col-12 center medium-heading padded-lg padded-b-0"> {{project.title}}</h3>
     
-    <section class="grid-spaceAround padded-lg md-padded padded-t padded-b-0  flex-flip-sm"> 
+    <section class="grid-spaceAround padded-lg md-padded padded-t padded-b-0 sm-padded-b-sm flex-flip-sm"> 
         <div class="col-3-middle_md-4_sm-12 sm-padded-1">
             <p>{{project.case}}</p>
         </div>
@@ -67,11 +67,11 @@ banner_messages:
         </div>
     </section>
 
-    <section class="grid padded-lg md-padded padded-t md-padded-t-1 padded-b md-padded-b"> 
+    <section class="grid padded-lg md-padded padded-t md-padded-t-1 padded-b md-padded-b sm-padded-t-0">  
         <div class="bg-image col-7_sm-12 tall-70 sm-tall-50 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
        
         <div class="grid col-5-bottom_sm-12">
-            <div class="padded col-12 right sm-text-left sm-padded-1">
+            <div class="padded col-12 right sm-text-left sm-padded-1 sm-padded-b">
                 <p>{{project.solution}}</p>
                 <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
             </div>
@@ -85,9 +85,9 @@ banner_messages:
 
 
     <!-------Call to Action and Previous / next project navigation ----------->
-     <section class="padded padded-t-0 grid-spaceAround center"> 
+     <section class="padded padded-t-0 xs-padded-b-lg grid-spaceAround center"> 
 
-        <div class="col-8 right padded-b-0">
+        <div class="col-8 right padded-b-0 xs-padded-05">
             <a href="{{ project.next-project_url }}" class="medium-heading featured-text">Next project &#8594;</a> 
         </div>
 

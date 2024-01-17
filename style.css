@@ -742,6 +742,7 @@ img {
 }
 
 
+
 /* Photography Portfolio Images —————————-—----------— */
 .elegant-drink  { background-image: url('images/jcs-drink-photography-elegant.jpg');}
 .coffee-pour    { background-image: url('images/jcs-drink-photography-pour.jpg');}
@@ -771,7 +772,12 @@ img {
 
 /* Website Portfolio Images —————————-—----------— */
 .portfolio-cocktail-bar     { background-image: url('images/the-article-cocktail-venue.jpg');}
-.portfolio-cocktail-mockup   { background-image: url('images/article-cocktail-mockup-elegant.png');}
+.portfolio-cocktail-mockup  { background-image: url('images/article-cocktail-mockup-elegant.png');}
+.mob-bakery-mockup          { background-image: url('images/bakery-2.jpg');}
+.bnb-mockup { 
+    background-image: url('images/bed-breakfast-11.jpg');
+    background-position: 59% 50%;
+}
 
 
 
@@ -959,6 +965,8 @@ form button:hover {
     .sm-padded-05   {padding: 0.5rem;}
     .sm-padded-t    {padding-top: 5%; }
     .sm-padded-b    {padding-bottom: 5%; }
+    .sm-padded-t-0  {padding-top: 0;}
+    .sm-padded-b-sm {padding-bottom: 2.5%; }
 
     .sm-padded-t-75    {padding-top: 7.5%; }
 
@@ -1009,6 +1017,7 @@ form button:hover {
 
     .xs-padded-t    {padding-top: 5%;}
     .xs-padded-b    {padding-bottom: 5%;}
+    .xs-padded-b-lg {padding-bottom: 10%;}
     .xs-padded-tb   {padding:5% 0;}
 
     .xs-tall-70     { min-height: 70vh; }

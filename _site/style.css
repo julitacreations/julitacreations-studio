@@ -193,6 +193,9 @@ li {
 .small-text {
     font-size: 0.9rem;
 }
+.small-text-1 {
+    font-size: 1rem;
+}
 .medium-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.7rem;

@@ -52,8 +52,6 @@
 
 .padded-t-0 { padding-top: 0; }
 .padded-b-0 { padding-bottom: 0; }
-
-.padded-vw {padding: 1vw;}
   
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -722,7 +720,6 @@ img {
 .profile-image  { background-image: url('images/jcs-profile-image.jpg');}
 .profile-image-2 { background-image: url('images/jcs-profile-photo-2.jpg');}
 .building       { background-image: url('images/building-max.jpg');}
-
 .towel-beach    { 
     background-image: url('images/chandra-oh-beach-towel.jpg');
     background-attachment: fixed;
@@ -739,38 +736,14 @@ img {
     background-image: url('images/jcs-photography-cookies.jpg');
     background-position: 50% 90%;
 }
-.raspberry-lemon-loaf { 
-    background-image: url('images/jcs-photography-lemon-raspbery-loaf-2.jpg');
-    background-position: 50% 80%;
-}
 
 
 
 /* Photography Portfolio Images —————————-—----------— */
-.elegant-drink  { background-image: url('images/jcs-drink-photography-elegant.jpg');}
-.coffee-pour    { background-image: url('images/jcs-drink-photography-pour.jpg');}
 .acquafaba      { background-image: url('images/jcs-food-photography-acquafaba.jpg');}
 .macro-biscuit  { background-image: url('images/jcs-food-photography-biscuits.jpg');}
-.cheesecake     { background-image: url('images/jcs-food-photography-cheesecake.jpg');}
-.crepes         { background-image: url('images/jcs-food-photography-crepes.jpg');}
 .croissant-choc { background-image: url('images/jcs-food-photography-croissant-choc.jpg');}
-.croissant-stack { background-image: url('images/jcs-food-photography-croissant.jpg');}
 .biscuit-flatlay { background-image: url('images/jcs-food-photography-flatlay.jpg');}
-.loaf-cake      { background-image: url('images/jcs-food-photography-loaf.jpg');}
-.loaf-motion    { background-image: url('images/jcs-food-photography-motion.jpg');}
-.serve-cake     { background-image: url('images/jcs-food-photography-serve-cake.jpg');}
-.skillet-cookie { background-image: url('images/jcs-food-photography-skillet-cookie.jpg');}
-.cinammon-roll  { background-image: url('images/jcs-photography-cinammon-roll.jpg');}
-.raspberry-lemon-loaf-2 { background-image: url('images/jcs-photography-lemon-raspberry-loaf.jpg');}
-
-/* Restaurant Portfolio Images ——----------— */
-.flatlay        { background-image: url('images/jcs-food-photography-14.jpg');}
-.drink-hugo     { background-image: url('images/jcs-drink-photography-hugo.jpg');}
-.red-cappuccino { background-image: url('images/jcs-drink-photography-red-cappuccino.jpg');}
-.flower-portrait { background-image: url('images/jcs-portfolio-flower.jpg');}
-.musician { background-image: url('images/jcs-portfolio-musician.jpg');}
-.coffee-cake { background-image: url('images/jcs-restaurant-photography-coffee-cake.jpg');}
-.egg-benedict   { background-image: url('images/jcs-restaurant-photography-egg-benedict.jpg');}
 
 
 /* Website Portfolio Images —————————-—----------— */
@@ -781,7 +754,6 @@ img {
     background-image: url('images/bed-breakfast-11.jpg');
     background-position: 59% 50%;
 }
-
 
 
 /*Video styles------------------------------*/

@@ -210,9 +210,9 @@ li {
     text-align: center;
 }
 
-.light-text { color: #EFE4DA; } 
-.dark-text  { color: #21383C; }
-.featured-text { color: #B86E49; }
+.light-text     { color: #EFE4DA; } 
+.dark-text      { color: #21383C; }
+.featured-text  { color: #B86E49; }
   
 .bg-light    { background-color: #EFE4DA;  }
 .bg-dark     { background-color: #21383C;  }
@@ -237,7 +237,7 @@ a:hover {
     border-bottom: 1px solid;
 }
 
-/* Button styles—-———*/
+/* Button styles—----———*/
   
 .button {
     background-color: #B8C4CB;
@@ -328,13 +328,6 @@ a:hover {
 
 /*Testimonial Block--------------------------------*/
 
-.quote-icon {
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
-    font-weight: 400;
-    color: rgba(33, 56, 60, 0.8);
-}
-
 .cursive-text {
     font-family: 'Windsong', cursive;
     font-size: 1.4rem;
@@ -346,7 +339,6 @@ a:hover {
 }
 
 
-  
 
 /* Testimonial Slider Styles-------*/
 .testimonial-slider-container {
@@ -374,7 +366,6 @@ a:hover {
     width: 10px;
 }
 
-
 .slick-dots li button::before {
     font-size: 12px;
     background-color: transparent; /* Dot background color */
@@ -384,7 +375,6 @@ a:hover {
 .slick-dots li.slick-active button::before {
     color: #e67b45;
 }
-
 
 .slick-dotted.slick-slider {
     margin-bottom: 0px;
@@ -400,8 +390,6 @@ a:hover {
 
   
   
-
-
 /* Header & Footer Styles———————————————-----------------—*/
   
 header a {
@@ -493,7 +481,6 @@ footer p {
 }
 
 
-
 .footer-info img {
     max-width: 50%;
 }
@@ -526,7 +513,7 @@ display: block;
 display: block;
 }
 
-/* mobile menu styles -----*/
+/* mobile menu styles ---------*/
 
 .burger-button {
     position:fixed;
@@ -617,9 +604,6 @@ display: block;
 } 
 
 
-
-
-
 /* Images & Background Images—————————-----—----------— */
 
 .bg-image {
@@ -657,20 +641,6 @@ img {
 .bg-pos-unique { background-position: 50% 50%; }
 
 /*Position classes */
-.relative { position: relative; }
-.biscuit-position   { 
-    position: absolute;
-    bottom: -8rem;
-    right: 6rem;
-    margin: 0;
-    transform: rotate(90deg);
-}
-.drink-position { 
-    position: absolute;
-    top: -6rem;
-    left: 1rem;
-    margin: 0;
-}
 
 .img-holder {
     position:relative;
@@ -694,8 +664,7 @@ img {
 }
 
 
-
-/* Filterable Gallery Styles-------   */ 
+/* Filterable Gallery Styles--------  */ 
 .filterable-gallery {
     padding: 1rem;
 }
@@ -738,11 +707,9 @@ img {
 }
 
 
-
 /* Photography Portfolio Images —————————-—----------— */
 .acquafaba      { background-image: url('images/jcs-food-photography-acquafaba.jpg');}
 .macro-biscuit  { background-image: url('images/jcs-food-photography-biscuits.jpg');}
-.croissant-choc { background-image: url('images/jcs-food-photography-croissant-choc.jpg');}
 .biscuit-flatlay { background-image: url('images/jcs-food-photography-flatlay.jpg');}
 
 
@@ -864,8 +831,6 @@ form button:hover {
 }
   
 
-  
-
 
 /* General CSS Styles (apply everywhere)-MEDIA QUERIES */ 
 
@@ -880,7 +845,7 @@ form button:hover {
 
 @media (max-width: 64em) {
 
-    body { border: 2px solid green; padding: 0.5rem;}
+    /*body { border: 2px solid green; padding: 0.5rem;}*/
    
 
 	.show-md { display: block; }
@@ -913,7 +878,7 @@ form button:hover {
 @media (max-width: 48em) {
     html { font-size: 14px;}
 
-    body { border: 2px solid blue;}
+    /*body { border: 2px solid blue;} */
 
     .show-sm { display: block; }
     .hide-sm { display: none; }
@@ -951,10 +916,7 @@ form button:hover {
 
     .dusting-cake   {margin-bottom: -30%;}
 
-    .flex-flip-sm { flex-direction: column-reverse; }
-
-
-
+    .flex-flip-sm { flex-direction: column-reverse; }s
 
     .accordion-item { margin: -0.1rem 0;}
 
@@ -966,7 +928,7 @@ form button:hover {
 
 @media (max-width: 36em) {
 
-    body { border: 2px solid lightblue;}
+    /*body { border: 2px solid lightblue;}*/
 
     .show-xs { display: block; }
     .hide-xs { display: none; }

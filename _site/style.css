@@ -85,7 +85,7 @@
   
 
 /* Height Classes */
- 
+.tall-10 { min-height: 10vh; }
 .tall-20 { min-height: 20vh; }
 .tall-30 { min-height: 30vh; }
 .tall-40 { min-height: 40vh; }
@@ -833,6 +833,30 @@ form button:hover {
   
 
 
+/*Explore page for Instagram----*/
+
+.explore-page a {
+    font-family: 'Playfair Display', serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #B8C4CB;
+    color: #21383C;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.explore-page .featured {
+    background-color: #B86E49;
+    color: #EFE4DA;
+}
+.bg-explore {background-color:#F5F6F7;}
+
+
+
 /* General CSS Styles (apply everywhere)-MEDIA QUERIES */ 
 
 .show-xs, 
@@ -923,6 +947,8 @@ form button:hover {
 
     .accordion-item { margin: -0.1rem 0;}
 
+    .logo img { max-width: 70%;}
+
 
 }
 
@@ -971,6 +997,8 @@ form button:hover {
     form button { font-size: 0.8rem;}
 
     .burger-button {margin-top: -0.2rem;}
+
+    .logo img { max-width: 80%;}
 
 
 

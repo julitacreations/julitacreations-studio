@@ -125,7 +125,7 @@ gallery:
 <section class="grid-spaceAround center padded tall-80 sm-tall-70 container-header">
   
     <div class="col-2-bottom image-column hide-sm">
-        <div class="bg-image acquafaba portrait-tall"></div>
+        <div class="bg-image acquafaba portrait-tall lazy"></div>
     </div>
     <div class="col-8_sm-9-middle center text-column">
         <h1 class="uppercase eyebrow-heading margin-b-1"> Food Photographer in Milan </h1>
@@ -134,7 +134,7 @@ gallery:
         <!-- <a href="" class="uppercase center margin-t-2 button"> Available for hire </a> -->
     </div>
     <div class="col-2-top_sm-4 image-column">
-        <div class="bg-image pomelo-drink portrait"></div>
+        <div class="bg-image pomelo-drink portrait lazy"></div>
     </div>
 
 </section>
@@ -171,7 +171,7 @@ gallery:
       {% for item in page.gallery %}
       <a class="{{item.column-size}} {{item.category}} gallery-item" href="{{item.background-image}}">
         <div class="img-holder {{item.aspect-ratio}}">
-          <img src="{{item.background-image}}" alt="{{item.image_alt}}">
+          <img data-src="{{item.background-image}}" class="lazy" alt="{{item.image_alt}}">
         </div>
       </a> 
       {% endfor %}

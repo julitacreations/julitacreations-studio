@@ -14,7 +14,7 @@ banner_messages:
 
 <section class="center grid-spaceAround padded tall-80 sm-tall-70 container-header">
     <div class="bg-image col-2-bottom image-column hide-sm">
-        <div class="bg-image mob-bakery-mockup portrait"></div>
+        <div class="bg-image mob-bakery-mockup portrait lazy"></div>
     </div>
     <div class="col-8_sm-10-middle text-column">
         <h1 class="uppercase eyebrow-heading margin-b-1"> Web Designer & Developer in Milan </h1>
@@ -23,7 +23,7 @@ banner_messages:
     </div>
     
     <div class="col-2-top_sm-4 image-column">
-        <div class="bg-image bnb-mockup portrait-tall"></div>
+        <div class="bg-image bnb-mockup portrait-tall lazy"></div>
     </div>
 </section> 
 
@@ -54,14 +54,14 @@ banner_messages:
 </section>
 
 <section class="grid padded-lg md-padded padded-t md-padded-t-1 padded-b md-padded-b sm-padded-t-0">  
-    <div class="bg-image col-7_sm-12 tall-70 sm-tall-50 image-border" style="background-image: url('{{ project.mockup_image }}')"></div>
+    <div class="bg-image col-7_sm-12 tall-70 sm-tall-50 image-border lazy" style="background-image: url('{{ project.mockup_image }}')"></div>
     
     <div class="grid col-5-bottom_sm-12">
         <div class="padded col-12 right sm-text-left sm-padded-1 sm-padded-b">
             <p>{{project.solution}}</p>
             <a href="{{ project.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
         </div>
-        <div class="bg-image tall-40 image-border col-12" style="background-image: url('{{ project.featured_image }}')">
+        <div class="bg-image tall-40 image-border col-12 lazy" style="background-image: url('{{ project.featured_image }}')">
             <!-- background image -->
         </div> 
     </div>

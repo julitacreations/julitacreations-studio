@@ -839,19 +839,18 @@ form button:hover {
     font-family: 'Playfair Display', serif;
     display: block;
     text-align: center;
-    margin-bottom: 1rem;
-    background-color: #B8C4CB;
+    margin-bottom: 0.8rem;
     color: #21383C;
-    border-radius: 0.2rem;
      /*top +bottom then left +right */
     padding: 0.7rem 1.5rem;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
+
 .explore-page .featured {
-    background-color: #B86E49;
-    color: #EFE4DA;
+    color: #B86E49;
 }
 .bg-explore {background-color:#F5F6F7;}
 

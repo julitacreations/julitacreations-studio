@@ -85,11 +85,12 @@ $( document ).ready(function() {
       var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         strings: [
-            "hospitality business",
             "restaurant",
             "café",
             "bed + breakfast",
-            "service business"
+            "hospitality business",
+            "service business",
+            "food brand"
           ],
         typeSpeed: 100,
         backSpeed: 70,

@@ -340,6 +340,21 @@ a:hover {
     display: block; /* Makes the image block level to allow centering */
 }
 
+/* Horizonatal scroll section */
+/* General reset and positioning */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling from the body */
+}
+
+
+
+
 
 /*Accordion Block--------------------------------*/
 .accordion {

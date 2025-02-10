@@ -42,6 +42,7 @@ $( document ).ready(function() {
       // Reset the + and - signs on other headers
       $('.accordion-header').not(this).find('::after').html('+');
     });
+  
 
 
     //Filterable Gallery
@@ -267,3 +268,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", lazyload);
   }
 })
+

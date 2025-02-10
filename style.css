@@ -1,8 +1,8 @@
 /* Colours & fonts */
 /*  Dark: #21383C - new: #1f292d
     Light Blue: #B8C4CB - new: #adbec5
-    Neutral: #EFE4DA -- new: #f6f3ef
-    Light Beige: #D9BDA2 - new: #e1d7c9
+    Light Neutral: #EFE4DA -- new: #f6f3ef
+    Beige: #D9BDA2 - new: #e1d7c9
     Rust: #B86E49 - new: #ac5122
     Neutral background: #F5F6F7 - new: #f6f3ef
 
@@ -100,8 +100,8 @@
 /* Typography font styles———-————————-----------—*/
 body {
     font-family: 'Libre Franklin', sans-serif;
-    color: #21383C;
-    background-color: #F5F6F7;
+    color: #1f292d;
+    background-color: #f6f3ef;
 }
   
 h1 {
@@ -210,13 +210,14 @@ li {
     text-align: center;
 }
 
-.light-text     { color: #EFE4DA; } 
-.dark-text      { color: #21383C; }
-.featured-text  { color: #B86E49; }
+.light-text     { color:#f6f3ef; } 
+.dark-text      { color: #1f292d; }
+.featured-text  { color: #ac5122; }
   
-.bg-light    { background-color: #EFE4DA;  }
-.bg-dark     { background-color: #21383C;  }
+.bg-light    { background-color:#f6f3ef;  }
+.bg-dark     { background-color: #1f292d;  }
 .bg-featured { background-color: #B8C4CB;  }
+.bg-featured-beige {background-color: #e1d7c9;}
 
 .bg-gradient { 
     background: #B8C4CB; /* Background for old browsers */
@@ -224,7 +225,7 @@ li {
 }
   
 a {
-    color: #21383C;
+    color: #1f292d;
     text-decoration: none;
     display: inline-block;
     font-size: 0.9rem;
@@ -250,9 +251,9 @@ a:hover {
 }
 
 .button-color {
-    background-color: #21383C;
-    color: #EFE4DA;
-    border: 1px solid #21383C;
+    background-color: #1f292d;
+    color:#f6f3ef;
+    border: 1px solid #1f292d;
     border-radius: 0.2rem;
      /*top +bottom then left +right */
      padding: 0.75rem 1.9rem;
@@ -260,35 +261,83 @@ a:hover {
 }
   
 .button:hover {
-    color: #EFE4DA;
-    background-color: #B86E49;
-    border: 1px solid #B86E49;
+    color:#f6f3ef;
+    background-color: #ac5122;
+    border: 1px solid #ac5122;
     font-style:normal;
 }
 
 .button-color:hover {
-    color: #EFE4DA;
-    background-color: #B86E49;
-    border: 1px solid #B86E49;
+    color:#f6f3ef;
+    background-color: #ac5122;
+    border: 1px solid #ac5122;
     font-style:normal;
 }
 
 .border-line {
     border: none;
-    border-bottom: 1px solid #21383C;
+    border-bottom: 1px solid #1f292d;
     padding: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .capped-width {
-    max-width: 1000px;
+    max-width: 1150px;
     margin: auto;
 }
  
 .capped-width-narrow {
     max-width: 800px;
     margin: auto;
+}
+
+
+/* Sticky Section Scroll------ */
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-scroll-section {
+    z-index: 4;
+}
+
+.sticky-top-0 {
+    position: sticky;
+    top: 0; /* Makes the section stick 50px from the top of the viewport */
+    overflow: hidden;
+}
+
+.image-position {
+    position: relative;
+    width: 50vw; /* Set the image container width to 50vw */
+    margin: 0 auto; /* Center the image */
+}
+.content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center it exactly */
+    color: white;
+    z-index: 3;
+    text-align: center; /* Center the text within the overlay */
+}
+
+.portfolio-mockup {
+    width: 70vw;  /* Takes up 70% of the viewport width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fills the area properly */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Makes the image block level to allow centering */
 }
 
 
@@ -369,7 +418,7 @@ a:hover {
 .slick-dots li button::before {
     font-size: 12px;
     background-color: transparent; /* Dot background color */
-    color: #21383C;
+    color: #1f292d;
 }
 
 .slick-dots li.slick-active button::before {
@@ -385,7 +434,7 @@ a:hover {
     font-size: 25px;
     line-height: 1;
     opacity: .80;
-    color: #21383C;
+    color: #1f292d;
 }
 
   
@@ -434,7 +483,7 @@ header {
   
 .typed-cursor {
     font-size: 3rem;
-    color: #B86E49;
+    color: #ac5122;
 } 
 
 
@@ -448,7 +497,7 @@ footer a {
     padding: 0.3rem 0;
 }
 footer a:hover {
-    color: #B86E49;
+    color: #ac5122;
 }
 .footer-info {
     padding-right: 10%;
@@ -479,7 +528,7 @@ footer p {
     display: inline-block;
 }
 .site-credit a:hover {
-  color:#B86E49;
+  color:#ac5122;
 }
 
 
@@ -503,7 +552,7 @@ top: 100%;
 left: -1rem;
 padding: 0.5rem;
 display: none;
-background-color: #21383C;
+background-color: #1f292d;
 z-index: 2;
 text-align: left;
 min-width: 9rem;
@@ -529,8 +578,8 @@ display: block;
 .burger-button span{
     /*this is how long the lines are*/
     width: 40px;
-    border: 1.5px solid #B86E49;
-    background-color: #B86E49;
+    border: 1.5px solid #ac5122;
+    background-color: #ac5122;
     display: block;
     border-radius: 22px;
     transition: 2s;
@@ -579,7 +628,7 @@ display: block;
     left:20vw;
     right:0;
     bottom: 110vh;
-    background-color: #21383C;
+    background-color: #1f292d;
     padding:5px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 8;
@@ -598,7 +647,7 @@ display: block;
     text-decoration: none;
     font-size: 2.5rem;
     font-family: 'Playfair Display', serif;
-    color: #EFE4DA;
+    color:#f6f3ef;
     display:block;
     padding: 2% 10%;
     text-align: right;
@@ -616,7 +665,7 @@ display: block;
 }
 
 .image-border {
-    border: 10px solid #F5F6F7;
+    border: 10px solid #f6f3ef;
 }
   
 .gallery [class*="col-"] {
@@ -683,7 +732,7 @@ img {
     cursor: pointer;
 }
 .portfolio-filter .active {
-    color: #B86E49;
+    color: #ac5122;
 }
 
 /* Individual Images —————————-—-----------------------— */
@@ -755,16 +804,16 @@ form textarea {
     margin: 0 0 0.5rem 0;
     border: none;
     outline: none;
-    border-bottom: 1px solid #21383C;
-    border-top: 1px solid #F5F6F7;
+    border-bottom: 1px solid #1f292d;
+    border-top: 1px solid #f6f3ef;
     font-family: inherit;
     font-size: 0.9rem;
-    background-color: #F5F6F7;
+    background-color: #f6f3ef;
 }
 
 form input:focus,
 form textarea:focus {
-  border: 1px solid #B86E49;
+  border: 1px solid #ac5122;
 }
 
 textarea {
@@ -782,9 +831,9 @@ form button {
 }
   
 form button:hover {
-    color: #EFE4DA;
-    background-color: #B86E49;
-    border: 1px solid #B86E49;
+    color:#f6f3ef;
+    background-color: #ac5122;
+    border: 1px solid #ac5122;
     font-style:normal;
 }
 
@@ -804,8 +853,8 @@ form button:hover {
     overflow-X: hidden;
     display: flex;
     flex-direction: row-reverse;
-    background-color: #21383C;
-    color: #EFE4DA;
+    background-color: #1f292d;
+    color:#f6f3ef;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.9rem;
@@ -840,7 +889,7 @@ form button:hover {
     display: block;
     text-align: center;
     margin-bottom: 0.8rem;
-    color: #21383C;
+    color: #1f292d;
      /*top +bottom then left +right */
     padding: 0.7rem 1.5rem;
     text-decoration: none;
@@ -850,9 +899,9 @@ form button:hover {
 
 
 .explore-page .featured {
-    color: #B86E49;
+    color: #ac5122;
 }
-.bg-explore {background-color:#F5F6F7;}
+.bg-explore {background-color:#f6f3ef;}
 
 
 

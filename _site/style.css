@@ -405,7 +405,9 @@ a:hover {
     z-index: 2; /* Ensure it sits above the image */
     width: auto; /* Allow the text to exceed the container width */
     overflow: visible; /* Allow the text to overflow beyond the container */
+    text-shadow: -1px -1px 1.5px rgba(180, 85, 38, 0.3); /* Second shadow: lighter */
 }
+
 
 
 /*Accordion Block--------------------------------*/

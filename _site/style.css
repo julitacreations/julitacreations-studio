@@ -50,6 +50,8 @@
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-t-1 { padding-top: 1rem;}
 
+.padded-tb-sm { padding-bottom: 2.5%; padding-top: 2.5%; }
+
 .padded-t-0 { padding-top: 0; }
 .padded-b-0 { padding-bottom: 0; }
   
@@ -187,6 +189,11 @@ li {
     font-size: 3.4rem;
     font-weight: 400;
 }
+.extra-large-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.2rem;
+    font-weight: 400;
+}
 
 .small-text {
     font-size: 0.9rem;
@@ -293,67 +300,112 @@ a:hover {
 }
 
 
-/* Sticky Section Scroll------ */
-
-
-.wrapper {
+/* Portfolio section ------------------------------ */
+.portfolio-container {
     display: flex;
-    flex-direction: column;
+    gap: 20px; /* Space between the two columns */
 }
 
-.second-scroll-section {
-    z-index: 4;
-}
-
-.sticky-top-0 {
-    position: sticky;
-    top: 0; /* Makes the section stick 50px from the top of the viewport */
-    overflow: hidden;
-}
-
-.image-position {
-    position: relative;
-    width: 50vw; /* Set the image container width to 50vw */
-    margin: 0 auto; /* Center the image */
-}
+/* Content section */
 .content {
     position: relative;
+    flex: 1; /* Ensures equal column width */
     z-index: 2;
     width: 100%;
 }
 
+/* Text and link container setup */
+.text-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.text-link-container p {
+    flex: 0 0 65%; /* Paragraph takes 65% of width */
+    margin-top: 1rem;
+}
+
+.text-link-container a {
+    flex: 0 0 35%; /* Link takes 35% of width */
+    text-align: right;
+}
+
+/* Image container setup */
+.portfolio-image-intro {
+    position: relative;
+    overflow: visible;
+    width: 80%; /* You can adjust this as needed */
+    height:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Makes the entire image a clickable link */
+.portfolio-image-intro a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Grayscale effect hidden by default */
+.portfolio-image-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Retains background image */
+    filter: grayscale(100%);
+    opacity: 0; /* Default: full-color */
+    transition: opacity 0.3s;
+}
+
+/* Overlay text - hidden by default */
 .overlay-text {
     position: absolute;
-    top: 50%; /* Center the text vertically */
-    left: 50%; /* Center the text horizontally */
-    transform: translate(-50%, -50%); /* Center it exactly */
-    color: white;
-    z-index: 3;
-    text-align: center; /* Center the text within the overlay */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #ac5122;
+    text-align: center;
+    max-width: 100%;
 }
 
-.portfolio-mockup {
-    width: 70vw;  /* Takes up 70% of the viewport width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image fills the area properly */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Makes the image block level to allow centering */
+/* On hover: Show grayscale effect */
+.portfolio-image-intro:hover::before {
+    opacity: 1;
 }
 
-/* Horizonatal scroll section */
-/* General reset and positioning */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* On hover: Show overlay text */
+.portfolio-image-intro:hover .overlay-text {
+    opacity: 1;
+    transform: translate(-50%, -40%);
 }
 
-body {
-    overflow-x: hidden; /* Prevents horizontal scrolling from the body */
+/* do not apply italic on hover */
+.portfolio-image-intro a:hover {
+    font-style: normal;
 }
 
-
-
+/* Prevents wrapping in h4 */
+.overlay-text h4 {
+    white-space: nowrap; /* Prevents wrapping */
+    position: absolute; /* To position it absolutely within the container */
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 2; /* Ensure it sits above the image */
+    width: auto; /* Allow the text to exceed the container width */
+    overflow: visible; /* Allow the text to overflow beyond the container */
+}
 
 
 /*Accordion Block--------------------------------*/
@@ -695,6 +747,7 @@ img {
 /* Aspect Ratio  */
 .portrait-tall { padding-bottom: 134%; }
 .portrait { padding-bottom: 125%; }
+.portrait-short { padding-bottom: 101%; }
 .square { padding-bottom: 100%; }
 .landscape { padding-bottom: 61.6%; }
 .landscape-wide { padding-bottom: 56%; }

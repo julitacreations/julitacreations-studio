@@ -208,7 +208,7 @@
                     <h4 class="uppercase small-text bold accordion-header"> Timeline </h4>
                     <div class="accordion-content">
                         <p class="small-text-1">A website can take anywhere between 3 to 12 weeks, depending on the complexity of features required.</p>
-                        <p class="small-text">*Bespoke quotes - starting at €1200 for an essential website of 1-2 pages.</p>
+                        <!-- <p class="small-text">*Bespoke quotes - starting at €1200 for an essential website of 1-2 pages.</p> -->
                     </ul>
                     </div>
                 </div>
@@ -249,7 +249,6 @@
                         <p class="margin-t-1">Potential add-ons </p>
                         <ul>
                             <li>Advanced editing in Photoshop</li>
-                            <li>Social Graphics</li>
                             <li>Specific Liscencing</li>
                         </ul>
                     </div>
@@ -276,8 +275,8 @@
                     <div class="accordion-content">
                         <p class="small-text-1">Photo delivery can take anywhere from 7+ days, depending on the complexity of setup and number of shots and editing required.
                         </p>
-                        <p class="small-text">*Bespoke quotes for 1-2 hours of shooting time for up to 15 images - starting at €300. For more information or other options, feel free to reach out directly.
-                        </p>
+                        <!-- <p class="small-text">*Bespoke quotes for 1-2 hours of restaurant shooting time for up to 15 images - starting at €300. For more information or other options, feel free to reach out directly.
+                        </p> -->
                     </div>
                 </div>
                 <hr class="col-11 border-line">
@@ -305,7 +304,7 @@
 
     <div class="portfolio-intro col-12-middle center">
         <div class="portfolio-link"> 
-            <a href="/portfolio-web.html" class="extra-large-heading">Food, Restaurant &<br> Product Photography <span> Explore 02</span></a>
+            <a href="/portfolio-photography.html" class="extra-large-heading">Food, Restaurant &<br> Product Photography <span> Explore 02</span></a>
         </div>
         <img src="/images/jcs-food-photography-corn-fritter.jpg" class="hover-image-2">
     </div>
@@ -450,7 +449,7 @@
 <!------- Call to Action Section ----------->
 <section class="padded-lg md-padded sm-padded-lg bg-gradient grid-spaceAround"> 
     <div class="col-4-middle hide-xs">
-        <div class="bg-image profile-image-2 portrait-tall lazy"></div>
+        <div class="bg-image profile-image-2 portrait lazy"></div>
     </div>
     <div class="col-7_xs-12-middle">
         <h4 class="medium-heading">Driven to make an impact. One <em>dish</em> at a time. One <em>experience</em> at a time.</h4>
@@ -473,13 +472,13 @@
         <form class="uppercase">
             <label for="_name">Name*</label>
             <input type="text" name="_name" id="_name">
-            
-            <label for="_replyto">Email*</label>
-            <input type="email" name="_replyto" id="_replyto">
-            
-            <label for="_number">Number</label>
-            <input type="tel" name="_number" id="_number">
-            
+            <div>
+                <label for="_replyto">Email*</label>
+                <input type="email" name="_replyto" id="_replyto">
+                
+                <label for="_number">Number</label>
+                <input type="tel" name="_number" id="_number">
+            </div>
             <label for="services" class="margin-b-1">Which Services are you interested in?</label>
             <select id="services">
                 <option value="web">Web Design / Development</option>
@@ -490,8 +489,13 @@
                 <option value="product">UGC Creation</option>
             </select>
 
-            <label for="timeline">Timeline until launch date</label>
-            <input type="text" id="_timeline">
+            <div>
+                <label for="_number">Budget</label>
+                <input type="tel" name="_number" id="_number">
+
+                <label for="timeline">Timeline until launch date</label>
+                <input type="text" id="_timeline">
+            </div>
             
             <label for="message">Tell me a little about your business & what you are looking for...</label>
             <textarea name="message" id="messgae"></textarea>

@@ -50,6 +50,8 @@
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-t-1 { padding-top: 1rem;}
 
+.padded-t-2 { padding-top: 2rem; }
+
 .padded-tb-sm { padding-bottom: 2.5%; padding-top: 2.5%; }
 
 .padded-t-0 { padding-top: 0; }
@@ -172,7 +174,7 @@ li {
   
 .subheading {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 } 
 .medium-heading {
@@ -182,8 +184,14 @@ li {
 }
 
 .medium-heading span {
-    font-size: 1.45rem;
+    font-size: 1.2rem;
 }
+
+.extra-large-heading span {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
 .large-heading {
     font-family: 'Playfair Display', serif;
     font-size: 3.4rem;
@@ -300,114 +308,42 @@ a:hover {
 }
 
 
-/* Portfolio section ------------------------------ */
-.portfolio-container {
-    display: flex;
-    gap: 20px; /* Space between the two columns */
-}
 
-/* Content section */
-.content {
+
+/* NEW portfolio section----------------- */
+
+.portfolio-intro {
     position: relative;
-    flex: 1; /* Ensures equal column width */
-    z-index: 2;
-    width: 100%;
+    display: inline-block;
+}
+.hover-image {
+    position: absolute;
+    top: -35%;
+    left: 91%;
+    transform: translateX(-50%);
+    width: 250px;
+    display: none;
 }
 
-/* Text and link container setup */
-.text-link-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
+.hover-image-2 {
+    position: absolute;
+    top: -25%;
+    left: 9%;
+    transform: translateX(-50%);
+    width: 250px;
+    display: none;
 }
 
-.text-link-container p {
-    flex: 0 0 65%; /* Paragraph takes 65% of width */
-    margin-top: 1rem;
-}
-
-.text-link-container a {
-    flex: 0 0 35%; /* Link takes 35% of width */
-    text-align: right;
-}
-
-/* Image container setup */
-.portfolio-image-intro {
-    position: relative;
-    overflow: visible;
-    width: 80%; /* You can adjust this as needed */
-    height:60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* Makes the entire image a clickable link */
-.portfolio-image-intro a {
+.portfolio-intro:hover .hover-image {
     display: block;
-    width: 100%;
-    height: 100%;
+}
+.portfolio-intro:hover .hover-image-2 {
+    display: block;
 }
 
-/* Grayscale effect hidden by default */
-.portfolio-image-intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit; /* Retains background image */
-    filter: grayscale(100%);
-    opacity: 0; /* Default: full-color */
-    transition: opacity 0.3s;
-}
-
-/* Overlay text - hidden by default */
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    color: #ac5122;
-    text-align: center;
-    max-width: 100%;
-}
-
-/* On hover: Show grayscale effect */
-.portfolio-image-intro:hover::before {
-    opacity: 1;
-}
-
-/* On hover: Show overlay text */
-.portfolio-image-intro:hover .overlay-text {
-    opacity: 1;
-    transform: translate(-50%, -40%);
-}
-
-/* do not apply italic on hover */
-.portfolio-image-intro a:hover {
+.portfolio-link a:hover {
     font-style: normal;
 }
-
-/* Prevents wrapping in h4 */
-.overlay-text h4 {
-    white-space: nowrap; /* Prevents wrapping */
-    position: absolute; /* To position it absolutely within the container */
-    top: 50%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    z-index: 2; /* Ensure it sits above the image */
-    width: auto; /* Allow the text to exceed the container width */
-    overflow: visible; /* Allow the text to overflow beyond the container */
-    text-shadow: -1px -1px 1.5px rgba(180, 85, 38, 0.3); /* Second shadow: lighter */
-}
-
 
 
 /*Accordion Block--------------------------------*/
@@ -928,7 +864,6 @@ form button:hover {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.9rem;
-  
 }
 .tickerBanner{
     display: flex;
@@ -938,7 +873,7 @@ form button:hover {
   
 .tickerBanner div{
     display: inline-block;
-    padding: 1vw;
+    padding: 1.5vw;
     flex-shrink: 0;
     position: relative;
     animation: ticker 2s infinite linear;

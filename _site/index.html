@@ -469,16 +469,20 @@
     <div class="col-8_xs-12-middle">
         <h2 class="center padded-b"> Let's get your  <br> business online </h2>
         
-        <form class="uppercase">
+        <div class="grid-center">
+            <form class="grid-spaceBetween uppercase">
             <label for="_name">Name*</label>
             <input type="text" name="_name" id="_name">
-            <div>
+
+            <div class="col-5_sm-12">
                 <label for="_replyto">Email*</label>
                 <input type="email" name="_replyto" id="_replyto">
-                
+            </div>
+            <div class="col-5_sm-12">
                 <label for="_number">Number</label>
                 <input type="tel" name="_number" id="_number">
             </div>
+
             <label for="services" class="margin-b-1">Which Services are you interested in?</label>
             <select id="services">
                 <option value="web">Web Design / Development</option>
@@ -489,11 +493,12 @@
                 <option value="product">UGC Creation</option>
             </select>
 
-            <div>
-                <label for="_number">Budget</label>
+            <div class="col-5_sm-12">
+                <label for="_number">Your Budget</label>
                 <input type="tel" name="_number" id="_number">
-
-                <label for="timeline">Timeline until launch date</label>
+            </div>
+            <div class="col-5_sm-12">
+                <label for="timeline">Expected launch date</label>
                 <input type="text" id="_timeline">
             </div>
             
@@ -502,6 +507,7 @@
             
             <button class="uppercase margin-t-1 center" type="submit"> Inquire now </button>
             </form>
+        </div>
     </div>
     
     <div class="col-2-top hide-xs">

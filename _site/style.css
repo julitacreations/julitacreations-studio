@@ -826,6 +826,7 @@ textarea {
     min-height: 5rem;
 }
 
+
 form button {
     background-color: #B8C4CB;
     border: 1px solid #B8C4CB;
@@ -843,6 +844,19 @@ form button:hover {
     font-style:normal;
 }
 
+/* remove automatic rendering how safari shows drop down boxes */
+select {
+    -webkit-appearance: none;  /* Removes default Safari styling */
+    -moz-appearance: none;      /* Removes Firefox styling */
+    appearance: none;           /* Standardizes across browsers */
+    background-color: transparent; /* Removes any unwanted background */
+    border-radius: 0; /* Removes rounded corners */
+}
+
+select:focus {
+    outline: none; /* Removes Safari focus outline */
+    border-color: #ac5122; /* Optional: Changes border color when selected */
+}
 
 /* Ticket Banner slider Styles-------------------*/
   
@@ -1043,11 +1057,7 @@ form button:hover {
 
     .portfolio-cocktail-mob   { background-image: url('images/article-cocktail-mockup-mob.jpg');}
 
-    form {
-        max-width: 60vw;
-    }
 
-    form button { font-size: 0.8rem;}
 
     .burger-button {margin-top: -0.2rem;}
 

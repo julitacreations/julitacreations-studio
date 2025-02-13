@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
   
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
   
 [class*="col-"] {
     padding: 0;
@@ -199,8 +203,10 @@ li {
 }
 .extra-large-heading {
     font-family: 'Playfair Display', serif;
-    font-size: 4.2rem;
     font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .small-text {
@@ -216,13 +222,6 @@ li {
 }
 .large-text   { 
     font-size: 3.4rem; 
-}
-.xtra-large-text {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 4.2rem;
-    line-height: 1.2;
-    text-align: center;
 }
 
 .light-text     { color:#f6f3ef; } 
@@ -332,6 +331,12 @@ a:hover {
     transform: translateX(-50%);
     width: 250px;
     display: none;
+}
+
+.hover-image,
+.hover-image-2 {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Keeps aspect ratio */
 }
 
 .portfolio-intro:hover .hover-image {
@@ -945,7 +950,7 @@ select:focus {
 
     h1              { font-size: 3.4rem;}
     h2              { font-size: 2.2rem}
-    .xtra-large-text{ font-size: 3.4rem;}
+    .extra-large-heading {font-size: 3.4rem;}
     .medium-heading { font-size: 2.1rem;}
     .medium-text    { font-size: 1.4rem;}
 
@@ -963,6 +968,7 @@ select:focus {
 
     .flex-flip-md   {flex-direction: column-reverse; }
 
+    .footer-info {padding-right: 0;}
     .footer-info img {max-width: 45%; }
 }
 
@@ -984,7 +990,7 @@ select:focus {
         margin-top: 5%;
     }
     .subheading         {font-size: 1rem;}
-    .xtra-large-text    { font-size: 2.6rem;}
+    .extra-large-heading { font-size: 2.6rem;}
     .large-text         {font-size: 3.2rem;}
     .medium-text        { font-size: 1.4rem;}
 
@@ -1001,6 +1007,7 @@ select:focus {
     .sm-padded-b    {padding-bottom: 5%; }
     .sm-padded-t-0  {padding-top: 0;}
     .sm-padded-b-sm {padding-bottom: 2.5%; }
+    .sm-padded-lr      {padding-left: 5%; padding-right:5%;}
 
     .sm-padded-t-75    {padding-top: 7.5%; }
 
@@ -1015,6 +1022,23 @@ select:focus {
     .accordion-item { margin: -0.1rem 0;}
 
     .logo img { max-width: 70%;}
+
+    .extra-large-heading span {
+        font-size: 0.8rem;
+    }
+
+    .tickerBanner div { padding: 3vw;}
+    
+    .hover-image,
+    .hover-image-2 {
+        max-width: 90%; /* Ensures images are responsive */
+        height: auto; /* Keeps aspect ratio */
+    }
+
+    .sm-form {
+        max-width: 50vw;
+        margin: auto;
+    } 
 
 
 }
@@ -1034,7 +1058,7 @@ select:focus {
     h1              { font-size: 2.3rem;}
     h2              { font-size: 1.9rem}
     .medium-heading { font-size: 2rem;}
-    .xtra-large-text{ font-size: 2.3rem;}
+    .extra-large-heading { font-size: 2.3rem;}
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}
 
@@ -1058,12 +1082,20 @@ select:focus {
     .portfolio-cocktail-mob   { background-image: url('images/article-cocktail-mockup-mob.jpg');}
 
 
-
     .burger-button {margin-top: -0.2rem;}
 
-    .logo img { max-width: 80%;}
+    .logo img { max-width: 70%;}
 
+    .hover-image,
+    .hover-image-2 {
+        max-width: 90%; /* Ensures images are responsive */
+        height: auto; /* Keeps aspect ratio */
+    }
 
+    .xs-form {
+        max-width: 80vw;
+        margin: auto;
+    } 
 
 
 }

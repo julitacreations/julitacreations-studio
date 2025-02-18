@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
   
-html, body {
+html {
     overflow-x: hidden;
     width: 100%;
 }
@@ -450,6 +450,10 @@ a:hover {
     color: #1f292d;
 }
 
+.hidden-overfolow {
+    overflow-x: hidden;
+}
+
   
   
 /* Header & Footer Styles———————————————-----------------—*/
@@ -480,6 +484,7 @@ header {
 
 .container-header {
     display: flex;
+    align-self: flex-start;
 }
 .image-column {
     flex: 1;
@@ -1007,6 +1012,7 @@ select:focus {
     .sm-text-right  {text-align: right;}
 
     .sm-padded-lg   {padding: 10%;  }
+    .sm-sm-padded   {padding: 2.5%;}
     .sm-padded      {padding: 5%;}
     .sm-padded-1    {padding: 1rem;}
     .sm-padded-05   {padding: 0.5rem;}
@@ -1014,6 +1020,7 @@ select:focus {
     .sm-padded-b    {padding-bottom: 5%; }
     .sm-padded-t-0  {padding-top: 0;}
     .sm-padded-b-sm {padding-bottom: 2.5%; }
+    .sm-sm-padded-lr   {padding-left: 2.5%; padding-right:2.5%;}
     .sm-padded-lr      {padding-left: 5%; padding-right:5%;}
 
     .sm-padded-t-75    {padding-top: 7.5%; }
@@ -1071,12 +1078,14 @@ select:focus {
 
     .xs-text-center {text-align: center;}
 
+    .xs-sm-padded   {padding: 2.5%;}
     .xs-padded      {padding: 5%;}
     .xs-padded-1    {padding: 1rem;}
     .xs-padded-05   {padding: 0.5rem;}
 
     .xs-padded-t    {padding-top: 5%;}
     .xs-padded-b    {padding-bottom: 5%;}
+    .xs-padded-t-lg {padding-top: 10%;}
     .xs-padded-b-lg {padding-bottom: 10%;}
     .xs-padded-tb   {padding:5% 0;}
 

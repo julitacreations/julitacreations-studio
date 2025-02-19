@@ -472,6 +472,10 @@ header {
     padding: 1.5% 5%;
  
 }
+
+.logo {
+    margin-top: 0.5%;
+}
   
 .logo h2 {
     font-family: 'Libre Franklin', sans-serif;
@@ -1064,6 +1068,8 @@ select:focus {
     .hide-xs { display: none; }
 
     .mobile-menu a { font-size: 2rem; }
+
+    .logo { margin-top: 2.5%;}
 
     h1              { font-size: 2.6rem;}
     h2              { font-size: 1.9rem}

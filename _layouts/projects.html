@@ -26,7 +26,12 @@ layout: default
         <div class="grid col-5-bottom_sm-12">
             <div class="padded col-12 right sm-text-left sm-padded-1">
                 <p>{{page.solution}}</p>
-                <a href="{{ page.live_url }}" class="uppercase featured-text bold" target=“_blank”>View Live Site &#8594;</a>
+
+                {% if page.live_url %}
+                    <a href="{{ page.live_url }}" class="uppercase featured-text bold" target="_blank"> {{page.live-site}}
+                    </a>
+                {% endif %}
+
             </div>
             <div class="col-12 bg-image tall-40 image-border lazy" style="background-image: url('{{ page.featured_image }}')">
                 <!-- background image -->
@@ -38,15 +43,16 @@ layout: default
 
 
     <!-------Call to Action and Previous / next project navigation ----------->
-     <section class="padded padded-t-0 xs-padded-b-lg grid-spaceAround center"> 
+     <section class="padded padded-t-0 xs-padded-b-lg gridBetween center"> 
 
-        <div class="col-8 right padded-b-0 xs-padded-05">
-            <a href="{{ page.next-project_url }}" class="medium-heading featured-text">Next project &#8594;</a> 
+         <div class="col-12 padded-b-0 xs-padded-05">
+            <a href="{{ page.previous-project_url }}" class="medium-heading featured-text margin-lr "> &#8592;Previous project</a> 
+            <a href="{{ page.next-project_url }}" class="medium-heading featured-text margin-lr">Next project &#8594;</a>  
         </div>
 
-        <div class="col-8 left padded-b">
+        <!-- <div class="col-8 left padded-b">
             <a href="{{ page.previous-project_url }}" class="medium-heading featured-text"> &#8592;Previous project</a> 
-        </div>
+        </div> -->
 
         <div class="col-12-middle padded-t">
             <h5 class="medium-heading margin-b-0"> Ready to <em>create</em> <br> <em>your</em> dream website? </h5>

@@ -358,6 +358,7 @@ a:hover {
 }
 
 
+
 /*Accordion Block--------------------------------*/
 .accordion {
     display: flex;
@@ -691,6 +692,7 @@ display: block;
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 
 .image-border {
     border: 10px solid #f6f3ef;

@@ -13,9 +13,16 @@
 <meta name="theme-color" content="#ffffff">
 
 
+<!--------------------- Title and SEO Metadata ----------------------->
+<title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+<meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
 
-<!-- The title for SEO & browser tabs -->
-<title> Julita Creations Home </title>
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+    <meta name="robots" content="index, follow">
+{% endif %}
 
 
 <!-- Gridlex -->

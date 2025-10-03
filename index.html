@@ -109,7 +109,7 @@ banner_messages:
                 </div>
                 <hr class="col-11 border-line">
             </div>
-            <a href="#contact" class="uppercase center margin-t-1 button-color"> Book a call</a>
+            <a href="#contact" class="uppercase center margin-t-1 button-color"> Equire now</a>
         </div>
 
         <div class="col-4_sm-12 sm-padded-t-75">
@@ -178,7 +178,7 @@ banner_messages:
                 </div>
                 <hr class="col-11 border-line">
             </div>
-            <a href="#contact" class="uppercase center margin-t-1 button-color"> Book a call</a>
+            <a href="#contact" class="uppercase center margin-t-1 button-color"> Enquire now</a>
         </div>
         
     </div>
@@ -353,20 +353,22 @@ banner_messages:
         
         <div class="grid-center">
             <form class="grid-spaceBetween uppercase sm-form xs-form">
-            <label for="_name">Name*</label>
-            <input type="text" name="_name" id="_name">
+            <div class="col-5_sm-12">
+                <label for="_name">Name*</label>
+                <input type="text" name="_name" id="_name" required>
+            </div>  
 
             <div class="col-5_sm-12">
                 <label for="_replyto">Email*</label>
-                <input type="email" name="_replyto" id="_replyto">
+                <input type="email" name="_replyto" id="_replyto" required>
             </div>
-            <div class="col-5_sm-12">
+            <!-- <div class="col-5_sm-12">
                 <label for="_number">Number</label>
                 <input type="tel" name="_number" id="_number">
-            </div>
+            </div> -->
 
-            <label for="services" class="margin-b-1">Which Services are you interested in?</label>
-            <select id="services">
+            <label for="services" class="margin-b-1">Which Services are you interested in?*</label>
+            <select id="services" required>
                 <option value="web">Web Design / Development</option>
                 <option value="web">Development Only</option>
                 <option value="photo">Food Photography </option>
@@ -376,8 +378,15 @@ banner_messages:
             </select>
 
             <div class="col-5_sm-12">
-                <label for="_number">Your Budget</label>
-                <input type="tel" name="_number" id="_number">
+                <label for="budget">Your Budget</label>
+                <select id="budget">
+                    <option value="" disabled selected hidden>Select your budget</option>
+                    <option value="under-1000">Under &euro;1000</option>
+                    <option value="1000-3000"> &euro;1000-3000</option>
+                    <option value="3000-5000">&euro;3000-5000</option>
+                    <option value="5000+">&euro;5000+</option>
+                </select>
+                
             </div>
             <div class="col-5_sm-12">
                 <label for="timeline">Expected launch date</label>
@@ -385,9 +394,9 @@ banner_messages:
             </div>
             
             <label for="message">Tell me a little about your business & what you are looking for...</label>
-            <textarea name="message" id="messgae"></textarea>
+            <textarea name="message" id="message"></textarea>
             
-            <button class="uppercase margin-t-1 center" type="submit"> Inquire now </button>
+            <button class="uppercase margin-t-1 center" type="submit"> Send Enquiry </button>
             </form>
         </div>
     </div>

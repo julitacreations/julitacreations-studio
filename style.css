@@ -847,7 +847,7 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-  border: 1px solid #ac5122;
+  border-bottom: 1px solid #ac5122;
 }
 
 textarea {
@@ -879,11 +879,12 @@ select {
     appearance: none;           /* Standardizes across browsers */
     background-color: transparent; /* Removes any unwanted background */
     border-radius: 0; /* Removes rounded corners */
+    border: none; 
 }
 
 select:focus {
     outline: none; /* Removes Safari focus outline */
-    border-color: #ac5122; /* Optional: Changes border color when selected */
+    border-bottom: 1px solid #ac5122;
 }
 
 /* Ticket Banner slider Styles-------------------*/

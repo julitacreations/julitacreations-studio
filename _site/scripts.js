@@ -129,7 +129,7 @@ $( document ).ready(function() {
   // 4) we then use this to set how far we push it off the side
   document.documentElement.style.setProperty('--bannerBlockLength', `${bannerBlock}px`);
   //  and how long it takes to do it in. In this example it goes at a rate of 50px a second but all you need to do is change the 50 to what ever px per second your looking for
-  document.documentElement.style.setProperty('--bannerBlockTime', `${(bannerBlock / 50)}s`);
+  document.documentElement.style.setProperty('--bannerBlockTime', `${(bannerBlock / 30)}s`);
   
   // 5) here we are setting the current length of our banner to a single set of blocks
   let bannerLength = bannerBlock

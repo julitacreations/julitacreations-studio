@@ -214,6 +214,9 @@ li {
 .tiny-text {
     font-size: 0.6rem;
 }
+.smaller-text {
+    font-size: 0.85rem;
+}
 .small-text {
     font-size: 0.95rem;
 }
@@ -895,7 +898,7 @@ select:focus {
 
 :root {
 --bannerBlockLength: 280px;
---bannerBlockTime: 2s;
+--bannerBlockTime: 10s;
 }
 
 .container-ticker-banner{

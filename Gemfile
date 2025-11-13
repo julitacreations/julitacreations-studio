@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gem "jekyll"
 
 gem "base64"
+gem "bigdecimal"
 
 gem "logger"
 gem "csv"

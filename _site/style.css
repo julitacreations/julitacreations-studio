@@ -113,14 +113,12 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     color: #1f292d;
     background-color: #f6f3ef;
-    cursor: none;
+  
 }
 /* CSS */
-body {
-  cursor: none; /* hide default cursor */
-}
 
-#custom-cursor {
+
+/* #custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -131,7 +129,7 @@ body {
   transition: transform 0.2s ease;
   z-index: 9999;
   opacity: 1;
-}
+} */
 
   
 h1 {

@@ -32,6 +32,7 @@ html {
     margin:0;
 }
   
+
 /* Reusale Utility classes*/
 .padded { padding: 5%; }
 .padded-sm { padding: 2.5%; }
@@ -112,7 +113,26 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     color: #1f292d;
     background-color: #f6f3ef;
+    cursor: none;
 }
+/* CSS */
+body {
+  cursor: none; /* hide default cursor */
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px; /* adjust size */
+  height: 16px;
+  pointer-events: none; /* allows clicks through the cursor */
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.2s ease;
+  z-index: 9999;
+  opacity: 1;
+}
+
   
 h1 {
     font-family: 'Playfair Display', serif;

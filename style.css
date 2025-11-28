@@ -123,13 +123,13 @@ body {
   top: 0;
   left: 0;
   width: 16px; /* adjust size */
-  height: 16px;
-  pointer-events: none; /* allows clicks through the cursor */
-  transform: translate(-50%, -50%) scale(1);
+  /* height: 16px;
+  pointer-events: none; allows clicks through the cursor */
+  /* transform: translate(-50%, -50%) scale(1);
   transition: transform 0.2s ease;
   z-index: 9999;
   opacity: 1;
-} */
+} */ 
 
   
 h1 {
@@ -533,6 +533,66 @@ header {
     font-size: 3rem;
     color: #ac5122;
 } 
+
+
+/* new testing section------------------------------------------------- */
+
+.hero-pin-wrapper {
+  position: relative;
+  height: 1850px; /* perfect height based on your measured scroll */
+}
+
+.hero-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* ensure hero text & original images are above the base scroll-stack */
+.hero-text,
+.original-img {
+  position: relative;
+  z-index: 20; /* hero level */
+}
+
+/* put the whole scroll-stack *below* the hero by default */
+.scroll-stack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 440vh;
+  pointer-events: none;
+  z-index: 10; /* lower than .hero-text (20) */
+}
+
+/* default for images — they are behind the hero by default */
+.scroll-img {
+  position: absolute;
+  width: 24vw;
+  opacity: 0;
+  transform: translateY(120vh);
+  transition: opacity 0.4s ease-out;
+  z-index: 5; /* below hero (20) */
+}
+
+
+
+/* specific images you want to appear ABOVE the hero must have higher z */
+.img-3 { left: 43%; top: 0; z-index: 1; }   /* stays behind text */
+.img-4 { left: 33%; top: 0; transform: translateX(-50%) translateY(120vh); z-index: 25; } /* on top of text */
+.img-5 { left: 14%; top: 0; z-index: 25; }  /* on top of text */
+
+.original-img {
+  position: relative;
+  z-index: 20; /* above base scroll-stack but below images with z-index >20 */
+  will-change: transform;
+}
+
+
+/* end new testing section -----------------------------------------------------------*/
 
 
 footer {
@@ -1196,3 +1256,5 @@ $( document ).ready(function() {
     
 
 }); */
+
+

@@ -44,6 +44,12 @@ $( document ).ready(function() {
     });
   
 
+       // Animate on scroll - activate 
+      AOS.init({
+        offset: 80, // offset (in px) from the original trigger point
+        duration: 900, // values from 0 to 3000, with step 50ms
+      });
+
 
     //Filterable Gallery
     $('#portfolio-filter span').click(function(){

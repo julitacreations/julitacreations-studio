@@ -118,18 +118,6 @@ body {
 /* CSS */
 
 
-/* #custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 16px; /* adjust size */
-  /* height: 16px;
-  pointer-events: none; allows clicks through the cursor */
-  /* transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.2s ease;
-  z-index: 9999;
-  opacity: 1;
-} */ 
 
   
 h1 {

@@ -275,24 +275,44 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
+//this is the hero animation
 
-//custom cursor
-// const cursor = document.getElementById('custom-cursor');
+document.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const vh = window.innerHeight;
 
-// document.addEventListener('mousemove', e => {
-//   cursor.style.left = e.clientX + 'px';
-//   cursor.style.top = e.clientY + 'px';
-// });
+  // Earlier triggers so images start rising sooner
+  const triggers = [0.05, 0.35, 0.75].map(t => t * vh);
 
-// // Enlarge and make transparent on hover
-// document.querySelectorAll('a, button').forEach(el => {
-//   el.addEventListener('mouseenter', () => {
-//     cursor.style.transform = 'translate(-50%, -50%) scale(2)';
-//     cursor.style.opacity = '0.5'; // semi-transparent
-//   });
-//   el.addEventListener('mouseleave', () => {
-//     cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-//     cursor.style.opacity = '1'; // fully visible
-//   });
-// });
+  // Smooth stagger speeds
+  const speeds = [0.55, 0.7, 0.85];
+
+  document.querySelectorAll(".scroll-img").forEach((img, i) => {
+    const start = triggers[i];
+    const speed = speeds[i];
+
+    if (scrollTop > start) {
+      const move = (scrollTop - start) * speed;
+
+      img.style.opacity = 1;
+
+      // Start from below the fold (bottom of screen)
+      img.style.transform = `translateY(${110 - move / 12}vh)`;
+    } else {
+      img.style.opacity = 0;
+
+      // Fully hidden below the fold before animation begins
+      img.style.transform = `translateY(110vh)`;
+    }
+  });
+
+  // hero images slight parallax
+  document.querySelector(".original-left").style.transform =
+    `translateY(${-scrollTop * 0.6}px)`;
+
+  document.querySelector(".original-right").style.transform =
+    `translateY(${-scrollTop * 0.4}px)`;
+});
+
+
 

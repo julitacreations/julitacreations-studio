@@ -109,6 +109,27 @@ $( document ).ready(function() {
 
       });
 
+        // Typed JS code -mobile
+       var typed = new Typed('#typed-mobile', {
+        stringsElement: '#typed-strings-mobile',
+        strings: [
+            "restaurant",
+            "café",
+            "bed + breakfast",
+            "hospitality business",
+            "service business",
+            "food brand"
+          ],
+        typeSpeed: 100,
+        backSpeed: 70,
+        loop: true,
+        loopCount: Infinity,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 200
+
+      });
+
 });
 
   // End JQuery, add vanilla javascript

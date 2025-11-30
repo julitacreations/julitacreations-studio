@@ -523,7 +523,7 @@ header {
 } 
 
 
-/* new testing section------------------------------------------------- */
+/* new hero testing section------------------------------------------------- */
 
 .hero-pin-wrapper {
   position: relative;
@@ -1029,6 +1029,26 @@ select:focus {
 .show-md {
 	display: none;
 }
+.mobile-only {
+    display: none;
+}
+
+/* DESKTOP HERO ONLY */
+.desktop-only {
+    display: none;
+}
+
+/* Show desktop section, hide mobile section at large screens */
+@media (min-width: 1024px) {
+    
+   .desktop-only {
+        display: block !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+    
+}
 
 /* --------------- MD Media Query (64em / 1024px) --------------- */ 
 /* Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
@@ -1040,6 +1060,16 @@ select:focus {
 
 	.show-md { display: block; }
 	.hide-md { display: none; }
+
+  
+    .mobile-only {
+        display: flex !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+
+    
 
     h1              { font-size: 3.6rem;}
     h2              { font-size: 2.2rem}
@@ -1068,6 +1098,9 @@ select:focus {
 
     .footer-info {padding-right: 0;}
     .footer-info img {max-width: 45%; }
+
+   
+  
 }
 
 /* --------------- SM Media Query (48em / 768px) --------------- */ 
@@ -1117,7 +1150,7 @@ select:focus {
 
     .dusting-cake   {margin-bottom: -35%;}
 
-    .flex-flip-sm { flex-direction: column-reverse; }s
+    .flex-flip-sm { flex-direction: column-reverse; }
 
     .accordion-item { margin: -0.1rem 0;}
 
@@ -1226,23 +1259,5 @@ select:focus {
 
 
 
-
-
-/*THIS IS THE JS FOR THE filterable gallery hamburger nav etc- scripts.js----------------*/
-
-/*
-  // A $( document ).ready() block.
-$( document ).ready(function() {
-    
-
-      // Animate on scroll - activate 
-      AOS.init({
-        offset: 80, // offset (in px) from the original trigger point
-        duration: 900, // values from 0 to 3000, with step 50ms
-      });
-
-    
-
-}); */
 
 

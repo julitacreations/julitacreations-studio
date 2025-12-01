@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------- This is the head of the HTML for linking external resources & metadata ------->
+<head> 
+
+    <!-- Viewport meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Metadata for Favicons-->
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#b86e49">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+<!--------------------- Title and SEO Metadata ----------------------->
+<title> Julita Creations | Web Design & Development - Food and Restaurant Photography </title> 
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+    <meta name="robots" content="noindex, nofollow">
+
+
+
+<!-- Gridlex -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+<!-- Add Google Fonts Here  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=WindSong&display=swap" rel="stylesheet">
+        
+<!--- Animate on scroll  --->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Magnific Image Popup core CSS file only on photography page -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'; this.onload=null;"/>
+
+<!--- Main CSS that handles all the functionality Slick Slider only on home page --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'; this.onload=null;"/>
+
+<!--- Slick slider theme that handles the way everything slides. Optional but very helpful --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'; this.onload=null;"/>
+
+<!-- My own custom stylesheet-this always goes last -->
+<link rel="stylesheet" href="/style.css">
+       
+</head>
+
+<!------ This is the body, where all of the contents of our page go  ------->
+<body>
+    
+
+    <!--header nav-------->
+    
+<header class="grid-middle bg-dark light-text">
+    <div class="col-5_sm-9">
+        <a href="/index.html" class="logo">
+            <!--<h2> Julita Creations Studio </h2>-->
+            <img src="/images/jcs-logo-nav.png" alt="Julita Creations Studio logo">
+        </a>
+    </div>
+    <nav class="col-7 right hide-sm">
+        <a href="/index.html#service">Services</a>
+        <div class="dropdown">
+            <span class="dropdown-title"> Portfolio </span>
+            <div class="dropdown-content">
+              <a href="/portfolio-web"> Websites </a>
+              <a href="/portfolio-photography"> Photography </a>
+            </div>
+        </div>
+        <a href="/index#about">About</a>
+        <a href="/index#contact">Contact</a>
+    </nav>
+    <div class="col-1">
+        <div class="burger-button show-sm">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+    </div>
+</header>
+
+<!--mobile menu hamburger button-->
+<div class="mobile-menu padded">
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/index.html#service">Services</a>
+        <a href="/portfolio-web">Website Portfolio</a>
+        <a href="/portfolio-photography">Photography Portfolio</a>
+        <a href="/index.html#about">About</a>
+        <a href="/index.html#contact">Contact</a>
+    </nav>
+</div>
+
+
+    <!-------Site content------------>
+
+    <!-- Desktop Hero Banner-->
+<section class="hero-pin-wrapper desktop-only">
+
+  <div class="hero-wrapper">
+
+    <div class="grid-spaceAround center padded sm-padded xs-padded-1 tall-100 container-header">
+
+       <div class="col-2-bottom image-column hide-md original-img original-left">
+            <div class="bg-image bubble-drink portrait lazy"></div>
+        </div>
+
+        <div class="col-7_sm-10-middle center text-column hero-text">
+            <h2 class="uppercase eyebrow-heading margin-b-1">Web Developer & Photographer</h2>
+            <h1>
+              Creating <em>websites + photography</em> <br>
+              for your impactful <br>
+              <span id="typed">hospitality business</span>
+            </h1>
+
+            <div id="typed-strings" style="display:none;">
+                <p>restaurant</p>
+                <p>café</p>
+                <p>bed + breakfast</p>
+                <p>hospitality business</p>
+                <p>service business</p>
+                <p>food brand</p>
+            </div>
+
+            <a href="#service" class="uppercase center margin-t-2 button">
+              Let's work together
+            </a>
+        </div>
+
+        <div class="col-2-top_sm-4_xs-3 image-column original-img original-right">
+            <div class="bg-image dusting-cake portrait-tall lazy"></div>
+        </div>
+
+    </div>
+
+  </div>
+
+  <!-- ALL IMAGES THAT WILL SCROLL -->
+  <div class="scroll-stack">
+
+
+      <img src="/images/tjuling_copyright-hotel-bf.jpg" class="scroll-img img-3">
+    
+
+  </div>
+
+</section>
+
+<!-------Mobile Hero Banner------------>
+    
+<section class="grid-spaceAround center padded sm-padded xs-padded-1 tall-90 md-tall-80 xs-tall-90 container-header mobile-only ">
+
+    <div class="col-2-bottom image-column hide-sm">
+        <div class="bg-image bubble-drink portrait lazy"></div>
+    </div>
+    <div class="col-7_sm-12-middle center text-column">
+        <h2 class="uppercase eyebrow-heading margin-b-1">Web Developer & Photographer</h2>
+        <h1>Creating <em>websites + photography</em> <br> for your  impactful <br> <span id="typed-mobile">hospitality business</span>
+        </h1>
+        <div id="typed-strings-mobile" style="display: none;">
+            <p>restaurant</p>
+            <p>café</p>
+            <p>bed + breakfast</p>
+            <p>hospitality business</p>
+            <p>service business</p>
+            <p>food brand</p>
+        </div>
+        <a href="#service" class="uppercase center margin-t-2 button"> Let's work together</a> 
+    </div>
+    <div class="col-2-top_sm-4 image-column">
+        <div class="bg-image dusting-cake portrait-tall lazy"></div>
+    </div>
+
+</section> 
+  
+    <!-------moving slider banner------>
+
+    
+<div class="container-ticker-banner">
+    <div class="tickerBanner">
+
+      
+      <div class="text-block">Impactful</div>
+      
+      <div class="text-block">Website development</div>
+      
+      <div class="text-block">Mobile responsive</div>
+      
+      <div class="text-block">Website design</div>
+      
+      <div class="text-block">Purpose-driven</div>
+      
+      <div class="text-block">Food Photography</div>
+      
+      <div class="text-block">Thoughtful</div>
+      
+      <div class="text-block">Restaurant Photography</div>
+      
+
+    </div>
+</div>
+  
+
+
+<!--Services Menu OPTION 2-->
+
+<section class="padded sm-padded-lg sm-sm-padded-lr" id="service" > 
+    <h3 class="subheading center"> Service menu </h3>
+    <!--this is the website service-->
+    <div class="grid-spaceBetween-middle capped-width padded-sm padded-b" data-aos="fade-up">
+        <div class="col-7_sm-12">
+            <h2 class="medium-heading"> <span>01</span> Web <em>Design</em> / Development</h2>
+            <p>You barely have enough time to handle the daily operations of your independent cafe, restaurant, or bed & breakfast, let alone worry about building a bespoke website. In an ever-evolving digital landscape, you want your website to reflect your physical space and make an impactful <strong>first impression.</strong> I don’t try to make your business fit into a template. Your website will be built with purpose using <strong>custom code </strong>and connects your business to your guests. </p>
+            <div class="accordion">
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header"> Typically Includes </h4>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Strategic single or multi page custom-coded websites</li>
+                            <li>Custom creation to fit your unqiue brand</li>
+                            <li>Using Tailwind CSS & JavaScript</li>
+                            <li>Mobile friendly & responsive design</li>
+                            <li>Basic SEO optimisation</li>
+                            <li>Fast & secure build</li>
+                            <!-- <li>Analytics setup</li> -->
+                            <li>Cross-browser compatibility testing</li>
+                            <li>Custom Content Management System setup, for easy updates</li>
+                            <li>Post-launch support</li>
+                        </ul>
+                        <p class="margin-t-1">Potential add-ons </p>
+                        <ul>
+                            <li>Ongoing Maintenance support</li>
+                            <li>Booking engine integration</li>
+                            <li>Social Media integration</li>
+                            <li>Food & Restaurant Photography / content creation</li>
+                            <li>Image Sourcing</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header">Process</h4>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Strategy - Understanding your goals, vision, style and brand is important to create a website that speaks to your ideal audience. We dive deep into getting to the root of what you are trying to achieve, making sure your guest journey is thought of at each step of the process.
+                            </li>
+                            <li>Conceptualisation - We'll walk through moodboards and create a low-fidelity wireframe to bring your ideas and vision to life, making sure that we move forward with a cohesive visual style for your online home - because your guest journey starts online.
+                            </li>
+                            <li>Creation - I create a fast, reliable custom custom-coded website, completing it with a user-friendly CMS that you can update yourself.
+                            </li>
+                            <li>Delivery - Created with your goals in mind, you will receive your final website, tailored to your guests. With your new website, we'll have a thorough handover, to make sure you feel prepared to use your new online home with confidence. Time to celebrate!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header"> Timeline </h4>
+                    <div class="accordion-content">
+                        <p class="small-text">A website can take anywhere between 5 to 12 weeks, depending on the complexity of features required.</p>
+                        <!-- <p class="small-text">*Bespoke quotes - starting at €1200 for an essential website of 1-2 pages.</p> -->
+                    </ul>
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+            </div>
+            <a href="#contact" class="uppercase center margin-t-1 button-color"> Equire now</a>
+        </div>
+
+        <div class="col-4_sm-12 sm-padded-t-75">
+            <div class="bg-image laptop portrait-tall lazy"></div>
+        </div>
+        
+    </div>
+
+
+    <!-- This is the Photography service-->
+    <div class="grid-spaceBetween-middle capped-width padded-sm" data-aos="fade-up">
+        <div class="col-4_sm-12 hide-sm">
+            <div class="bg-image biscuit-flatlay portrait-tall lazy"></div>
+        </div>
+
+        <div class="col-7_sm-12">
+            <h2 class="medium-heading"> <span>02</span> Food / Restaurant <em>Photography</em></h2>
+            <p> For food and service-based businesses that believe every dish has a unique story to tell. I’ll capture the soul of your creations through professional photography, 'UGC' content creation, leaving your dream customers envisioning their next visit.</p>
+            <div class="accordion">
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header margin-b-0"> What to expect</h4>
+                    <div class="accordion-content">
+                        <p class="small-text"> Receive a fully edited gallery of images that have been discussed for their specific purposes in advance.</p>
+                        <ul>
+                            <li>Food</li>
+                            <li>Drinks</li>
+                            <li>Restaurant</li>
+                            <li>Product</li>
+                            <li>Lifestyle</li>
+                        </ul>
+                        <p class="margin-t-1">Potential add-ons </p>
+                        <ul>
+                            <li>Advanced editing in Photoshop</li>
+                            <li>Specific Liscencing</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header"> Process</h4>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Strategy - Understanding your goals, vision, ideal guests and brand is important to create photography that connects with your your audience. We dive deep into getting to the root of what you are trying to achieve. 
+                            </li>
+                            <li>Conceptualisation - We'll walk through moodboards and your ideas to come up with a concept and plan for shooting day.
+                            </li>
+                            <li>Creation - I will be capturing your imagery, sharing updates along the way. Once the photos are taken, you will receive a gallery to select the final images for editing.
+                            </li>
+                            <li>Delivery - Created with your goals in mind, you’ll receive your final images, ready to use!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+                <div class="accordion-item">
+                    <h4 class="uppercase small-text bold accordion-header"> Timeline </h4>
+                    <div class="accordion-content">
+                        <p class="small-text-1">Photo delivery can take anywhere from 10+ days, depending on the complexity of setup and number of shots and editing required.
+                        </p>
+                        <p class="small-text">Packages start from 1-2 hours shooting time for up to 15 images. For a bespoke package, feel free to reach out directly.
+                        </p>
+                        <!-- <p class="small-text">*Bespoke quotes for 1-2 hours of restaurant shooting time for up to 15 images - starting at €300. For more information or other options, feel free to reach out directly.
+                        </p> -->
+                    </div>
+                </div>
+                <hr class="col-11 border-line">
+            </div>
+            <a href="#contact" class="uppercase center margin-t-1 button-color"> Enquire now</a>
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+
+<!-------Portfolio Section ------------------------------->
+
+<section class="padded-lg xs-padded-tb-xl grid-spaceAround bg-dark light-text" id="portfolio" >
+    <h2 class="center eyebrow-heading uppercase margin-b-1 col-12">View Portfolio</h2>
+
+    <div class="portfolio-intro col-12-middle center" data-aos="fade-up">
+        <div class="portfolio-link"> 
+            <a href="/portfolio-web" class="extra-large-heading light-text margin-b-1"><span class="hide-xs">Explore 01</span>Website Design <br> <em>& Website </em>Development</a>
+        </div>
+        <img src="/images/article-cocktail-mockup-elegant.png" class="hover-image hide-sm">
+    </div>
+
+    <div class="portfolio-intro col-12-middle center margin-b-1" data-aos="fade-up">
+        <div class="portfolio-link"> 
+            <a href="/portfolio-photography" class="extra-large-heading light-text">Food, Restaurant &<br> Product <em>Photography </em><span class="hide-xs"> Explore 02</span></a>
+        </div>
+        <img src="/images/jcs-food-photography-corn-fritter.jpg" class="hover-image-2 hide-sm">
+    </div>
+    <div class="col-9_sm-11 center padded-tb-sm">
+        <a href="/portfolio-web" class="bold uppercase featured-text underline margin-r-1"><span class="tiny-text">01</span> View Websites</a>
+        <a href="/portfolio-photography" class="bold uppercase featured-text underline margin-l-1"><span class="tiny-text">02</span> View Photography</a>
+    </div>
+   
+</section>
+
+
+
+
+  
+<!-------old Portfolio Section ------------------------------->
+<!-------Portfolio Web dev section ------>
+<!-- <h2 class="center col-12 large-text padded-b"> Portfolio</h2>
+<div class="wrapper">
+    <section class="grid-spaceAround padded-lg padded-t padded-b bg-featured-beige relative sticky-top-0" id="portfolio"> 
+        <h2 class="center col-12 large-text padded-b"> Portfolio</h2>
+        <div class="col-4_md-12-top">
+            <div class="padded-sm">
+                <p class="subheading margin-b-05">Website Creations</p>
+                <h4 class="medium-heading">Web <em>design</em> & development</h4>
+                <p> Explore what your new online home could do for you. </p>
+                <a href="/portfolio-web.html" class="uppercase featured-text bold">Explore more &#8594;</a>
+            </div>
+        </div>
+        <a href="/portfolio-web.html" class="col-7_md-12">
+            <div class="bg-image portfolio-cocktail-mockup portfolio-cocktail-mob tall-70 sm-tall-50 lazy">
+                background image web project
+            </div>
+        </a>
+    </section> -->
+
+
+    <!-------Portfolio photography section ------>
+    <!-- <section class="grid-spaceAround padded-lg padded-t-0 bg-featured-beige flex-flip-md second-scroll-section"> 
+         <a href="/portfolio-photography.html" class="col-7_md-12">
+            <div class="bg-image corn-fritter tall-70 sm-tall-50 lazy">
+                < background image photography-->
+            <!-- </div>
+        </a> --> 
+        <!-- <div class="col-4_md-12-top">
+            <div class="padded-sm right">
+                <p class="subheading margin-b-05">Photography Creations</p>
+                <h4 class="medium-heading">Food <em>photography</em></h4>
+                <p> Bringing your story to life through photography to connect with your guests.</p>
+                <a href="/portfolio-photography.html" class="uppercase featured-text bold">Explore more &#8594;</a>
+            </div>
+        </div>
+    </section>
+</div> --> 
+
+<!-- <section class="padded  bg-featured-beige" id="portfolio">
+    <h2 class="center large-text margin-b-1">Portfolio Projects</h2>
+    
+    <div class="portfolio-container">
+        <div class="content padded-tb-sm">
+                <div class="bg-image portfolio-image-intro portfolio-cocktail-mockup portrait-short tall-60 sm-tall-50 lazy">
+                    <a href="/portfolio-web.html">
+                        <div class="overlay-text">
+                            <h4 class="extra-large-heading featured-text">Web <em>design</em> <br>& development</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-link-container">
+                    <p>Explore what your new online home could do for you.</p>
+                    <a href="/portfolio-web.html" class="uppercase featured-text bold">Explore more</a>
+                </div>
+        </div> -->
+
+        <!-- <div class="content padded-tb-sm">
+                <div class="bg-image portfolio-image-intro corn-fritter portrait-short tall-70 sm-tall-50 lazy">
+                    <a href="/portfolio-photography.html">
+                        <div class="overlay-text">
+                            <h4 class="extra-large-heading featured-text">Food <br> <em>photography</em> </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="text-link-container">
+                    <p>Bringing your story to life through photography to connect with your guests.</p>
+                    <a href="/portfolio-photography.html" class="uppercase featured-text bold">Explore more</a>
+                </div>
+        </div> -->
+    <!-- </div>
+</section> -->
+
+
+
+
+
+<!-------Testimonial Section ------------>
+
+<section class="grid bg-image towel-beach">
+    <div class="overlay grid col-12 capped-width hidden-overfolow">
+        <h4 class="col-12 center subheading margin-b-0 padded-lg-t"> Kind words </h4>
+        <div class="col-12-middle center padded-lg-b"> 
+            <div class="testimonial-slider-container">
+                <!------------Slide 1----------------->
+                <div class="slider-item">
+                    <p class="medium-text center"> 
+                    We would never have the time to take the time to sit down and plan out every single detail (...) as Tatjana has done. Her international hospitality experience provided us with valuable insights, from assisting with training, new concept ideas & implementation (...) and simply being able to have more time to go on a holiday! The ease of working with Tatjana is every restaurant owner's dream. </p>
+                    <p class="cursive-text center"> - Vanessa, Fresh 'n Wild </p>
+                </div>
+                <!------------Slide 2----------------->
+                <div class="slider-item">
+                    <p class="medium-text center"> 
+                    The best thing for a hospitality owner is when you find someone you can trust completely, taking tasks off your hands and being able to focus on the things you want to, in your business. And that's exactly what happened when Tatjana came along! </p>
+                    <p class="cursive-text center"> - Vanessa, Fresh 'n Wild </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------About Studio Section ----------------------->
+
+<section class="grid-spaceAround padded md-padded sm-padded-lg sm-padded-lr xs-padded-tb-xl" id="about" >
+    <div class="col-7-middle_sm-12" data-aos="fade-up">
+    
+        <h3 class="subheading">Ciao, I'm Tatjana</h3>
+        <h2>Your <em>day is made</em> when your <em>service</em>  brings a smile to someone’s face? If that is you, then I'm glad you're here!
+        </h2>
+        <p> Growing up in Namibia, surrounded by nature and incredible wildlife, two things have always been important to me: 
+        </p>
+        <ol class="margin-b-1">
+            <li> Delivering memorable services and experiences </li>
+            <li> Leaving a positive impact wherever I go</li>
+        </ol>
+        <p> With a Bachelor in International Hospitality Management and a decade in the industry, hospitality to me, has always been about community and creating beautiful memories. My time in the industry has allowed me to create some of the most beautiful in-person moments.
+        </p>
+        <p> Now, I bring that same dedication to helping small hospitality businesses shine online. Because your guest's journey already starts online. Through strategic website design and food photography, I help you continue making a mark in the hearts of your guests, and create a lasting impression  —both in your community, and beyond.
+        </p>
+    </div>
+    
+    <div class="col-4-middle_sm-12 sm-padded-t">
+        <div class="bg-image profile-image portrait-tall lazy"></div>
+    </div>
+</section>
+  
+  
+
+    
+  
+<!------- Call to Action Section ----------->
+<section class="padded-lg md-padded sm-padded-lg sm-padded-lr xs-padded-tb-xl bg-gradient grid-spaceAround" > 
+    <div class="col-4-middle hide-xs">
+        <div class="bg-image profile-image-2 portrait lazy"></div>
+    </div>
+    <div class="col-7_xs-12-middle" data-aos="fade-up">
+        <h4 class="medium-heading">Driven to make an impact. One <em>dish</em> at a time. One <em>experience</em> at a time.</h4>
+        <p> By the time our work is done, you won’t just have a website or gorgeous new images. You’ll have a newfound confidence in your business that stems from knowing your digital presence aligns with your values, aspirations, and purpose - beyond the ordinary.
+        </p>
+        <a href="#contact" class="uppercase margin-t-1 button-color">Book a call</a>
+    </div>
+</section>
+
+
+    
+<!-------Contact Form Section -------------------->
+<section class="grid padded md-padded xs-padded xs-padded-tb-xl" id="contact">
+    <div class="col-2-bottom hide-xs" data-aos="fade-up">
+        <div class="bg-image water-image portrait-tall lazy"></div>
+    </div>
+    <div class="col-8_xs-12-middle">
+        <h2 class="center padded-b"> Let's get your  <br> business online </h2>
+        
+        <div class="grid-center">
+            <form class="grid-spaceBetween uppercase sm-form xs-form">
+            <div class="col-5_sm-12">
+                <label for="_name">Name*</label>
+                <input type="text" name="_name" id="_name" required>
+            </div>  
+
+            <div class="col-5_sm-12">
+                <label for="_replyto">Email*</label>
+                <input type="email" name="_replyto" id="_replyto" required>
+            </div>
+            <!-- <div class="col-5_sm-12">
+                <label for="_number">Number</label>
+                <input type="tel" name="_number" id="_number">
+            </div> -->
+
+            <label for="services" class="margin-b-1">Which Services are you interested in?*</label>
+            <select id="services" required>
+                <option value="web">Web Design / Development</option>
+                <option value="web">Development Only</option>
+                <option value="photo">Food Photography </option>
+                <option value="restaurant">Restaurant Photography</option>
+                <option value="product">Product Photography</option>
+                <option value="product">UGC Creation</option>
+            </select>
+
+            <div class="col-5_sm-12">
+                <label for="budget">Your Budget</label>
+                <select id="budget">
+                    <option value="" disabled selected hidden>Select your budget</option>
+                    <option value="under-1000">Under &euro;1000</option>
+                    <option value="1000-3000"> &euro;1000-3000</option>
+                    <option value="3000-5000">&euro;3000-5000</option>
+                    <option value="5000+">&euro;5000+</option>
+                </select>
+                
+            </div>
+            <div class="col-5_sm-12">
+                <label for="timeline">Expected launch date</label>
+                <input type="text" id="_timeline">
+            </div>
+            
+            <label for="message">Tell me a little about your business & what you are looking for...</label>
+            <textarea name="message" id="message"></textarea>
+            
+            <button class="uppercase margin-t-1 center" type="submit"> Send Enquiry </button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="col-2-top hide-xs" data-aos="fade-up">
+        <div class="bg-image building portrait lazy"></div>
+    </div>
+
+    <div class="grid-center col-10-middle">
+        <div class="col-6_sm-11 margin-t xs-margin-t-2">
+            <p class="smaller-text margin-b-0">*To give my undivided attention to each client, I work on a limited number of projects at a time. Expect to hear back within 36h. <br> Reach out in English, German or Afrikaans</p>
+        </div>
+        <!-- <div class="col-4 padded-t">
+            <p class="small-text margin-b-0">Reach out in English, German or Afrikaans</p>
+        </div> -->
+        <!-- <div class="col-2_xs-6 padded-t">
+            <p class="small-text margin-b-0">Email directly</p>
+            <a href="#" class="bold uppercase underline">Here</a>
+        </div>
+        <div class="col-2_xs-4 padded-t">
+            <p class="small-text margin-b-0">Book a free call</p>
+            <a href="#" class="bold uppercase featured-text underline">Book here</a>
+        </div> -->
+    </div>
+
+</section>
+
+
+
+
+  
+<!-------Instagram Gallery OPTINAL ------>
+<!--
+<section class="grid-spaceAround gallery padded-sm padded-t-0">
+    <div class="col-2">
+        <div class="bg-image square"></div>
+    </div> 
+    <div class="col-2">
+        <div class="bg-image square"></div>
+    </div> 
+    <div class="col-2">
+        <div class="bg-image square"></div>
+    </div> 
+    <div class="col-2">
+        <div class="bg-image square"></div>
+    </div> 
+    <div class="col-2">
+        <div class="bg-image square"></div>
+    </div> 
+</section>
+-->
+      
+
+
+
+    <!-------Footer--------------->
+    <footer class="grid-spaceBetween-top bg-dark light-text padded-b-0 sm-padded-lr">
+    <div class="col-5_md-12 footer-info xs-padded">
+        <img src="/images/jcs-logo.png" alt="Julita Creations logo" class="margin-l-negative md-margin-l-1-negative xs-margin-l-negative">
+        <div class="padded-t-1 md-padded-b">
+            <p> One-person Web Design & Development and Photography studio specialising in Food, Beverage & Service - based businesses, with purposes beyond the ordinary.
+            </p>
+        </div>
+    </div>
+
+    <nav class="col-2_md-4_xs-6 xs-padded">
+        <h4> Quick Links </h4>
+        <a href="/index.html#service"> Services </a>
+        <a href="/portfolio-web.html"> Website Portfolio </a>
+        <a href="/portfolio-photography.html"> Photography Portfolio </a>
+        <a href="/index.html#about"> About </a>
+        <a href="/index.html#contact"> Enquire Now </a>
+    </nav>
+
+    <nav class="col-2_md-4_xs-6 xs-padded"> 
+    <h4> Connect </h4>
+        <a href="https://www.instagram.com/julitacreations.studio/" target=“_blank”> Instagram </a>
+        <!-- <a href="#" target=“_blank”> Facebook </a> -->
+        <a href="#" target=“_blank”> Pinterest </a>
+    </nav>
+
+    <nav class="col-3_md-4_xs-12 xs-padded"> 
+        <h4> Get in touch </h4>
+            <p>Based in Milan, working with businesses worldwide. <!-- Wed-Fri 9am-5pm CEST  --></p>
+            <a href="mailto:contact@julitacreations.com" target=“_blank”> contact@julitacreations.com </a>
+            <!-- <a href="#" target=“_blank”> WhatsApp </a> -->
+    </nav>
+
+    <div class="site-credit light-text bg-dark padded-b-2 col-12 grid">
+        <div class="col-12 padded-t padded-b-1">
+            <span>Copyright Julita Creations 2025 | </span>
+            <a href="#" target=“_blank”> Policies </a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--JavaScript etc files-------->
+    <!--Add jQuery ALWAYS FIRST-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Any other tools like popup gallery etc / slick slider etc -->
+
+<!--------------- Animate on Scroll ------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- Magnific Popup core JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+<!--Typed JS -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" async></script>
+
+<!--------------- Slick Slider(only homepage uses) ------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+<!--SLick JavaScript path-->
+<script src="/slick.js"></script>
+
+<!--Custom JavaScript at the end -->
+<script src="/scripts.js" defer></script>
+
+
+</body>
+
+</html>

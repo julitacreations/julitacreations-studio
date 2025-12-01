@@ -267,6 +267,17 @@ a:hover {
 }
 
 /* Button styles—----———*/
+
+.button-landing {
+    background-color: #B8C4CB;
+    color: inherit;
+    border: 1px solid #B8C4CB;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+    padding: 0.6rem 2rem;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+}
   
 .button {
     background-color: #B8C4CB;

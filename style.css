@@ -495,8 +495,9 @@ header a {
   
 header {
     padding: 1.5% 2.5%;
- 
+
 }
+
 
 .logo {
     margin-top: 0.5%;
@@ -645,7 +646,7 @@ footer p {
 }
 
 /* navigation styles ------*/
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
 }
@@ -670,7 +671,44 @@ display: block;
 }
 .dropdown-content a {
 display: block;
+} */
+
+.dropdown-title {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: inherit;
+  cursor: pointer;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  background: #1f292d;
+  min-width: 9rem;
+  display: none;
+  z-index: 9999;
+  padding-bottom: 0.75rem;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+
 
 /* mobile menu styles ---------*/
 

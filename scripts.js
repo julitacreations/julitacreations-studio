@@ -16,6 +16,8 @@ $( document ).ready(function() {
       });
 
 
+
+
     // Magnific Popup Gallery
 
     // This will create a single gallery from all elements that have class "gallery-item"
@@ -337,3 +339,15 @@ document.addEventListener("scroll", () => {
 
 
 
+
+
+ // Dropdown hover
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdown.addEventListener('mouseenter', () => {
+      dropdown.classList.add('open');
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      dropdown.classList.remove('open');
+    });

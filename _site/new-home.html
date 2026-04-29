@@ -542,52 +542,59 @@
         <h2 class="center padded-b"> Let's get your  <br> business online </h2>
         
         <div class="grid-center">
-            <form class="grid-spaceBetween uppercase sm-form xs-form">
-            <div class="col-5_sm-12">
-                <label for="_name">Name*</label>
-                <input type="text" name="_name" id="_name" required>
-            </div>  
+            
+<form class="grid-spaceBetween uppercase sm-form xs-form" action="https://api.web3forms.com/submit" method="POST">
+<!-- Email subject -->
+<input type="hidden" name="subject" value="New Enquiry - Contact Page Form" >
 
-            <div class="col-5_sm-12">
-                <label for="_replyto">Email*</label>
-                <input type="email" name="_replyto" id="_replyto" required>
-            </div>
-            <!-- <div class="col-5_sm-12">
-                <label for="_number">Number</label>
-                <input type="tel" name="_number" id="_number">
-            </div> -->
+    <input type="hidden" name="access_key" value="4a6b2909-4e4c-47dd-8c08-999fdd6e13f6">
+        <div class="col-5_sm-12">
+            <label for="_name">Name*</label>
+            <input type="text" name="_name" id="_name" required>
+        </div>  
 
-            <label for="services" class="margin-b-1">Which Services are you interested in?*</label>
-            <select id="services" required>
-                <option value="web">Web Design / Development</option>
-                <option value="web">Development Only</option>
-                <option value="photo">Food Photography </option>
-                <option value="restaurant">Restaurant Photography</option>
-                <option value="product">Product Photography</option>
-                <option value="product">UGC Creation</option>
+        <div class="col-5_sm-12">
+            <label for="_replyto">Email*</label>
+            <input type="email" name="_replyto" id="_replyto" required>
+        </div>
+        <!-- <div class="col-5_sm-12">
+            <label for="_number">Number</label>
+            <input type="tel" name="_number" id="_number">
+        </div> -->
+
+        <label for="services" class="margin-b-1">Which Services are you interested in?*</label>
+        <select id="services" required>
+            <option value="web">Web Design / Development</option>
+            <option value="web">Development Only</option>
+            <option value="photo">Food Photography </option>
+            <option value="restaurant">Restaurant Photography</option>
+            <option value="product">Product Photography</option>
+            <option value="product">Custom</option>
+        </select>
+
+        <div class="col-5_sm-12">
+            <label for="budget">Your Budget</label>
+            <select id="budget">
+                <option value="" disabled selected hidden>Select your budget</option>
+                <option value="under-1000">Under &euro;1000</option>
+                <option value="1000-3000"> &euro;1000-2500</option>
+                <option value="3000-5000">&euro;2500-4000</option>
+                <option value="5000+">&euro;4000+</option>
             </select>
-
-            <div class="col-5_sm-12">
-                <label for="budget">Your Budget</label>
-                <select id="budget">
-                    <option value="" disabled selected hidden>Select your budget</option>
-                    <option value="under-1000">Under &euro;1000</option>
-                    <option value="1000-3000"> &euro;1000-3000</option>
-                    <option value="3000-5000">&euro;3000-5000</option>
-                    <option value="5000+">&euro;5000+</option>
-                </select>
-                
-            </div>
-            <div class="col-5_sm-12">
-                <label for="timeline">Expected launch date</label>
-                <input type="text" id="_timeline">
-            </div>
             
-            <label for="message">Tell me a little about your business & what you are looking for...</label>
-            <textarea name="message" id="message"></textarea>
-            
-            <button class="uppercase margin-t-1 center" type="submit"> Send Enquiry </button>
-            </form>
+        </div>
+        <div class="col-5_sm-12">
+            <label for="timeline">Expected launch date</label>
+            <input type="text" id="_timeline">
+        </div>
+        
+        <label for="message">Tell me a little about your business & what you are looking for...</label>
+        <textarea name="message" id="message"></textarea>
+        
+        <button class="uppercase margin-t-1 center" type="submit"> Send Enquiry </button>
+    <!-- Add full URL for custom redirect in value below (include https) -->
+    <input type="hidden" name="redirect" value="https://www.julitacreations.com/thank-you" />
+</form>
         </div>
     </div>
     
@@ -597,7 +604,7 @@
 
     <div class="grid-center col-10-middle">
         <div class="col-6_sm-11 margin-t xs-margin-t-2">
-            <p class="smaller-text margin-b-0">*To give my undivided attention to each client, I work on a limited number of projects at a time. Expect to hear back within 36h. <br> Reach out in English, German or Afrikaans</p>
+            <p class="smaller-text margin-b-0">*To give my undivided attention to each client, I work on a limited number of projects at a time. Expect to hear back within 36h. <br> Reach out in English, German or Afrikaans <em>(and a tiny bit of Italian).</em></p>
         </div>
         <!-- <div class="col-4 padded-t">
             <p class="small-text margin-b-0">Reach out in English, German or Afrikaans</p>

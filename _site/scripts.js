@@ -90,26 +90,24 @@ $( document ).ready(function() {
       });
 
 
-      // Typed JS code
-      var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        strings: [
-            "restaurant",
-            "café",
-            "bed + breakfast",
-            "hospitality business",
-            "service business",
-            "food brand"
-          ],
-        typeSpeed: 100,
-        backSpeed: 70,
-        loop: true,
-        loopCount: Infinity,
-        fadeOut: true,
-        fadeOutClass: 'typed-fade-out',
-        fadeOutDelay: 200
+      // highighted text
+       const words = document.querySelectorAll(".word");
 
-      });
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const index = [...words].indexOf(entry.target);
+
+              setTimeout(() => {
+                entry.target.classList.add("active");
+              }, index * 120); // stagger effect
+            }
+          });
+        }, {
+          threshold: 0.5
+        });
+
+        words.forEach(word => observer.observe(word));
 
         // Typed JS code -mobile
        var typed = new Typed('#typed-mobile', {

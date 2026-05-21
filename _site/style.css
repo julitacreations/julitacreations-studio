@@ -88,7 +88,11 @@ html {
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
 .margin-l-negative { margin-left: -0.7rem;}
-  
+
+.rounded {
+    border-radius: 2.5rem;
+    border: 1px solid inherit
+}
   
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -123,10 +127,38 @@ body {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 4.1rem;
+    font-size: 3rem;
     line-height: 1.1;
     text-align: center;
 }
+
+.word {
+  display: inline;
+  padding: 0 0.12em;
+
+    background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(173, 190, 197, 0.12) 10%,
+    rgba(173, 190, 197, 0.38) 22%,
+    rgba(173, 190, 197, 0.38) 78%,
+    rgba(173, 190, 197, 0.12) 90%,
+    transparent 100%
+  );
+
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+
+  /* only lower portion */
+  background-size: 0% 45%;
+
+  transition: background-size 0.8s cubic-bezier(.22,1,.36,1);
+}
+
+.word.active {
+  background-size: 100% 45%;
+}
+
   
 .eyebrow-heading {
     font-size: 1rem;
@@ -193,6 +225,7 @@ li {
     font-family: 'Playfair Display', serif;
     font-size: 2.3rem;
     font-weight: 400;
+    margin-bottom:1.5rem;
 }
 
 .medium-heading span {
@@ -1124,7 +1157,7 @@ select:focus {
 
     
 
-    h1              { font-size: 3.6rem;}
+    h1              { font-size: 2.6rem;}
     h2              { font-size: 2.2rem}
     .extra-large-heading {font-size: 3.6rem;}
     .medium-heading { font-size: 2.1rem;}
@@ -1167,7 +1200,7 @@ select:focus {
     .show-sm { display: block; }
     .hide-sm { display: none; }
 
-    h1                  { font-size: 2.9rem;}
+    h1                  { font-size: 2rem;}
     h2                  { font-size: 2rem}
     .eyebrow-heading    {
         font-size: 1rem;
@@ -1241,9 +1274,9 @@ select:focus {
 
     .logo { margin-top: 2.5%;}
 
-    h1              { font-size: 2.6rem;}
+    h1              { font-size: 2rem;}
     h2              { font-size: 1.9rem}
-    .medium-heading { font-size: 2rem;}
+    .medium-heading { font-size: 1.7rem;}
     .extra-large-heading { font-size: 2.6rem;}
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}

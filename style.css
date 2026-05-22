@@ -584,7 +584,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 2rem;
-    border-radius: 1.5rem;
+    border-radius: 2.5rem;
     background: rgba(255,255,255,0.14);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -599,7 +599,6 @@ a:hover {
 
 .testimonial-card {
     min-height: 26rem;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1336,6 +1335,36 @@ select:focus {
   position: relative;
   z-index: 1;
 }
+
+ /* mobile testimonial cards----- */
+    /* MOBILE STACKING VERSION */
+
+   .testimonials-section {
+        height: auto;
+    }
+
+    .testimonials-stack {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .testimonial-card {
+        position: sticky;
+        top: 4rem;
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none;
+        padding: 4rem 3rem;
+    }
+
+    .testimonial-card-1 { z-index: 1; }
+    .testimonial-card-2 { z-index: 2; }
+    .testimonial-card-3 { z-index: 3; }
+    
     
   
 }
@@ -1407,42 +1436,13 @@ select:focus {
         margin: auto;
     } 
 
-    /* mobile testimonial cards----- */
-    /* MOBILE STACKING VERSION */
-
-   .testimonials-section {
-        height: auto;
-    }
-
-    .testimonials-stack {
-
-        position: relative;
-
-        height: auto;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 2rem;
-
+     .testimonials-stack {
         padding: 2rem 1rem;
     }
 
     .testimonial-card {
-
-        position: sticky;
-        top: 4rem;
-
-        opacity: 1 !important;
-        transform: none !important;
-
-        animation: none;
+        padding: 3rem 2rem;
     }
-
-    .testimonial-card-1 { z-index: 1; }
-    .testimonial-card-2 { z-index: 2; }
-    .testimonial-card-3 { z-index: 3; }
-    
 
 
 }

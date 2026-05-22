@@ -55,6 +55,8 @@ html {
 .padded-b-1 { padding-bottom: 1rem; }
 .padded-t-1 { padding-top: 1rem;}
 
+.padded-lr-2 {padding-left: 2rem; padding-right: 2rem;}
+
 .padded-t-2 { padding-top: 2rem; }
 
 .padded-tb-sm { padding-bottom: 2.5%; padding-top: 2.5%; }
@@ -334,6 +336,17 @@ a:hover {
     transition: all 0.2s;
     font-size: 0.75rem;
 }
+
+.button-accent {
+    background-color: #ac5122;
+    color:#f6f3ef;
+    border: 1px solid #ac5122;
+    border-radius: 0.2rem;
+     /*top +bottom then left +right */
+     padding: 0.6rem 1.6rem;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+}
   
 .button:hover {
     color:#f6f3ef;
@@ -348,6 +361,13 @@ a:hover {
     border: 1px solid #ac5122;
     font-style:normal;
 }
+.button-accent:hover {
+    color:#f6f3ef;
+    background-color: #1f292d;
+    border: 1px solid #1f292d;
+    font-style:normal;
+}
+
 
 
 
@@ -416,6 +436,22 @@ a:hover {
 
 
 
+/* portfolio section animation */
+
+/* Section 1 stays fixed while scrolling */
+    .section-1 {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    /* Section 2 scrolls over it */
+    .section-2 {
+      position: relative;
+      background: #f6f3ef;
+      z-index: 2;
+    }
+
 /*Accordion Block--------------------------------*/
 .accordion {
     display: flex;
@@ -454,7 +490,7 @@ a:hover {
 
 .cursive-text {
     font-family: 'Windsong', cursive;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 1.8rem;
 }
 
@@ -517,6 +553,113 @@ a:hover {
 }
 
   
+
+
+/* new testimonial card animation----------------- */
+
+/* SECTION CREATES SCROLL DISTANCE */
+.testimonials-section {
+    position: relative;
+    height: 120vh;
+}
+
+/* STICKY AREA */
+.testimonials-stack {
+    position: sticky;
+    top: 0;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+/* TESTIMONIAL CARD */
+.testimonial-card {
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid #ac5122;
+    color: #1f292d;
+    opacity: 0;
+    transform: translateY(80px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.testimonial-card {
+    min-height: 26rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* SCROLL REVEALS */
+
+.testimonial-card-1 {
+    animation: reveal-1 linear both;
+    animation-timeline: view();
+}
+
+.testimonial-card-2 {
+    animation: reveal-2 linear both;
+    animation-timeline: view();
+}
+
+.testimonial-card-3 {
+    animation: reveal-3 linear both;
+    animation-timeline: view();
+}
+
+/* ANIMATIONS */
+
+@keyframes reveal-1 {
+
+    0%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes reveal-2 {
+
+    0%, 25% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    35%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes reveal-3 {
+
+    0%, 50% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    60%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* end new testimonial section */
+
   
 /* Header & Footer Styles———————————————-----------------—*/
   
@@ -1255,6 +1398,41 @@ select:focus {
         margin: auto;
     } 
 
+    /* mobile testimonial cards----- */
+    /* MOBILE STACKING VERSION */
+
+   .testimonials-section {
+        height: auto;
+    }
+
+    .testimonials-stack {
+
+        position: relative;
+
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+
+        padding: 2rem 1rem;
+    }
+
+    .testimonial-card {
+
+        position: sticky;
+        top: 4rem;
+
+        opacity: 1 !important;
+        transform: none !important;
+
+        animation: none;
+    }
+
+    .testimonial-card-1 { z-index: 1; }
+    .testimonial-card-2 { z-index: 2; }
+    .testimonial-card-3 { z-index: 3; }
     
 
 

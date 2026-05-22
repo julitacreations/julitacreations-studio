@@ -227,7 +227,7 @@ li {
     font-family: 'Playfair Display', serif;
     font-size: 2.3rem;
     font-weight: 400;
-    margin-bottom:1.5rem;
+    margin-bottom:1.7rem;
 }
 
 .medium-heading span {
@@ -493,7 +493,7 @@ a:hover {
 .cursive-text {
     font-family: 'Windsong', cursive;
     font-size: 1.3rem;
-    margin-top: 1.8rem;
+    margin-top: 0.5rem;
 }
 
 .overlay {
@@ -1464,7 +1464,7 @@ select:focus {
     h1              { font-size: 2rem;}
     h2              { font-size: 1.9rem}
     .medium-heading { font-size: 1.7rem;}
-    .extra-large-heading { font-size: 2.6rem;}
+    .extra-large-heading { font-size: 2.5rem;}
     .large-text     { font-size: 2.8rem;}
     .medium-text    { font-size: 1.3rem;}
 

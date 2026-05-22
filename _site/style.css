@@ -452,6 +452,8 @@ a:hover {
       z-index: 2;
     }
 
+
+
 /*Accordion Block--------------------------------*/
 .accordion {
     display: flex;
@@ -729,6 +731,7 @@ header {
   overflow: hidden;
   z-index: 10;
 }
+
 
 /* ensure hero text & original images are above the base scroll-stack */
 .hero-text,
@@ -1321,14 +1324,19 @@ select:focus {
 
     .md-margin-l-1-negative  { margin-left: -1.2rem; }
 
-    .md-tall-80 { min-height: 80vh; }
+    .md-tall-70 { min-height: 70vh; }
 
     .flex-flip-md   {flex-direction: column-reverse; }
 
     .footer-info {padding-right: 0;}
     .footer-info img {max-width: 45%; }
 
-   
+    /* animation sticky for services section */
+    .section-1 {
+  position: relative;
+  z-index: 1;
+}
+    
   
 }
 
@@ -1370,6 +1378,7 @@ select:focus {
     .sm-padded-b-sm {padding-bottom: 2.5%; }
     .sm-sm-padded-lr   {padding-left: 2.5%; padding-right:2.5%;}
     .sm-padded-lr      {padding-left: 5%; padding-right:5%;}
+    .padded-lr-2 {padding-left: 0rem; padding-right: 0rem;}
 
     .sm-padded-t-75    {padding-top: 7.5%; }
 

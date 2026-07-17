@@ -1242,7 +1242,7 @@ select:focus {
     padding: 0.7rem 1.5rem;
     text-decoration: none;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
